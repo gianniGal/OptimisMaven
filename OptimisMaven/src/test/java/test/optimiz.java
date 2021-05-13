@@ -80,7 +80,7 @@ public class optimiz {
 //		
 //		System.out.println(daoVehicule.optimizedcar(circuit1));
 //		
-		Context.get_instance().getEmf().close();
+//		Context.get_instance().getEmf().close();
 		
 
 	}

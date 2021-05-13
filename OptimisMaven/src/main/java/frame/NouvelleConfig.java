@@ -4,6 +4,8 @@ import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
 
+import dao.DAOVehicule;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +17,6 @@ import metier.FiltresTerrain.Terrain;
 public class NouvelleConfig extends javax.swing.JFrame{
 	
 	
-
 
 	
 	private JFrame frame;
@@ -56,7 +57,7 @@ public class NouvelleConfig extends javax.swing.JFrame{
 		
 		frame = new JFrame();
 		frame.getContentPane().setBackground(Color.WHITE);
-		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+//		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		//frame.setBounds(0, 0, screenSize.width, screenSize.height);
 		frame.setBounds(0, 0, 1060, 550);
 		frame.setLocationRelativeTo(null);
@@ -264,6 +265,10 @@ public class NouvelleConfig extends javax.swing.JFrame{
 		JButton btnSearch = new JButton("Validé");
 		btnSearch.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+//				la query retourne une liste de piece
+//				List<Piece> piecesOpti = DAOVehicule. find all pieces
+//				Vehicule vehiculeOpti = new Vehicule(login,password,piecesOpti)   1Client plusieurs Vehicules
+//						daoVehicule.save(v);
 				ResultatConfig.main(new String[]{});
 				frame.dispose();
 			} 

@@ -9,7 +9,6 @@ public class ErrorChampsVide extends javax.swing.JFrame{
 	
 	
 
-
 	
 	private JFrame frame;
 

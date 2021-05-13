@@ -2,16 +2,33 @@ package metier;
 
 import java.util.List;
 
+import javax.persistence.*;
 import metier.FiltresTerrain.Terrain;
 
+@Entity
 public class Piece {
 	
-	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id ;
 	private String libelle;
 	private double prix;
 //	private List<Terrain> listeTerrain;
 	private Terrain terrain;
 	private String typePiece;
+	
+	public Piece() {
+
+	}
+	
+	public Piece(int id,String libelle, double prix, Terrain terrain) {
+
+		this.id = id;
+		this.libelle = libelle;
+		this.prix = prix;
+		this.terrain = terrain;
+//		this.typePiece = typePiece;
+	}
 	
 	public Piece(String libelle, double prix, Terrain terrain) {
 
@@ -31,13 +48,13 @@ public class Piece {
 //		this.typePiece = typePiece;
 	}
 
-//	public int getId() {
-//		return id;
-//	}
-//
-//	public void setId(int id) {
-//		this.id = id;
-//	}
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getLibelle() {
 		return libelle;
@@ -73,11 +90,11 @@ public class Piece {
 
 	@Override
 	public String toString() {
-		return "Piece [libelle=" + libelle + ", prix=" + prix + "]";
+		return "Piece [id=" + id + ", libelle=" + libelle + ", prix=" + prix + ", terrain=" + terrain + ", typePiece="
+				+ typePiece + "]";
 	}
-	
-	
-	
+
+
 	
 
 }

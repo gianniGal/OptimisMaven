@@ -37,6 +37,7 @@ public class Userlogsucces {
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 1004, 562);
+		//METTRE LA FRAME AU CENTRE
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
