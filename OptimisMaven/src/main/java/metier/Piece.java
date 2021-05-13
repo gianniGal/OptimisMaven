@@ -5,11 +5,11 @@ import java.util.List;
 import javax.persistence.*;
 import metier.FiltresTerrain.Terrain;
 
-@Entity
+//@Entity
 public class Piece {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@Id
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id ;
 	private String libelle;
 	private double prix;

@@ -3,19 +3,23 @@ package metier;
 import javax.persistence.*;
 
 @Entity
-public class Client extends Compte{
+public class Client {
 
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idClient;
 	
+	@Column(nullable = false)
+	private  String login;
+	private  String password;
+	private int telephone;
+	private String mail;
+	
 	@Embedded
 	private Adresse adresse;
 	
-	@Column(nullable = false)
-	private int telephone;
-	private String mail;
+
 	
 
 	
@@ -24,12 +28,31 @@ public class Client extends Compte{
 	}
 
 	public Client(String login, String password, Adresse adresse, int telephone, String mail) {
-		super(login, password);
+		this.login = login ;
+		this.password = password;
 		this.adresse = adresse;
 		this.telephone = telephone;
 		this.mail = mail;
 	}
+	
+	
 
+	public String getLogin() {
+		return login;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
 	public int getIdClient() {
 		return idClient;
 	}

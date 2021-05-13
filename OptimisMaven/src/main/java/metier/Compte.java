@@ -8,13 +8,13 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
 
-
+//@Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Compte {
 
     @Id
-	protected transient String login;
-	protected transient String password;
+	protected  String login;
+	protected  String password;
 	
 	
 	public Compte() {

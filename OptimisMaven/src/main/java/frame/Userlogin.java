@@ -8,6 +8,8 @@ import java.sql.*;
 
 
 import dao.Logverif;
+import metier.Client;
+import util.Context;
 
 
 
@@ -15,7 +17,7 @@ import dao.Logverif;
 
 public class Userlogin {
 
-	Connection connection= null;
+//	Connection connection= null;
 
 	private JFrame frame;
 	private JPasswordField passwordField;
@@ -45,7 +47,7 @@ public class Userlogin {
 	 */
 	public Userlogin() {
 		initialize();
-		connection = MyysqlConnection.dbConnector();		
+//		connection = MyysqlConnection.dbConnector();		
 	}
 
 	/**
@@ -97,15 +99,16 @@ public class Userlogin {
 		btnLOGIN.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				String name=textField.getText();
+				String login=textField.getText();
 				String password=String.valueOf(passwordField.getPassword());
 
-				if(Logverif.logValide(connection,name, password))
+				Client c = Context.get_instance().getDaoC().seConnecter(login, password);
+				if(login.equals(c.getLogin()) && password.equals(c.getPassword()))
 				{
 					Userlogsucces.main(new String[]{});
 					frame.dispose();
 				}
-				else
+				else //EXCCEPTION NON PRISE EN COMPTE
 				{
 					System.out.println("ERROR ID ne correspondent pas");
 					frame.dispose();

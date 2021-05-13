@@ -18,9 +18,11 @@ public class DAOClient implements IDAO<Client, Integer>
 	public Client seConnecter(String login, String password) {
 		Client c = null;
 		EntityManager em = Context.get_instance().getEmf().createEntityManager();
-		Query myQuery = em.createQuery("SELECT c from Client c where c.login=login and c.password=password",Client.class);
+		Query myQuery = em.createQuery("SELECT c from Client c where c.login=:login and c.password=:password",Client.class);
 		myQuery.setParameter("login", login);
-		myQuery.setParameter("paswword",password);
+		myQuery.setParameter("password",password);
+	    c=(Client) myQuery.getSingleResult();
+		em.close();
 		return c;
 
 
