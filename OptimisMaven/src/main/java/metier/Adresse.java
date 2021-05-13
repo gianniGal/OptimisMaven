@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 @Embeddable
 public class Adresse {
+	
 	@Column(nullable=false)
 	private String rue;
 	private int numero;
