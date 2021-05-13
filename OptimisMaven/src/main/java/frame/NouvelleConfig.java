@@ -265,10 +265,13 @@ public class NouvelleConfig extends javax.swing.JFrame{
 		JButton btnSearch = new JButton("Validé");
 		btnSearch.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
 //				la query retourne une liste de piece
 //				List<Piece> piecesOpti = DAOVehicule. find all pieces
 //				Vehicule vehiculeOpti = new Vehicule(login,password,piecesOpti)   1Client plusieurs Vehicules
 //						daoVehicule.save(v);
+				
+				//M
 				ResultatConfig.main(new String[]{});
 				frame.dispose();
 			} 
