@@ -6,11 +6,25 @@ import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
 import metier.Client;
+import metier.Compte;
 import util.Context;
 
 
 public class DAOClient implements IDAO<Client, Integer>
 {
+		
+	
+	
+	public Client seConnecter(String login, String password) {
+		Client c = null;
+		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		Query myQuery = em.createQuery("SELECT c from Client c where c.login=login and c.password=password",Client.class);
+		myQuery.setParameter("login", login);
+		myQuery.setParameter("paswword",password);
+		return c;
+		
+	
+	}
 
 	@Override
 	public List<Client> findAll() {

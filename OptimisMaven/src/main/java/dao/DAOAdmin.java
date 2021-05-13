@@ -11,6 +11,18 @@ import util.Context;
 
 public class DAOAdmin implements IDAO<Admin, Integer> {
 
+	
+	public Admin seConnecter(String login, String password) {
+		Admin a = null;
+		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		Query myQuery = em.createQuery("SELECT a from Admin a where a.login=login and a.password=password",Admin.class);
+		myQuery.setParameter("login", login);
+		myQuery.setParameter("paswword",password);
+		return a;
+	}
+	
+	
+	
 	@Override
 	public List<Admin> findAll() {
 		EntityManager em = Context.get_instance().getEmf().createEntityManager();
