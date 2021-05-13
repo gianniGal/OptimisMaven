@@ -70,7 +70,7 @@ public class optimiz {
 //		boolean luminosite = false;
 //		
 
-//		Application.main(new String[]{});
+		Application.main(new String[]{});
 //		Terrain  circuit1 = null;
 //		circuit1 = EnvironnementFrame.EnvironnementFrame();
 //		
