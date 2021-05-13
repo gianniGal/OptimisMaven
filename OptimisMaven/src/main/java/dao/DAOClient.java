@@ -6,7 +6,7 @@ import java.util.*;
 import javax.persistence.EntityManager;
 
 import metier.*;
-import utile.Context;
+import util.Context;
 
 
 public class DAOClient implements IDAO<Client, Integer>
