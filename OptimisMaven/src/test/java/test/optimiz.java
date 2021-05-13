@@ -49,7 +49,6 @@ public class optimiz {
 	}
 
 
-
 //	static DAOClient daoClient = Context.get_instance().getDaoC();
 	
 	public static void main(String[] args) {

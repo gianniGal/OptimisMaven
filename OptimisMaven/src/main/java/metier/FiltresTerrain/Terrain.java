@@ -1,46 +1,40 @@
 package metier.FiltresTerrain;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+
+@Embeddable
+
 public class Terrain {
 	
 	protected boolean course;
-	protected boolean luminosite;
-	public String lien;
+	public transient String lien;
 	protected Sol sol;
-	protected TpsDeVoyage dureeVoyage;
 	protected NbDePlaces nombrePlaces;
-	protected boolean animal;
-	protected boolean conflit;
-	protected boolean statut;
+	protected transient boolean statut;
 	
 	
-    public Terrain(boolean course, boolean luminosite, String lien, Sol sol, TpsDeVoyage dureeVoyage,
-			NbDePlaces nombrePlaces, boolean animal, boolean conflit) {
+    public Terrain(boolean course, String lien, Sol sol, NbDePlaces nombrePlaces) {
 		
 		this.course = course;
-		this.luminosite = luminosite;
 		this.lien = lien;
 		this.sol = sol;
-		this.dureeVoyage = dureeVoyage;
 		this.nombrePlaces = nombrePlaces;
-		this.animal = animal;
-		this.conflit = conflit;
+
 	}
     
     public Terrain() {
 	
 	}
 
-	public Terrain(boolean course, boolean luminosite,  Sol sol, TpsDeVoyage dureeVoyage,
-			NbDePlaces nombrePlaces, boolean animal, boolean conflit,boolean statut) {
+	public Terrain(boolean course, Sol sol, NbDePlaces nombrePlaces, boolean statut) {
 
 		this.course = course;
-		this.luminosite = luminosite;
 		this.sol = sol;
-		this.dureeVoyage = dureeVoyage;
 		this.nombrePlaces = nombrePlaces;
-		this.animal = animal;
-		this.conflit = conflit;
 		this.statut = statut;
+
 	}
 
 	public boolean isStatut() {
@@ -59,13 +53,6 @@ public class Terrain {
 		this.course = course;
 	}
 
-	public boolean isLuminosite() {
-		return luminosite;
-	}
-
-	public void setLuminosite(boolean luminosite) {
-		this.luminosite = luminosite;
-	}
 
 	public String getLien() {
 		return lien;
@@ -83,13 +70,6 @@ public class Terrain {
 		this.sol = sol;
 	}
 
-	public TpsDeVoyage getDureeVoyage() {
-		return dureeVoyage;
-	}
-
-	public void setDureeVoyage(TpsDeVoyage dureeVoyage) {
-		this.dureeVoyage = dureeVoyage;
-	}
 
 	public NbDePlaces getNombrePlaces() {
 		return nombrePlaces;
@@ -99,22 +79,6 @@ public class Terrain {
 		this.nombrePlaces = nombrePlaces;
 	}
 
-	public boolean isAnimal() {
-		return animal;
-	}
-
-	public void setAnimal(boolean animal) {
-		this.animal = animal;
-	}
-
-	public boolean isConflit() {
-		return conflit;
-	}
-
-	public void setConflit(boolean conflit) {
-		this.conflit = conflit;
-	}
-	
 	
 
 }
