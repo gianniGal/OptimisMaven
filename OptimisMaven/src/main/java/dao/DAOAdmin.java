@@ -5,77 +5,67 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
+import metier.Admin;
 import metier.Client;
-import metier.Compte;
 import util.Context;
 
+public class DAOAdmin implements IDAO<Admin, Integer> {
 
-public class DAOClient implements IDAO<Client, Integer>
-{
-
-
-
-	public Client seConnecter(String login, String password) {
-		Client c = null;
+	
+	public Admin seConnecter(String login, String password) {
+		Admin a = null;
 		EntityManager em = Context.get_instance().getEmf().createEntityManager();
-		Query myQuery = em.createQuery("SELECT c from Client c where c.login=login and c.password=password",Client.class);
+		Query myQuery = em.createQuery("SELECT a from Admin a where a.login=login and a.password=password",Admin.class);
 		myQuery.setParameter("login", login);
 		myQuery.setParameter("paswword",password);
-		return c;
-
-
+		return a;
 	}
-
+	
+	
+	
 	@Override
-	public List<Client> findAll() {
+	public List<Admin> findAll() {
 		EntityManager em = Context.get_instance().getEmf().createEntityManager();
 
-		Query myQuery = em.createQuery("SELECT c from Client c",Client.class);
-		List<Client> clients=myQuery.getResultList();
+		Query myQuery = em.createQuery("SELECT a from Admin a",Admin.class);
+		List<Admin> admins=myQuery.getResultList();
 		em.close();
-		return clients;
+		return admins;
 	}
 
 	@Override
-	public Client findById(Integer id) {
+	public Admin findById(Integer id) {
 		EntityManager em = Context.get_instance().getEmf().createEntityManager();
 
-		Client client = em.find(Client.class, id);
+		Admin admins = em.find(Admin.class, id);
 
 		em.close();
-		return client;
+		return admins;
 	}
 
 	@Override
-	public Client save(Client client) {
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
-
-
-		em.getTransaction().begin();
-		client = em.merge(client);
-		em.getTransaction().commit();
-
-		em.close();
-		return client;
-
-	}
-
-
-
-	@Override
-	public void delete(Client client) {
+	public Admin save(Admin admins) {
 		EntityManager em = Context.get_instance().getEmf().createEntityManager();
 
 
 		em.getTransaction().begin();
-		client = em.merge(client);
-		em.remove(client);
+		admins = em.merge(admins);
 		em.getTransaction().commit();
 
 		em.close();
-
+		return admins;
 	}
 
+	@Override
+	public void delete(Admin admins) {
+		EntityManager em = Context.get_instance().getEmf().createEntityManager();
 
+		em.getTransaction().begin();
+		admins = em.merge(admins);
+		em.remove(admins);
+		em.getTransaction().commit();
+
+		em.close();
+	}
 
 }
