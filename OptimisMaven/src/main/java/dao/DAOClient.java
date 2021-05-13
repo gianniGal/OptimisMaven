@@ -47,12 +47,12 @@ public class DAOClient implements IDAO<Client, Integer>
 	}
 
 	@Override
-	public void delete(Client object) {
+	public void delete(Client client) {
 EntityManager em = Context.get_instance().getEmf().createEntityManager();
 		
 		em.getTransaction().begin();
-		object = em.merge(object);
-		em.remove(object);
+		client = em.merge(client);
+		em.remove(client);
 		em.getTransaction().commit();
 		
 		em.close();
