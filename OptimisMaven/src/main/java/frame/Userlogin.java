@@ -102,7 +102,7 @@ public class Userlogin {
 				String login=textField.getText();
 				String password=String.valueOf(passwordField.getPassword());
 
-				Client c = Context.get_instance().getDaoC().seConnecter(login, password);
+				Client c = Context.getInstance().getDaoC().seConnecter(login, password);
 				if(login.equals(c.getLogin()) && password.equals(c.getPassword()))
 				{
 					Userlogsucces.main(new String[]{});

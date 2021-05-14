@@ -1,14 +1,25 @@
 package frame;
 
-import java.awt.event.*;
-import java.awt.*;
-import javax.swing.*;
-
+import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JRadioButton;
+import javax.swing.SwingConstants;
 
-import metier.FiltresTerrain.*;
+import dao.DAOTerrain;
+import metier.FiltresTerrain.Sol;
 import util.Context;
 
 public class ChoixContraintes {
@@ -69,7 +80,11 @@ public class ChoixContraintes {
 		List <Sol> sols = new ArrayList();
 		sols.add(Sol.Boue);
 		sols.add(Sol.Glace);
-		Context.getInstance().getTerrainSelected().setSol(sols);
+		
+		
+		//Context.getInstance().getTerrainSelected().setSol(sols);
+		Context.getInstance().getDaoT().FindAllSolByIdTerrain(Context.getInstance().getTerrainSelected());
+		
 		
 		for(Sol s : Context.getInstance().getTerrainSelected().getSol()) 
 		{

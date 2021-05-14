@@ -18,16 +18,16 @@ import javax.persistence.ManyToMany;
 
 @Entity
 public class Terrain {
-	
-	
+
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id ;
-	public transient String lien;
+	private String lien;
 	//@Column(name="Course", columnDefinition="boolean default false")
 	protected boolean course ;
-	
-	
+
+
 	@ElementCollection(fetch = FetchType.EAGER)
 	@Enumerated(EnumType.STRING)
 	protected List<Sol> sols;
@@ -35,19 +35,20 @@ public class Terrain {
 	protected Meteo meteo;
 	@Enumerated(EnumType.STRING)
 	protected NbDePlaces nombrePlaces;
-	
-	
-    public Terrain(boolean course, String lien, List<Sol> sols, NbDePlaces nombrePlaces) {
-		
+
+
+	public Terrain(boolean course, String lien, List<Sol> sols, Meteo meteo, NbDePlaces nombrePlaces) {
+
 		this.course = course;
 		this.lien = lien;
 		this.sols = sols;
+		this.meteo=meteo;
 		this.nombrePlaces = nombrePlaces;
 
 	}
-    
-    public Terrain() {
-	
+
+	public Terrain() {
+
 	}
 
 	public Terrain(boolean course, List<Sol> sols,Meteo meteo, NbDePlaces nombrePlaces) {
@@ -56,7 +57,7 @@ public class Terrain {
 		this.sols = sols;
 		this.meteo = meteo;
 		this.nombrePlaces = nombrePlaces;
-	
+
 
 	}
 
@@ -104,6 +105,12 @@ public class Terrain {
 		this.nombrePlaces = nombrePlaces;
 	}
 
-	
+	@Override
+	public String toString() {
+		return "Terrain [id=" + id + ", lien=" + lien + ", course=" + course + ", sols=" + sols + ", meteo=" + meteo
+				+ ", nombrePlaces=" + nombrePlaces + "]";
+	}
+
+
 
 }

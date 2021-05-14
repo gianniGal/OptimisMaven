@@ -5,6 +5,7 @@ import javax.persistence.Persistence;
 
 import dao.DAOClient;
 import dao.DAOPiece;
+import dao.DAOTerrain;
 import metier.FiltresTerrain.Sol;
 import metier.FiltresTerrain.Terrain;
 
@@ -17,6 +18,7 @@ public class Context {
 
 	private  DAOClient daoC = new DAOClient();
 	private  DAOPiece daoP = new DAOPiece();
+	private  DAOTerrain daoT = new DAOTerrain();
 	//	private IDAO daoP = new DAOProduit();
 
 	private static Context _instance=null; 
@@ -35,7 +37,7 @@ public class Context {
 		Context._instance = _instance;
 	}
 
-
+  
 
 
 	public EntityManagerFactory getEmf() {
@@ -94,6 +96,18 @@ public class Context {
 
 	public void setSolSelected(Sol solSelected) {
 		this.solSelected = solSelected;
+	}
+
+
+
+	public DAOTerrain getDaoT() {
+		return daoT;
+	}
+
+
+
+	public void setDaoT(DAOTerrain daoT) {
+		this.daoT = daoT;
 	}
 
 
