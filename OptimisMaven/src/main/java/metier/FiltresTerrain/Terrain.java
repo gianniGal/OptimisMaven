@@ -1,18 +1,30 @@
 package metier.FiltresTerrain;
 
 import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
-@Embeddable
+@Entity
 
 public class Terrain {
 	
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id ;
+
 	protected boolean course;
 	public transient String lien;
+	@Enumerated(EnumType.STRING)
 	protected Sol sol;
+	@Enumerated(EnumType.STRING)
 	protected NbDePlaces nombrePlaces;
-	protected transient boolean statut;
 	
 	
     public Terrain(boolean course, String lien, Sol sol, NbDePlaces nombrePlaces) {
@@ -28,22 +40,16 @@ public class Terrain {
 	
 	}
 
-	public Terrain(boolean course, Sol sol, NbDePlaces nombrePlaces, boolean statut) {
+	public Terrain(boolean course, Sol sol, NbDePlaces nombrePlaces) {
 
 		this.course = course;
 		this.sol = sol;
 		this.nombrePlaces = nombrePlaces;
-		this.statut = statut;
+	
 
 	}
 
-	public boolean isStatut() {
-		return statut;
-	}
 
-	public void setStatut(boolean statut) {
-		this.statut = statut;
-	}
 
 	public boolean isCourse() {
 		return course;

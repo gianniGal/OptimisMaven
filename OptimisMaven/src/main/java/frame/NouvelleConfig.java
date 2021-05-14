@@ -2,6 +2,8 @@ package frame;
 
 import java.awt.event.*;
 import java.awt.*;
+
+
 import javax.swing.*;
 
 import dao.DAOVehicule;
@@ -12,6 +14,7 @@ import java.util.List;
 import metier.FiltresTerrain.Desert;
 import metier.FiltresTerrain.Montagne;
 import metier.FiltresTerrain.Terrain;
+import util.Context;
 
 
 public class NouvelleConfig extends javax.swing.JFrame{
@@ -106,9 +109,9 @@ public class NouvelleConfig extends javax.swing.JFrame{
 	              String check =  e.getStateChange()==1?"checked":"unchecked"; 
 	             
 	              if (check.equals("checked") ) {
-	            	  t.setStatut(true) ;
+	            	 Context.getInstance().setTerrainSelected(t);
 	  						
-	              }else {t.setStatut(false) ;}
+	              }
 	             }    
 	          });   
 			
@@ -138,6 +141,7 @@ public class NouvelleConfig extends javax.swing.JFrame{
 				//PERMET DE DEFINIR SI NOS CONTRAINTES SONT FALSE
 				@Override
 				public void mouseClicked(MouseEvent e) {
+					
 					System.out.println(t);
 					JPopupMenu popupMenu = new JPopupMenu();
 					addPopup(lblNewLabel, popupMenu);
@@ -201,7 +205,6 @@ public class NouvelleConfig extends javax.swing.JFrame{
 					System.out.println(course);
 					System.out.println(luminosite);
 				
-					System.out.println(t.isStatut());
 					
 
 				}

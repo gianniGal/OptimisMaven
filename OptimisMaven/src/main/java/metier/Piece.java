@@ -13,33 +13,30 @@ public class Piece {
 	private int id ;
 	private String libelle;
 	private double prix;
-//	private List<Terrain> listeTerrain;
-	@Embedded
-	private Terrain terrain;
-	private String typePiece;
-	private String typeTerrain ;
+	@ManyToMany
+	private List<Terrain> terrains;	
+
 	
 
 	public Piece() {
 
 	}
 	
-	public Piece(int id,String libelle, double prix, Terrain terrain, String typeTerrain, String typePiece ) {
+	public Piece(int id,String libelle, double prix, List<Terrain> terrains ) {
 
 		this.id = id;
 		this.libelle = libelle;
 		this.prix = prix;
-		this.terrain = terrain;
-		this.typeTerrain = typeTerrain;
-		this.typePiece = typePiece;
+		this.terrains = terrains;
+
 	}
 	
-	public Piece(String libelle, double prix, Terrain terrain) {
+	public Piece(String libelle, double prix, List<Terrain> terrains) {
 
 //		this.id = id;
 		this.libelle = libelle;
 		this.prix = prix;
-		this.terrain = terrain;
+		this.terrains = terrains;
 //		this.typePiece = typePiece;
 	}
 	
@@ -76,40 +73,16 @@ public class Piece {
 		this.prix = prix;
 	}
 
-	public Terrain getTerrain() {
-		return terrain;
+	public List<Terrain>  getTerrain() {
+		return terrains;
 	}
 
-	public void setTerrain(Terrain terrain) {
-		this.terrain = terrain;
+	public void setTerrain(List<Terrain> terrains) {
+		this.terrains = terrains;
 	}
 
-	public String getTypeTerrain() {
-		return typeTerrain;
-	}
-
-	public void setTypeTerrain(String typeTerrain) {
-		this.typeTerrain = typeTerrain;
-	}
 
 	
-	public String getTypePiece() {
-		return typePiece;
-	}
-
-	public void setTypePiece(String typePiece) {
-		this.typePiece = typePiece;
-	}
-	
-	
-
-	@Override
-	public String toString() {
-		return "Piece [id=" + id + ", libelle=" + libelle + ", prix=" + prix + ", terrain=" + terrain + ", typePiece="
-				+ typePiece + "]";
-	}
-
-
 	
 
 }

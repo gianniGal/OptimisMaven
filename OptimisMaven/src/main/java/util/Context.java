@@ -5,11 +5,13 @@ import javax.persistence.Persistence;
 
 import dao.DAOClient;
 import dao.DAOVehicule;
+import metier.FiltresTerrain.Terrain;
 
 
 public class Context {
 
 	private  EntityManagerFactory emf = Persistence.createEntityManagerFactory("optimiseur");
+	private Terrain terrainSelected ;
 
 	private  DAOClient daoC = new DAOClient();
 	//	private IDAO daoP = new DAOProduit();
@@ -20,13 +22,13 @@ public class Context {
 
 
 
-	public static Context get_instance() {
+	public static Context getInstance() {
 		if(_instance==null) {_instance=new Context();}
 
 		return _instance;
 	}
 
-	public static void set_instance(Context _instance) {
+	public static void setInstance(Context _instance) {
 		Context._instance = _instance;
 	}
 
@@ -53,6 +55,18 @@ public class Context {
 
 	public void setDaoC(DAOClient daoC) {
 		this.daoC = daoC;
+	}
+
+
+
+	public Terrain getTerrainSelected() {
+		return terrainSelected;
+	}
+
+
+
+	public void setTerrainSelected(Terrain terrainSelected) {
+		this.terrainSelected = terrainSelected;
 	}
 
 

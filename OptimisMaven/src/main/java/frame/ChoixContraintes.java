@@ -1,25 +1,14 @@
 package frame;
 
-import java.awt.Color;
+import java.awt.event.*;
+import java.awt.*;
+import javax.swing.*;
+
 import java.awt.EventQueue;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.JFrame;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JLabel;
-import javax.swing.JPopupMenu;
-import javax.swing.JRadioButton;
-import javax.swing.SwingConstants;
 
 import metier.FiltresTerrain.*;
 
@@ -65,7 +54,7 @@ public class ChoixContraintes {
 		int yRadioButton = 55;
 		
 
-		
+		//ON EST CENSE RETROUVE le CIRCUIT 
 		Circuit t1 = new Circuit();
 		List<Sol> listSolCircuit = t1.getTypeSolCircuit();
 		listSolCircuit.add(Sol.Route);
