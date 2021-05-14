@@ -6,6 +6,7 @@ import javax.persistence.Persistence;
 import dao.DAOClient;
 import dao.DAOPiece;
 import dao.DAOTerrain;
+import metier.FiltresTerrain.Meteo;
 import metier.FiltresTerrain.Sol;
 import metier.FiltresTerrain.Terrain;
 
@@ -15,6 +16,7 @@ public class Context {
 	private  EntityManagerFactory emf = Persistence.createEntityManagerFactory("optimiseur");
 	private Terrain terrainSelected ;
 	private Sol solSelected ;
+	private Meteo meteoSelected;
 
 	private  DAOClient daoC = new DAOClient();
 	private  DAOPiece daoP = new DAOPiece();
@@ -108,6 +110,18 @@ public class Context {
 
 	public void setDaoT(DAOTerrain daoT) {
 		this.daoT = daoT;
+	}
+
+
+
+	public Meteo getMeteoSelected() {
+		return meteoSelected;
+	}
+
+
+
+	public void setMeteoSelected(Meteo meteoSelected) {
+		this.meteoSelected = meteoSelected;
 	}
 
 

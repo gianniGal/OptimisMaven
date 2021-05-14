@@ -19,6 +19,7 @@ import javax.swing.JRadioButton;
 import javax.swing.SwingConstants;
 
 import dao.DAOTerrain;
+import metier.FiltresTerrain.Meteo;
 import metier.FiltresTerrain.Sol;
 import util.Context;
 
@@ -70,22 +71,23 @@ public class ChoixContraintes {
 
 
 		ButtonGroup group = new ButtonGroup();
+		ButtonGroup group2 = new ButtonGroup();
 
 
 		//POSITION INITIAL DU 1ER TERRAIN AFFICHE
-		int xRadioButton = 75 ;
+		int xRadioButton = 75;
 		int yRadioButton = 55;
 
-		
+
 		List <Sol> sols = new ArrayList();
 		sols.add(Sol.Boue);
 		sols.add(Sol.Glace);
-		
-		
+
+
 		//Context.getInstance().getTerrainSelected().setSol(sols);
-		Context.getInstance().getDaoT().FindAllSolByIdTerrain(Context.getInstance().getTerrainSelected());
-		
-		
+		//Context.getInstance().getDaoT().FindAllSolByIdTerrain(Context.getInstance().getTerrainSelected());
+
+
 		for(Sol s : Context.getInstance().getTerrainSelected().getSol()) 
 		{
 
@@ -98,9 +100,11 @@ public class ChoixContraintes {
 
 					if (check.equals("checked") ) {
 						Context.getInstance().setSolSelected(s);
+
 					}
 				}    
 			});   
+
 
 			rdbtnNewRadioButton.setBackground(new Color(255, 255, 255));
 			rdbtnNewRadioButton.setFont(new Font("Segoe UI", Font.PLAIN, 14));
@@ -118,7 +122,7 @@ public class ChoixContraintes {
 
 			//MISE EN PLACE DE L'ICON DE TERRAIN
 			//JLabel lblNewLabel = new JLabel("New label");
-			     /*     lblNewLabel.setIcon(new ImageIcon(NouvelleConfig.class.getResource(t.lien)));
+			/*     lblNewLabel.setIcon(new ImageIcon(NouvelleConfig.class.getResource(t.lien)));
 
 			lblNewLabel.setBounds(xRadioButton, yRadioButton, 118, 115);
 			frame.getContentPane().add(lblNewLabel);
@@ -157,6 +161,65 @@ public class ChoixContraintes {
 
 
 			});*/
+
+			// INCREMENTATION POUR LA MISE EN PLACE DU PROCHAIN TERRAIN
+			xRadioButton+=210;
+			yRadioButton = 55;
+
+			//MISE A LA LIGNE SI ON ARRIVE AU BORD DU TERRAIN
+			if ( xRadioButton + 100 > frame.getWidth() ) {
+				cpt++;
+				xRadioButton=75;
+				yRadioButton+=200*cpt;
+				aboveBorder = true;
+			}else if (aboveBorder = true && xRadioButton < frame.getWidth() ) {
+				yRadioButton+=200*cpt;
+			}
+
+
+		}
+
+
+
+
+
+		//Contraintes Meteo
+
+
+		xRadioButton = 75;
+		yRadioButton += 75;
+
+
+		for(Meteo m : Context.getInstance().getTerrainSelected().getMeteo()) 
+		{
+
+
+			//CREATION BOUTON RADIO POUR LE TERRAIN
+			JRadioButton rdbtnNewRadioButton = new JRadioButton(String.valueOf(m));		
+			rdbtnNewRadioButton.addItemListener(new ItemListener() {    
+				public void itemStateChanged(ItemEvent e) {                 
+					String check =  e.getStateChange()==1?"checked":"unchecked"; 
+
+					if (check.equals("checked") ) {
+						Context.getInstance().setMeteoSelected(m);
+
+					}
+				}    
+			});   
+
+
+			rdbtnNewRadioButton.setBackground(new Color(255, 255, 255));
+			rdbtnNewRadioButton.setFont(new Font("Segoe UI", Font.PLAIN, 14));
+			rdbtnNewRadioButton.setBounds(xRadioButton, yRadioButton, 97, 23);
+			frame.getContentPane().add(rdbtnNewRadioButton);
+
+			//MISE DANS LE GROUPE BOUTON RADIO POUR N'AVOIR QU'UN SEUL BOUTON ACTIF A LA FOIS
+			group2.add(rdbtnNewRadioButton);
+
+
+
+
+
 
 			// INCREMENTATION POUR LA MISE EN PLACE DU PROCHAIN TERRAIN
 			xRadioButton+=210;
@@ -215,6 +278,6 @@ public class ChoixContraintes {
 
 
 	}
-	
-	
+
+
 }

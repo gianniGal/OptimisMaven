@@ -27,22 +27,22 @@ public class Terrain {
 	//@Column(name="Course", columnDefinition="boolean default false")
 	protected boolean course ;
 
-
 	@ElementCollection(fetch = FetchType.EAGER)
 	@Enumerated(EnumType.STRING)
 	protected List<Sol> sols;
+	@ElementCollection(fetch = FetchType.LAZY)
 	@Enumerated(EnumType.STRING)
-	protected Meteo meteo;
+	protected List<Meteo> meteos;
 	@Enumerated(EnumType.STRING)
 	protected NbDePlaces nombrePlaces;
 
 
-	public Terrain(boolean course, String lien, List<Sol> sols, Meteo meteo, NbDePlaces nombrePlaces) {
+	public Terrain(boolean course, String lien, List<Sol> sols, List<Meteo> meteos, NbDePlaces nombrePlaces) {
 
 		this.course = course;
 		this.lien = lien;
 		this.sols = sols;
-		this.meteo=meteo;
+		this.meteos=meteos;
 		this.nombrePlaces = nombrePlaces;
 
 	}
@@ -51,11 +51,11 @@ public class Terrain {
 
 	}
 
-	public Terrain(boolean course, List<Sol> sols,Meteo meteo, NbDePlaces nombrePlaces) {
+	public Terrain(boolean course, List<Sol> sols,List<Meteo> meteos, NbDePlaces nombrePlaces) {
 
 		this.course = course;
 		this.sols = sols;
-		this.meteo = meteo;
+		this.meteos = meteos;
 		this.nombrePlaces = nombrePlaces;
 
 
@@ -63,12 +63,12 @@ public class Terrain {
 
 
 
-	public Meteo getMeteo() {
-		return meteo;
+	public List<Meteo> getMeteo() {
+		return meteos;
 	}
 
-	public void setMeteo(Meteo meteo) {
-		this.meteo = meteo;
+	public void setMeteo(List<Meteo> meteos) {
+		this.meteos = meteos;
 	}
 
 	public boolean isCourse() {
@@ -107,7 +107,7 @@ public class Terrain {
 
 	@Override
 	public String toString() {
-		return "Terrain [id=" + id + ", lien=" + lien + ", course=" + course + ", sols=" + sols + ", meteo=" + meteo
+		return "Terrain [id=" + id + ", lien=" + lien + ", course=" + course + ", sols=" + sols + ", meteo=" + meteos
 				+ ", nombrePlaces=" + nombrePlaces + "]";
 	}
 

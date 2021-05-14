@@ -72,17 +72,21 @@ public class optimiz {
 //		
 		List<Terrain> terrains= new ArrayList();
 		List<Sol> sols = new ArrayList();
+		List<Meteo> meteos = new ArrayList();
 		
 		sols.add(Sol.Boue);
 		sols.add(Sol.Glace);
-		Terrain terrain = new Terrain(false,"/Images/d3.png",sols,Meteo.Pluie,NbDePlaces.Mono);
-		Terrain terrain2 = new Terrain(false, "/Images/montagne2.png", sols,Meteo.Sec,NbDePlaces.Mono);
+		meteos.add(Meteo.Pluie);
+		meteos.add(Meteo.Sec);
+		meteos.add(Meteo.Brouillard);
+		Terrain terrain = new Terrain(false,"/Images/d3.png",sols,meteos,NbDePlaces.Mono);
+		Terrain terrain2 = new Terrain(false, "/Images/montagne2.png", sols,meteos,NbDePlaces.Mono);
 		terrains.add(terrain);
 		terrains.add(terrain2);
 		Piece piece = new Piece("pneu",4500,terrains);
 		Context.getInstance().getDaoP().save(piece);
 
-		//Application.main(new String[]{});
+		Application.main(new String[]{});
 //		Terrain  circuit1 = null;
 //		circuit1 = EnvironnementFrame.EnvironnementFrame();
 //		

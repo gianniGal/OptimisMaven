@@ -15,21 +15,21 @@ public class DAOTerrain implements IDAO<Terrain, Integer>{
 
 
 
-	public List<Sol> FindAllSolByIdTerrain(Terrain terrain) {
-
-		EntityManager em = Context.getInstance().getEmf().createEntityManager();
-
-		Query myQuery = em.createQuery("SELECT  distinct t from terrain t  join fetch t.terrain_sols",Terrain.class);
-		List<Sol> sols=myQuery.getResultList();
-		System.out.println(sols.size());
-		em.close();
-		return sols;
-
-
+//	public List<Sol> FindAllSolByIdTerrain(Terrain terrain) {
+//
+//		EntityManager em = Context.getInstance().getEmf().createEntityManager();
+//
+//		Query myQuery = em.createQuery("SELECT  distinct t from terrain t  join fetch t.terrain_sols",Terrain.class);
+//		List<Sol> sols=myQuery.getResultList();
+//		System.out.println(sols.size());
+//		em.close();
+//		return sols;
 
 
 
-	}
+
+
+	
 
 	@Override
 	public List<Terrain> findAll() {
