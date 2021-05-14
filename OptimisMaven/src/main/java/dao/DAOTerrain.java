@@ -5,11 +5,31 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-
+import metier.FiltresTerrain.Sol;
 import metier.FiltresTerrain.Terrain;
 import util.Context;
 
 public class DAOTerrain implements IDAO<Terrain, Integer>{
+
+
+
+
+
+	public List<Sol> FindAllSolByIdTerrain(Terrain terrain) {
+
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
+
+		Query myQuery = em.createQuery("SELECT  distinct t from terrain t  join fetch t.terrain_sols",Terrain.class);
+		List<Sol> sols=myQuery.getResultList();
+		System.out.println(sols.size());
+		em.close();
+		return sols;
+
+
+
+
+
+	}
 
 	@Override
 	public List<Terrain> findAll() {
@@ -54,7 +74,7 @@ public class DAOTerrain implements IDAO<Terrain, Integer>{
 		em.getTransaction().commit();
 
 		em.close();
-		
+
 	}
 
 }

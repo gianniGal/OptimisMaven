@@ -76,25 +76,25 @@ public class NouvelleConfig extends javax.swing.JFrame{
 
 		// INITIALISATION DE LA BOUCLE DES TERRAINS (TROUVER MOYEN AUTOMATISATION
 		// CHERCHER TOUS LES TYPES DIFFERENTS DE TERRAINS SANS LEUR VARIATIONS
-		Terrain t1 = new Desert();
-		t1.lien="/Images/d3.png";
-		Terrain t2=new Montagne();
-		t2.lien="/Images/montagne2.png";
-		List<Terrain> terrains= new ArrayList();
+//		Terrain t1 = new Desert();
+//		t1.lien="/Images/d3.png";
+//		Terrain t2=new Montagne();
+//		t2.lien="/Images/montagne2.png";
+		List<Terrain> terrains= Context.getInstance().getDaoT().findAll();
 		
-
+        System.out.println(terrains);
 		
-		terrains.add(t1);
-		terrains.add(t2);
-		terrains.add(t1);
-		terrains.add(t2);
-		terrains.add(t1);
-		terrains.add(t2);
-		terrains.add(t2);
-		terrains.add(t1);
+//		terrains.add(t1);
+//		terrains.add(t2);
+//		terrains.add(t1);
+//		terrains.add(t2);
+//		terrains.add(t1);
+//		terrains.add(t2);
+//		terrains.add(t2);
+//		terrains.add(t1);
 
 
-
+         
 
 		//POSITION INITIAL DU 1ER TERRAIN AFFICHE
 		int xRadioButton = 75 ;
@@ -112,6 +112,7 @@ public class NouvelleConfig extends javax.swing.JFrame{
 
 					if (check.equals("checked") ) {
 						Context.getInstance().setTerrainSelected(t);
+						System.out.println(Context.getInstance().getTerrainSelected());
 					}
 				}    
 			});   
@@ -132,7 +133,7 @@ public class NouvelleConfig extends javax.swing.JFrame{
 
 			//MISE EN PLACE DE L'ICON DE TERRAIN
 			JLabel lblNewLabel = new JLabel("New label");
-			lblNewLabel.setIcon(new ImageIcon(NouvelleConfig.class.getResource(t.lien)));
+			lblNewLabel.setIcon(new ImageIcon(NouvelleConfig.class.getResource(t.getLien())));
 
 			lblNewLabel.setBounds(xRadioButton, yRadioButton, 118, 115);
 			frame.getContentPane().add(lblNewLabel);
