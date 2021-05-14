@@ -1,5 +1,7 @@
 package metier.FiltresTerrain;
 
+import java.util.List;
+
 import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -17,31 +19,33 @@ public class Terrain {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id ;
-//	private String lien;
+	
+	public transient String lien;
+	
 	protected boolean course;
 	
 	@Enumerated(EnumType.STRING)
-	protected Sol sol;
+	protected List<Sol> sol;
 	@Enumerated(EnumType.STRING)
 	protected Meteo meteo;
 	@Enumerated(EnumType.STRING)
 	protected NbDePlaces nombrePlaces;
 	
 	
-//    public Terrain(boolean course, String lien, Sol sol, NbDePlaces nombrePlaces) {
-//		
-//		this.course = course;
-////		this.lien = lien;
-//		this.sol = sol;
-//		this.nombrePlaces = nombrePlaces;
-//
-//	}
+    public Terrain(boolean course, String lien, List<Sol> sol, NbDePlaces nombrePlaces) {
+		
+		this.course = course;
+		this.lien = lien;
+		this.sol = sol;
+		this.nombrePlaces = nombrePlaces;
+
+	}
     
     public Terrain() {
 	
 	}
 
-	public Terrain(boolean course, Sol sol,Meteo meteo, NbDePlaces nombrePlaces) {
+	public Terrain(boolean course, List<Sol> sol,Meteo meteo, NbDePlaces nombrePlaces) {
 
 		this.course = course;
 		this.sol = sol;
@@ -70,13 +74,13 @@ public class Terrain {
 	}
 
 
-//	public String getLien() {
-//		return lien;
-//	}
-//
-//	public void setLien(String lien) {
-//		this.lien = lien;
-//	}
+	public String getLien() {
+		return lien;
+	}
+
+	public void setLien(String lien) {
+		this.lien = lien;
+	}
 
 	public Sol getSol() {
 		return sol;
