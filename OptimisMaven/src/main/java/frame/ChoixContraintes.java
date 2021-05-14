@@ -76,7 +76,7 @@ public class ChoixContraintes {
 		for(Sol s : listSolCircuit) 
 		{
 			
-		²
+		
 			//CREATION BOUTON RADIO POUR LE TERRAIN
 			JRadioButton rdbtnNewRadioButton = new JRadioButton(t.getClass().getSimpleName());		
 			rdbtnNewRadioButton.addItemListener(new ItemListener() {    
