@@ -1,12 +1,27 @@
 package metier.FiltresTerrain;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Circuit extends Terrain{
 	
 	private String circuit;
+	private List<Sol> typeSolCircuit = new ArrayList();
 
-	public Circuit(boolean course, boolean luminosite, Sol sol, TpsDeVoyage dureeVoyage, NbDePlaces nombrePlaces,
-			boolean animal, boolean conflit) {
-		super(course, luminosite, sol, dureeVoyage, nombrePlaces, animal, conflit);
+
+
+	//	Sable,Terre,Boue,Glace,Neige,Route;
+	public Circuit() {
+	
+	}
+
+	public Circuit(boolean course, Sol sol, NbDePlaces nombrePlaces, boolean statut) {
+		super(course, sol, nombrePlaces, statut);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Circuit(boolean course, String lien, Sol sol, NbDePlaces nombrePlaces) {
+		super(course, lien, sol, nombrePlaces);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -18,6 +33,12 @@ public class Circuit extends Terrain{
 		this.circuit = circuit;
 	}
 	
-	
+	public List<Sol> getTypeSolCircuit() {
+		return typeSolCircuit;
+	}
+
+	public void setTypeSolCircuit(List<Sol> typeSolCircuit) {
+		this.typeSolCircuit = typeSolCircuit;
+	}
 
 }
