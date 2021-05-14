@@ -12,7 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import metier.FiltresTerrain.Desert;
+import metier.FiltresTerrain.Meteo;
 import metier.FiltresTerrain.Montagne;
+import metier.FiltresTerrain.NbDePlaces;
+import metier.FiltresTerrain.Sol;
 import metier.FiltresTerrain.Terrain;
 import util.Context;
 
@@ -78,6 +81,9 @@ public class NouvelleConfig extends javax.swing.JFrame{
 		Terrain t2=new Montagne();
 		t2.lien="/Images/montagne2.png";
 		List<Terrain> terrains= new ArrayList();
+		
+
+		
 		terrains.add(t1);
 		terrains.add(t2);
 		terrains.add(t1);

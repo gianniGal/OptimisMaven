@@ -71,8 +71,12 @@ public class optimiz {
 //		boolean luminosite = false;
 //		
 		List<Terrain> terrains= new ArrayList();
-		Terrain terrain = new Terrain(false,Sol.Boue,Meteo.Pluie,NbDePlaces.Mono);
-		Terrain terrain2 = new Terrain(false,Sol.Glace,Meteo.Sec,NbDePlaces.Mono);
+		List<Sol> sols = new ArrayList();
+		
+		sols.add(Sol.Boue);
+		sols.add(Sol.Glace);
+		Terrain terrain = new Terrain(false,sols,Meteo.Pluie,NbDePlaces.Mono);
+		Terrain terrain2 = new Terrain(false,sols,Meteo.Sec,NbDePlaces.Mono);
 		terrains.add(terrain);
 		terrains.add(terrain2);
 		Piece piece = new Piece("pneu",4500,terrains);

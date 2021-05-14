@@ -15,15 +15,7 @@ public class Circuit extends Terrain{
 	
 	}
 
-	public Circuit(boolean course, Sol sol, NbDePlaces nombrePlaces) {
-		super(course, sol, nombrePlaces);
-		// TODO Auto-generated constructor stub
-	}
-
-	public Circuit(boolean course, String lien, Sol sol, NbDePlaces nombrePlaces) {
-		super(course, lien, sol, nombrePlaces);
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	public String getCircuit() {
 		return circuit;
