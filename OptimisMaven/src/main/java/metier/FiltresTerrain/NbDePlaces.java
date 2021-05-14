@@ -2,6 +2,6 @@ package metier.FiltresTerrain;
 
 public enum NbDePlaces {
 
-	Mono,Duo,Famille,FamilleXL,Tourisme
+	Mono,Duo,Famille,Tourisme
 	
 }

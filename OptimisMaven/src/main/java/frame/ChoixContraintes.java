@@ -65,18 +65,24 @@ public class ChoixContraintes {
 		int xRadioButton = 75 ;
 		int yRadioButton = 55;
 
+		
+		List <Sol> sols = new ArrayList();
+		sols.add(Sol.Boue);
+		sols.add(Sol.Glace);
+		Context.getInstance().getTerrainSelected().setSol(sols);
+		
 		for(Sol s : Context.getInstance().getTerrainSelected().getSol()) 
 		{
 
 
 			//CREATION BOUTON RADIO POUR LE TERRAIN
-			JRadioButton rdbtnNewRadioButton = new JRadioButton(t.getClass().getSimpleName());		
+			JRadioButton rdbtnNewRadioButton = new JRadioButton(String.valueOf(s));		
 			rdbtnNewRadioButton.addItemListener(new ItemListener() {    
 				public void itemStateChanged(ItemEvent e) {                 
 					String check =  e.getStateChange()==1?"checked":"unchecked"; 
 
 					if (check.equals("checked") ) {
-						Context.getInstance().setTerrainSelected(t);
+						Context.getInstance().setSolSelected(s);
 					}
 				}    
 			});   
@@ -96,8 +102,8 @@ public class ChoixContraintes {
 			yRadioButton+=30;
 
 			//MISE EN PLACE DE L'ICON DE TERRAIN
-			JLabel lblNewLabel = new JLabel("New label");
-			lblNewLabel.setIcon(new ImageIcon(NouvelleConfig.class.getResource(t.lien)));
+			//JLabel lblNewLabel = new JLabel("New label");
+			     /*     lblNewLabel.setIcon(new ImageIcon(NouvelleConfig.class.getResource(t.lien)));
 
 			lblNewLabel.setBounds(xRadioButton, yRadioButton, 118, 115);
 			frame.getContentPane().add(lblNewLabel);
@@ -135,7 +141,7 @@ public class ChoixContraintes {
 				}
 
 
-			});
+			});*/
 
 			// INCREMENTATION POUR LA MISE EN PLACE DU PROCHAIN TERRAIN
 			xRadioButton+=210;

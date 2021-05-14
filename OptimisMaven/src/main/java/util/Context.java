@@ -4,8 +4,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 import dao.DAOClient;
-import dao.DAOVehicule;
 import dao.DAOPiece;
+import metier.FiltresTerrain.Sol;
 import metier.FiltresTerrain.Terrain;
 
 
@@ -13,6 +13,7 @@ public class Context {
 
 	private  EntityManagerFactory emf = Persistence.createEntityManagerFactory("optimiseur");
 	private Terrain terrainSelected ;
+	private Sol solSelected ;
 
 	private  DAOClient daoC = new DAOClient();
 	private  DAOPiece daoP = new DAOPiece();
@@ -81,6 +82,18 @@ public class Context {
 
 	public void setDaoP(DAOPiece daoP) {
 		this.daoP = daoP;
+	}
+
+
+
+	public Sol getSolSelected() {
+		return solSelected;
+	}
+
+
+
+	public void setSolSelected(Sol solSelected) {
+		this.solSelected = solSelected;
 	}
 
 
