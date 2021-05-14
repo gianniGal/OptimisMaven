@@ -17,7 +17,7 @@ public class DAOClient implements IDAO<Client, Integer>
 
 	public Client seConnecter(String login, String password) {
 		Client c = null;
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 		Query myQuery = em.createQuery("SELECT c from Client c where c.login=:login and c.password=:password",Client.class);
 		myQuery.setParameter("login", login);
 		myQuery.setParameter("password",password);
@@ -30,7 +30,7 @@ public class DAOClient implements IDAO<Client, Integer>
 
 	@Override
 	public List<Client> findAll() {
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
 		Query myQuery = em.createQuery("SELECT c from Client c",Client.class);
 		List<Client> clients=myQuery.getResultList();
@@ -40,7 +40,7 @@ public class DAOClient implements IDAO<Client, Integer>
 
 	@Override
 	public Client findById(Integer id) {
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
 		Client client = em.find(Client.class, id);
 
@@ -50,7 +50,7 @@ public class DAOClient implements IDAO<Client, Integer>
 
 	@Override
 	public Client save(Client client) {
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
 
 		em.getTransaction().begin();
@@ -66,7 +66,7 @@ public class DAOClient implements IDAO<Client, Integer>
 
 	@Override
 	public void delete(Client client) {
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
 
 		em.getTransaction().begin();

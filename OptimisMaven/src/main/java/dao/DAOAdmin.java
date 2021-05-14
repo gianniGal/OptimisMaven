@@ -14,7 +14,7 @@ public class DAOAdmin implements IDAO<Admin, Integer> {
 	
 	public Admin seConnecter(String login, String password) {
 		Admin a = null;
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 		Query myQuery = em.createQuery("SELECT a from Admin a where a.login=:login and a.password=:password",Admin.class);
 		myQuery.setParameter("login", login);
 		myQuery.setParameter("password",password);
@@ -27,7 +27,7 @@ public class DAOAdmin implements IDAO<Admin, Integer> {
 	
 	@Override
 	public List<Admin> findAll() {
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
 		Query myQuery = em.createQuery("SELECT a from Admin a",Admin.class);
 		List<Admin> admins=myQuery.getResultList();
@@ -37,7 +37,7 @@ public class DAOAdmin implements IDAO<Admin, Integer> {
 
 	@Override
 	public Admin findById(Integer id) {
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
 		Admin admins = em.find(Admin.class, id);
 
@@ -47,7 +47,7 @@ public class DAOAdmin implements IDAO<Admin, Integer> {
 
 	@Override
 	public Admin save(Admin admins) {
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
 
 		em.getTransaction().begin();
@@ -60,7 +60,7 @@ public class DAOAdmin implements IDAO<Admin, Integer> {
 
 	@Override
 	public void delete(Admin admins) {
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
 		em.getTransaction().begin();
 		admins = em.merge(admins);

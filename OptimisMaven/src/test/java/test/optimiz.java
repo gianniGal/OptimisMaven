@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import dao.DAOClient;
@@ -68,6 +70,13 @@ public class optimiz {
 //		boolean conflit = false;
 //		boolean luminosite = false;
 //		
+		List<Terrain> terrains= new ArrayList();
+		Terrain terrain = new Terrain(false,Sol.Boue,Meteo.Pluie,NbDePlaces.Mono);
+		Terrain terrain2 = new Terrain(false,Sol.Glace,Meteo.Sec,NbDePlaces.Mono);
+		terrains.add(terrain);
+		terrains.add(terrain2);
+		Piece piece = new Piece("pneu",4500,terrains);
+		Context.getInstance().getDaoP().save(piece);
 
 		Application.main(new String[]{});
 //		Terrain  circuit1 = null;

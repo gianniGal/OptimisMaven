@@ -13,7 +13,7 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 
 	@Override
 	public List<Piece> findAll() {
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
 		Query myQuery = em.createQuery("SELECT p from Piece p",Piece.class);
 		List<Piece> piece=myQuery.getResultList();
@@ -23,7 +23,7 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 
 	@Override
 	public Piece findById(Integer id) {
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
 		Piece piece = em.find(Piece.class, id);
 
@@ -33,7 +33,7 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 
 	@Override
 	public Piece save(Piece piece) {
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
 
 		em.getTransaction().begin();
@@ -46,7 +46,7 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 
 	@Override
 	public void delete(Piece piece) {
-		EntityManager em = Context.get_instance().getEmf().createEntityManager();
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
 		em.getTransaction().begin();
 		piece = em.merge(piece);

@@ -13,7 +13,7 @@ public class Piece {
 	private int id ;
 	private String libelle;
 	private double prix;
-	@ManyToMany
+	@ManyToMany(cascade = {CascadeType.MERGE,CascadeType.REMOVE})
 	private List<Terrain> terrains;	
 
 	

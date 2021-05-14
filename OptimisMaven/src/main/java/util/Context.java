@@ -5,6 +5,7 @@ import javax.persistence.Persistence;
 
 import dao.DAOClient;
 import dao.DAOVehicule;
+import dao.DAOPiece;
 import metier.FiltresTerrain.Terrain;
 
 
@@ -14,6 +15,7 @@ public class Context {
 	private Terrain terrainSelected ;
 
 	private  DAOClient daoC = new DAOClient();
+	private  DAOPiece daoP = new DAOPiece();
 	//	private IDAO daoP = new DAOProduit();
 
 	private static Context _instance=null; 
@@ -67,6 +69,18 @@ public class Context {
 
 	public void setTerrainSelected(Terrain terrainSelected) {
 		this.terrainSelected = terrainSelected;
+	}
+
+
+
+	public DAOPiece getDaoP() {
+		return daoP;
+	}
+
+
+
+	public void setDaoP(DAOPiece daoP) {
+		this.daoP = daoP;
 	}
 
 

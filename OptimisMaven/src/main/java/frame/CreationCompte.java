@@ -224,7 +224,7 @@ public class CreationCompte {
 
 				Adresse a = new Adresse(rue, numero, ville, codePostal) ;
 				Client c = new Client(username,password,a,telephone,mail);
-				Context.get_instance().getDaoC().save(c);
+				Context.getInstance().getDaoC().save(c);
 
 				
 				//COMMENT GERER LERREUR
