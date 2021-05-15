@@ -27,90 +27,74 @@ public class Terrain {
 	//@Column(name="Course", columnDefinition="boolean default false")
 	protected boolean course ;
 
-	@ElementCollection(fetch = FetchType.EAGER)
-	@Enumerated(EnumType.STRING)
+	@ManyToMany (cascade = {CascadeType.MERGE,CascadeType.REMOVE})
+	//@ElementCollection(fetch = FetchType.LAZY)
+	//@Enumerated(EnumType.STRING)
 	protected List<Sol> sols;
-	@ElementCollection(fetch = FetchType.LAZY)
-	@Enumerated(EnumType.STRING)
+	@ManyToMany (cascade = {CascadeType.MERGE,CascadeType.REMOVE})
+	//@ElementCollection(fetch = FetchType.LAZY)
+	//@Enumerated(EnumType.STRING)
 	protected List<Meteo> meteos;
 	@Enumerated(EnumType.STRING)
 	protected NbDePlaces nombrePlaces;
-
-
-	public Terrain(boolean course, String lien, List<Sol> sols, List<Meteo> meteos, NbDePlaces nombrePlaces) {
-
-		this.course = course;
-		this.lien = lien;
-		this.sols = sols;
-		this.meteos=meteos;
-		this.nombrePlaces = nombrePlaces;
-
-	}
-
+	
+	
 	public Terrain() {
-
+		
 	}
-
-	public Terrain(boolean course, List<Sol> sols,List<Meteo> meteos, NbDePlaces nombrePlaces) {
-
+	public Terrain( String lien, boolean course, List<Sol> sols, List<Meteo> meteos, NbDePlaces nombrePlaces) {
+		
+		this.lien = lien;
 		this.course = course;
 		this.sols = sols;
 		this.meteos = meteos;
 		this.nombrePlaces = nombrePlaces;
-
-
 	}
-
-
-
-	public List<Meteo> getMeteo() {
-		return meteos;
+	public int getId() {
+		return id;
 	}
-
-	public void setMeteo(List<Meteo> meteos) {
-		this.meteos = meteos;
+	public void setId(int id) {
+		this.id = id;
 	}
-
-	public boolean isCourse() {
-		return course;
-	}
-
-	public void setCourse(boolean course) {
-		this.course = course;
-	}
-
-
 	public String getLien() {
 		return lien;
 	}
-
 	public void setLien(String lien) {
 		this.lien = lien;
 	}
-
-	public List<Sol> getSol() {
+	public boolean isCourse() {
+		return course;
+	}
+	public void setCourse(boolean course) {
+		this.course = course;
+	}
+	public List<Sol> getSols() {
 		return sols;
 	}
-
-	public void setSol(List<Sol> sol) {
-		this.sols = sol;
+	public void setSols(List<Sol> sols) {
+		this.sols = sols;
 	}
-
-
+	public List<Meteo> getMeteos() {
+		return meteos;
+	}
+	public void setMeteos(List<Meteo> meteos) {
+		this.meteos = meteos;
+	}
 	public NbDePlaces getNombrePlaces() {
 		return nombrePlaces;
 	}
-
 	public void setNombrePlaces(NbDePlaces nombrePlaces) {
 		this.nombrePlaces = nombrePlaces;
 	}
-
 	@Override
 	public String toString() {
-		return "Terrain [id=" + id + ", lien=" + lien + ", course=" + course + ", sols=" + sols + ", meteo=" + meteos
+		return "Terrain [id=" + id + ", lien=" + lien + ", course=" + course + ", sols=" + sols + ", meteos=" + meteos
 				+ ", nombrePlaces=" + nombrePlaces + "]";
 	}
+	
+	
+	
 
-
-
+	
+	
 }

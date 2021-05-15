@@ -15,8 +15,9 @@ public class Context {
 
 	private  EntityManagerFactory emf = Persistence.createEntityManagerFactory("optimiseur");
 	private Terrain terrainSelected ;
-	private Sol solSelected ;
+	//private Sol solSelected ;
 	private Meteo meteoSelected;
+	private Sol solSelected;
 
 	private  DAOClient daoC = new DAOClient();
 	private  DAOPiece daoP = new DAOPiece();
@@ -90,15 +91,15 @@ public class Context {
 
 
 
-	public Sol getSolSelected() {
-		return solSelected;
-	}
+//	public Sol getSolSelected() {
+//		return solSelected;
+//	}
 
 
 
-	public void setSolSelected(Sol solSelected) {
-		this.solSelected = solSelected;
-	}
+//	public void setSolSelected(Sol solSelected) {
+//		this.solSelected = solSelected;
+//	}
 
 
 
@@ -114,6 +115,18 @@ public class Context {
 
 
 
+	public Sol getSolSelected() {
+		return solSelected;
+	}
+
+
+
+	public void setSolSelected(Sol s) {
+		this.solSelected = s;
+	}
+
+
+
 	public Meteo getMeteoSelected() {
 		return meteoSelected;
 	}
@@ -123,6 +136,18 @@ public class Context {
 	public void setMeteoSelected(Meteo meteoSelected) {
 		this.meteoSelected = meteoSelected;
 	}
+
+
+
+//	public Meteo getMeteoSelected() {
+//		return meteoSelected;
+//	}
+//
+
+//
+//	public void setMeteoSelected(Meteo meteoSelected) {
+//		this.meteoSelected = meteoSelected;
+//	}
 
 
 
