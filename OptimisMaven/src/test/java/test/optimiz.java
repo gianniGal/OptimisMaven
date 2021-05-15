@@ -71,26 +71,57 @@ public class optimiz {
 		//		boolean luminosite = false;
 		//		
 		List<Terrain> terrains= new ArrayList();
-		List<Sol> sols = new ArrayList();
-		List<Meteo> meteos = new ArrayList();
+		List<Terrain> terrainDesert = new ArrayList();
+		
+		List<Sol> solDesert = new ArrayList();
+		List<Sol> solMontagne = new ArrayList();
+		List<Meteo> meteoDesert = new ArrayList();
+		List<Meteo> meteoMontagne = new ArrayList();
+		
 		Sol sol1= new Sol("Boue");
 		Sol sol2= new Sol("Glace");
-
+		Sol sol3= new Sol("Sable");
+		Sol sol4= new Sol("Terre");
+		Sol sol5= new Sol("Neige");
+		Sol sol6= new Sol("Route");
+		
+		
+		solDesert.add(sol2);
+		solDesert.add(sol3);
+		solMontagne.add(sol4);
+		solMontagne.add(sol5);
+		solMontagne.add(sol6);
+	
 		Meteo met1 = new Meteo("Pluie");
 		Meteo met2 = new Meteo("Brouillard");
 		Meteo met3 = new Meteo("Sec");
-		sols.add(sol1);
-		sols.add(sol2);
-		meteos.add(met1);
-		meteos.add(met2);
-		meteos.add(met3);
+		
+	
+		meteoDesert.add(met2);
+		meteoDesert.add(met3);
+		
+		meteoMontagne.add(met1);
+		meteoMontagne.add(met2);
+		meteoMontagne.add(met3);
 
-		Terrain terrain = new Terrain("/Images/d3.png",false,sols,meteos,NbDePlaces.Mono);
-		Terrain terrain2 = new Terrain("/Images/montagne2.png", false, sols,meteos,NbDePlaces.Mono);
-		terrains.add(terrain);
+		Terrain terrain = new Terrain("/Images/d3.png",false,solDesert,meteoDesert,NbDePlaces.Mono);
+		Terrain terrain2 = new Terrain("/Images/montagne2.png", false, solMontagne,meteoMontagne,NbDePlaces.Mono);
+		
+		terrainDesert.add(terrain);
+		
+		
+	
 		terrains.add(terrain2);
-		Piece piece = new Piece("pneu",4500,terrains);
+		
+		Piece piece = new Piece("pneu",4500,terrainDesert,"/Images/pneuEte.png");
+		Piece piece2 = new Piece("pneu", 6000, terrains, "/Images/pneuNeige.png");
+		
+		
+		
+		
+		
 		Context.getInstance().getDaoP().save(piece);
+		Context.getInstance().getDaoP().save(piece2);
 
 		Application.main(new String[]{});
 		//		Terrain  circuit1 = null;

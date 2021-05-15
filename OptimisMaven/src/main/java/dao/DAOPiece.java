@@ -5,8 +5,10 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-import metier.Admin;
 import metier.Piece;
+import metier.FiltresTerrain.Meteo;
+import metier.FiltresTerrain.Sol;
+import metier.FiltresTerrain.Terrain;
 import util.Context;
 
 public class DAOPiece implements IDAO<Piece, Integer>{
@@ -15,12 +17,25 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 	public List<Piece> findAll() {
 		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
-		Query myQuery = em.createQuery("SELECT p from Piece p",Piece.class);
+		Query myQuery = em.createQuery("SELECT p from piece p",Piece.class);
 		List<Piece> piece=myQuery.getResultList();
 		em.close();
 		return piece;
 	}
 
+	
+
+	public Piece findPneu(Terrain terrain, Sol sol, Meteo meteo) {
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
+
+		Query myQuery = em.createQuery("SELECT p from piece p where libelle=:pneu, terrain=:terrain",Piece.class);
+		Piece piece=(Piece) myQuery.getSingleResult();
+		em.close();
+		return piece;
+	}
+
+	
+	
 	@Override
 	public Piece findById(Integer id) {
 		EntityManager em = Context.getInstance().getEmf().createEntityManager();

@@ -15,6 +15,7 @@ public class Piece {
 	private double prix;
 	@ManyToMany(cascade = {CascadeType.MERGE,CascadeType.REMOVE})
 	private List<Terrain> terrains;	
+	private String lien;
 
 	
 
@@ -22,22 +23,25 @@ public class Piece {
 
 	}
 	
-	public Piece(int id,String libelle, double prix, List<Terrain> terrains ) {
+	public Piece(int id,String libelle, double prix, List<Terrain> terrains) {
 
 		this.id = id;
 		this.libelle = libelle;
 		this.prix = prix;
 		this.terrains = terrains;
+		this.lien=lien;
+		
 
 	}
 	
-	public Piece(String libelle, double prix, List<Terrain> terrains) {
+	public Piece(String libelle, double prix, List<Terrain> terrains, String lien ) {
 
 //		this.id = id;
 		this.libelle = libelle;
 		this.prix = prix;
 		this.terrains = terrains;
 //		this.typePiece = typePiece;
+		this.lien=lien;
 	}
 	
 	public Piece(String libelle, double prix) {
@@ -79,6 +83,14 @@ public class Piece {
 
 	public void setTerrain(List<Terrain> terrains) {
 		this.terrains = terrains;
+	}
+
+	public String getLien() {
+		return lien;
+	}
+
+	public void setLien(String lien) {
+		this.lien = lien;
 	}
 
 

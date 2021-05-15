@@ -7,8 +7,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
@@ -18,7 +16,6 @@ import javax.swing.JLabel;
 import javax.swing.JRadioButton;
 import javax.swing.SwingConstants;
 
-import dao.DAOTerrain;
 import metier.FiltresTerrain.Meteo;
 import metier.FiltresTerrain.Sol;
 import util.Context;
@@ -165,15 +162,16 @@ public class ChoixContraintes {
 			// INCREMENTATION POUR LA MISE EN PLACE DU PROCHAIN TERRAIN
 			xRadioButton+=210;
 			yRadioButton = 55;
+			
 
 			//MISE A LA LIGNE SI ON ARRIVE AU BORD DU TERRAIN
 			if ( xRadioButton + 100 > frame.getWidth() ) {
 				cpt++;
 				xRadioButton=75;
-				yRadioButton+=200*cpt;
+				yRadioButton+=50*cpt;
 				aboveBorder = true;
-			}else if (aboveBorder = true && xRadioButton < frame.getWidth() ) {
-				yRadioButton+=200*cpt;
+			}else if (aboveBorder == true && xRadioButton < frame.getWidth() ) {
+				yRadioButton+=50*cpt;
 			}
 
 
@@ -189,11 +187,12 @@ public class ChoixContraintes {
 		xRadioButton = 75;
 		yRadioButton += 75;
 		int tmp = yRadioButton;
-
+		aboveBorder = false;
+		cpt=0;
 
 		for(Meteo m : Context.getInstance().getTerrainSelected().getMeteos()) 
 		{
-
+          System.out.println(yRadioButton);
              
 			//CREATION BOUTON RADIO POUR LE TERRAIN
 			JRadioButton rdbtnNewRadioButton = new JRadioButton(m.getMeteo());		
@@ -230,10 +229,10 @@ public class ChoixContraintes {
 			if ( xRadioButton + 100 > frame.getWidth() ) {
 				cpt++;
 				xRadioButton=75;
-				yRadioButton+=200*cpt;
+				yRadioButton+=50*cpt;
 				aboveBorder = true;
-			}else if (aboveBorder = true && xRadioButton < frame.getWidth() ) {
-				yRadioButton+=200*cpt;
+			}else if (aboveBorder == true && xRadioButton < frame.getWidth() ) {
+				yRadioButton+=50*cpt;
 			}
 
 
@@ -244,7 +243,7 @@ public class ChoixContraintes {
 		JButton btnBack = new JButton("Back");
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Userlogsucces.main(new String[]{});
+				NouvelleConfig.main(new String[]{});
 				frame.dispose();
 			} 
 		});
@@ -277,8 +276,11 @@ public class ChoixContraintes {
 		lblNewLabel_1.setBounds(0, 0, 1044, 511);
 		frame.getContentPane().add(lblNewLabel_1);
 
-
+		
 	}
 
+	
+	
+	
 
 }

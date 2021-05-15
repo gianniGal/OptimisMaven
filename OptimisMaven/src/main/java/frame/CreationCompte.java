@@ -227,6 +227,7 @@ public class CreationCompte {
 				Context.getInstance().getDaoC().save(c);
 
 				
+				ErrorChampsVide.main(null);
 				//COMMENT GERER LERREUR
 //				ErrorChampsVide.main(null);
 				//					btnNewButton_1 = new JButton("ERREUR champs vide");

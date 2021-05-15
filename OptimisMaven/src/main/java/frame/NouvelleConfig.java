@@ -183,7 +183,7 @@ public class NouvelleConfig extends javax.swing.JFrame{
 				xRadioButton=75;
 				yRadioButton+=200*cpt;
 				aboveBorder = true;
-			}else if (aboveBorder = true && xRadioButton < frame.getWidth() ) {
+			}else if (aboveBorder == true && xRadioButton < frame.getWidth() ) {
 				yRadioButton+=200*cpt;
 			}
 
@@ -202,24 +202,7 @@ public class NouvelleConfig extends javax.swing.JFrame{
 		btnBack.setBounds(frame.getWidth() - 150 , frame.getHeight() - 100 , 89, 23);
 		frame.getContentPane().add(btnBack);
 
-		//BOUTON DE RECHERCHE
-		JButton btnSearch = new JButton("Validé");
-		btnSearch.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-
-				//				la query retourne une liste de piece
-				//				List<Piece> piecesOpti = DAOVehicule. find all pieces
-				//				Vehicule vehiculeOpti = new Vehicule(login,password,piecesOpti)   1Client plusieurs Vehicules
-				//						daoVehicule.save(v);
-
-				//M
-				ResultatConfig.main(new String[]{});
-				frame.dispose();
-			} 
-		});
-		btnSearch.setBounds(frame.getWidth() - 250 , frame.getHeight() - 100, 89, 23);
-		frame.getContentPane().add(btnSearch);
-
+		
 
 		//FOND D ECRAN DE LA FRAME
 		JLabel lblNewLabel_1 = new JLabel("New label");
