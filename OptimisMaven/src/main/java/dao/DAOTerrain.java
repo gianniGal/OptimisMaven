@@ -5,7 +5,6 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-import metier.FiltresTerrain.Sol;
 import metier.FiltresTerrain.Terrain;
 import util.Context;
 
@@ -36,9 +35,19 @@ public class DAOTerrain implements IDAO<Terrain, Integer>{
 		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
 		Query myQuery = em.createQuery("SELECT t from Terrain t",Terrain.class);
-		List<Terrain>terrain=myQuery.getResultList();
-		em.close();
-		return terrain;
+		List<Terrain>terrains=myQuery.getResultList();
+//		EntityManager em = Context.getInstance().getEmf().createEntityManager();
+//
+//        List<Terrain>terrains =  em.createQuery("SELECT t from terrain t join fetch t.terrain_sol",Terrain.class)
+//                .setHint(QueryHints.PASS_DISTINCT_THROUGH, false)
+//                .getResultList();
+//
+//        terrains =  em.createQuery("SELECT t from terrain t join fetch t.terrain_meteo",Terrain.class)
+//                .setParameter("terrain", terrains)
+//                .setHint(QueryHints.PASS_DISTINCT_THROUGH, false)
+//                .getResultList();
+//		em.close();
+		return terrains;
 	}
 
 	@Override

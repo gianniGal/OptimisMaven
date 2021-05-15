@@ -79,21 +79,21 @@ public class ChoixContraintes {
 		int yRadioButton = 55;
 
 
-		List <Sol> sols = new ArrayList();
-		sols.add(Sol.Boue);
-		sols.add(Sol.Glace);
+//		List <Sol> sols = new ArrayList();
+//		sols.add(Sol.Boue);
+//		sols.add(Sol.Glace);
 
 
 		//Context.getInstance().getTerrainSelected().setSol(sols);
 		//Context.getInstance().getDaoT().FindAllSolByIdTerrain(Context.getInstance().getTerrainSelected());
 
 
-		for(Sol s : Context.getInstance().getTerrainSelected().getSol()) 
+		for(Sol s : Context.getInstance().getTerrainSelected().getSols()) 
 		{
 
 
 			//CREATION BOUTON RADIO POUR LE TERRAIN
-			JRadioButton rdbtnNewRadioButton = new JRadioButton(String.valueOf(s));		
+			JRadioButton rdbtnNewRadioButton = new JRadioButton(s.getSol());		
 			rdbtnNewRadioButton.addItemListener(new ItemListener() {    
 				public void itemStateChanged(ItemEvent e) {                 
 					String check =  e.getStateChange()==1?"checked":"unchecked"; 
@@ -116,9 +116,9 @@ public class ChoixContraintes {
 
 
 
-			//MISE EN PLACE DE L'AFFICHAGE DU  PROCHAIN TERRAIN
-			xRadioButton-=10;
-			yRadioButton+=30;
+//			//MISE EN PLACE DE L'AFFICHAGE DU  PROCHAIN TERRAIN
+//			xRadioButton-=10;
+//			yRadioButton+=30;
 
 			//MISE EN PLACE DE L'ICON DE TERRAIN
 			//JLabel lblNewLabel = new JLabel("New label");
@@ -188,14 +188,15 @@ public class ChoixContraintes {
 
 		xRadioButton = 75;
 		yRadioButton += 75;
+		int tmp = yRadioButton;
 
 
-		for(Meteo m : Context.getInstance().getTerrainSelected().getMeteo()) 
+		for(Meteo m : Context.getInstance().getTerrainSelected().getMeteos()) 
 		{
 
-
+             
 			//CREATION BOUTON RADIO POUR LE TERRAIN
-			JRadioButton rdbtnNewRadioButton = new JRadioButton(String.valueOf(m));		
+			JRadioButton rdbtnNewRadioButton = new JRadioButton(m.getMeteo());		
 			rdbtnNewRadioButton.addItemListener(new ItemListener() {    
 				public void itemStateChanged(ItemEvent e) {                 
 					String check =  e.getStateChange()==1?"checked":"unchecked"; 
@@ -223,7 +224,7 @@ public class ChoixContraintes {
 
 			// INCREMENTATION POUR LA MISE EN PLACE DU PROCHAIN TERRAIN
 			xRadioButton+=210;
-			yRadioButton = 55;
+			yRadioButton = tmp;
 
 			//MISE A LA LIGNE SI ON ARRIVE AU BORD DU TERRAIN
 			if ( xRadioButton + 100 > frame.getWidth() ) {
