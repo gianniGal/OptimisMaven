@@ -2,8 +2,12 @@ package frame;
 
 import java.awt.EventQueue;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+
+import metier.Piece;
+import util.Context;
 
 public class ResultatConfig {
 
@@ -41,7 +45,10 @@ public class ResultatConfig {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
+		Piece pneu = Context.getInstance().getDaoP().findPneu(Context.getInstance().getTerrainSelected(), Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected());	
+		
 		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon(NouvelleConfig.class.getResource(pneu.getLien())));
 		lblNewLabel.setBounds(287, 146, 379, 323);
 		frame.getContentPane().add(lblNewLabel);
 		
