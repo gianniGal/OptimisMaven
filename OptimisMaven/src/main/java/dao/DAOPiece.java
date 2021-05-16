@@ -25,18 +25,23 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 
 	
 
-	public Piece findPneu(Terrain terrain, Sol sol, Meteo meteo) {
+	public Piece findPneu(Sol sol, Meteo meteo) {
 		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
-		Query myQuery = em.createQuery("Select p from Piece p where p.libelle=:lelibelle, p.sol=:sol, p.meteo=:meteo", Piece.class);
-		myQuery.setParameter("lelibelle", "pneu");
+		//Query myQuery = em.createQuery("Select distinct p from Piece p, Sol s, Meteo m join p.sol s on where p.meteo_id=:m.id and p.sol_id=:s.id and p.libelle=:lelibelle and s.sol=:sol and m.meteo=:meteo)", Piece.class);
+		//SELECT distinct piece.libelle ,sol.sol, meteo.meteo from piece, sol, meteo where ( piece.libelle="pneu" and sol.sol="sable" and meteo.meteo="sec")
+		
+		List <Piece> pieces =  em.createQuery("Select p from Piece p where libelle=:lelibelle").setParameter("lelibelle", "pneu").getResultList();
+		pieces =  em.createQuery("Select p from Piece p, Sol s where s.sol=:sol").setParameter("sol", sol.getSol()).getResultList();
+		pieces =  em.createQuery("Select p from Piece p, Meteo m where m.meteo=:meteo").setParameter("meteo", meteo.getMeteo()).getResultList();
 		
 		
+		//MyQuery.setParameter("lelibelle", "pneu");
+		//.setParameter("sol", sol.getSol())
+		//.setParameter("meteo", meteo.getMeteo());
 		
-		
-		
-		Piece piece=(Piece) myQuery.getSingleResult();
-		
+		//pieces= Myquery.getResultList();
+		Piece piece = pieces.get(0);
 		em.close();
 		return piece;
 		
