@@ -44,38 +44,41 @@ public class ResultatConfig {
 		frame.setBounds(100, 100, 920,696);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
+
+		Piece roue = Context.getInstance().getDaoP().findPneu(Context.getInstance().getTerrainSelected(), Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected());	
+		String ValueRoue = roue.getLien();
+		System.out.println(ValueRoue);
 		
-		Piece pneu = Context.getInstance().getDaoP().findPneu(Context.getInstance().getTerrainSelected(), Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected());	
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon(NouvelleConfig.class.getResource(pneu.getLien())));
+		lblNewLabel.setIcon(new ImageIcon(ResultatConfig.class.getResource(ValueRoue)));
 		lblNewLabel.setBounds(287, 146, 379, 323);
 		frame.getContentPane().add(lblNewLabel);
-		
+
 		JLabel lblNewLabel_1 = new JLabel("New label");
 		lblNewLabel_1.setBounds(65, 63, 212, 139);
 		frame.getContentPane().add(lblNewLabel_1);
-		
+
 		JLabel lblNewLabel_2 = new JLabel("New label");
 		lblNewLabel_2.setBounds(65, 300, 46, 14);
 		frame.getContentPane().add(lblNewLabel_2);
-		
+
 		JLabel lblNewLabel_3 = new JLabel("New label");
 		lblNewLabel_3.setBounds(65, 487, 46, 14);
 		frame.getContentPane().add(lblNewLabel_3);
-		
+
 		JLabel lblNewLabel_4 = new JLabel("New label");
 		lblNewLabel_4.setBounds(779, 81, 46, 14);
 		frame.getContentPane().add(lblNewLabel_4);
-		
+
 		JLabel lblNewLabel_5 = new JLabel("New label");
 		lblNewLabel_5.setBounds(779, 209, 46, 14);
 		frame.getContentPane().add(lblNewLabel_5);
-		
+
 		JLabel lblNewLabel_6 = new JLabel("New label");
 		lblNewLabel_6.setBounds(779, 344, 46, 14);
 		frame.getContentPane().add(lblNewLabel_6);
-		
+
 		JLabel lblNewLabel_7 = new JLabel("New label");
 		lblNewLabel_7.setBounds(779, 499, 46, 14);
 		frame.getContentPane().add(lblNewLabel_7);

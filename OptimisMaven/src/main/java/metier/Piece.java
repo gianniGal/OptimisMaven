@@ -93,6 +93,12 @@ public class Piece {
 		this.lien = lien;
 	}
 
+	@Override
+	public String toString() {
+		return "Piece [id=" + id + ", libelle=" + libelle + ", prix=" + prix + ", terrains=" + terrains + ", lien="
+				+ lien + "]";
+	}
+
 
 	
 	

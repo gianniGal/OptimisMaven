@@ -113,8 +113,8 @@ public class optimiz {
 	
 		terrains.add(terrain2);
 		
-		Piece piece = new Piece("pneu",4500,terrainDesert,"/Images/pneuEte.png");
-		Piece piece2 = new Piece("pneu", 6000, terrains, "/Images/pneuNeige.png");
+		Piece piece = new Piece("pneu",4500,terrainDesert,"/Images/pneuEte.jpg");
+		Piece piece2 = new Piece("phare", 6000, terrains, "/Images/pneuNeige.png");
 		
 		
 		

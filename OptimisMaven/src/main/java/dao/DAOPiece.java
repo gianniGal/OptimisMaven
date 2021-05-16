@@ -28,10 +28,18 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 	public Piece findPneu(Terrain terrain, Sol sol, Meteo meteo) {
 		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 
-		Query myQuery = em.createQuery("SELECT p from piece p where libelle=:pneu, terrain=:terrain",Piece.class);
+		Query myQuery = em.createQuery("Select p from Piece p where p.libelle=:lelibelle, p.sol=:sol, p.meteo=:meteo", Piece.class);
+		myQuery.setParameter("lelibelle", "pneu");
+		
+		
+		
+		
+		
 		Piece piece=(Piece) myQuery.getSingleResult();
+		
 		em.close();
 		return piece;
+		
 	}
 
 	
