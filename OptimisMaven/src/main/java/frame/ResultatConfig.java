@@ -45,7 +45,7 @@ public class ResultatConfig {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
-		Piece roue = Context.getInstance().getDaoP().findPneu(Context.getInstance().getTerrainSelected(), Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected());	
+		Piece roue = Context.getInstance().getDaoP().findPneu(Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected());	
 		String ValueRoue = roue.getLien();
 		System.out.println(ValueRoue);
 		

@@ -1,21 +1,16 @@
 package test;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import dao.DAOClient;
-
-import dao.DAOVehicule;
-
-import frame.*;
-import metier.FiltresTerrain.* ;
+import frame.Application;
+import metier.Piece;
+import metier.FiltresTerrain.Meteo;
+import metier.FiltresTerrain.NbDePlaces;
+import metier.FiltresTerrain.Sol;
+import metier.FiltresTerrain.Terrain;
 import util.Context;
-import metier.*;
 
 
 public class optimiz {
@@ -70,9 +65,9 @@ public class optimiz {
 		//		boolean conflit = false;
 		//		boolean luminosite = false;
 		//		
-		List<Terrain> terrains= new ArrayList();
-		List<Terrain> terrainDesert = new ArrayList();
-		
+//		List<Terrain> terrains= new ArrayList();
+//		List<Terrain> terrainDesert = new ArrayList();
+//		
 		List<Sol> solDesert = new ArrayList();
 		List<Sol> solMontagne = new ArrayList();
 		List<Meteo> meteoDesert = new ArrayList();
@@ -107,14 +102,14 @@ public class optimiz {
 		Terrain terrain = new Terrain("/Images/d3.png",false,solDesert,meteoDesert,NbDePlaces.Mono);
 		Terrain terrain2 = new Terrain("/Images/montagne2.png", false, solMontagne,meteoMontagne,NbDePlaces.Mono);
 		
-		terrainDesert.add(terrain);
+		Context.getInstance().getDaoT().save(terrain);
+		Context.getInstance().getDaoT().save(terrain2);
 		
-		
-	
-		terrains.add(terrain2);
-		
-		Piece piece = new Piece("pneu",4500,terrainDesert,"/Images/pneuEte.jpg");
-		Piece piece2 = new Piece("phare", 6000, terrains, "/Images/pneuNeige.png");
+//		terrainDesert.add(terrain);
+//		terrains.add(terrain2);
+//		
+		Piece piece = new Piece("pneu",4500,sol3, met3,"/Images/pneuEte.jpg");
+		Piece piece2 = new Piece("pneu", 6000, sol5, met2, "/Images/pneuNeige.png");
 		
 		
 		
