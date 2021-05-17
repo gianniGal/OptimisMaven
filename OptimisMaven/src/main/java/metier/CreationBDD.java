@@ -208,8 +208,30 @@ public  class CreationBDD {
 //		Piece chassisTerre = new Piece("chassis",4500,terre, null,null,"/Images/chassisTerre.jpg");
 //		Piece chassisNeige = new Piece("chassis",4500,neige, null,null,"/Images/chassisNeige.jpg");
 //		Piece chassisRouteSec = new Piece("chassis",4500,route, sec,null,"/Images/chassisEte.jpg");
+<<<<<<< HEAD
+//		Piece chassisRoutePluie = new Piece("chassis",4500,route, pluie,null,"/Images/chassisHiver.jpg");	
+=======
 //		Piece chassisRoutePluie = new Piece("chassis",4500,route, pluie,null,"/Images/chassisHiver.jpg");
 //		
+		
+		//Suspension
+		Piece suspensionClassic = new Piece("suspension",6500,route, null,null,false,null,"/Images/suspensionClassic.jpg");
+		Piece suspensionAdaptative = new Piece("suspension",8500,route, null,null,false,null,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionToutTerrain = new Piece("suspension",9000,null, null,null,false,null,"/Images/suspensionSport.jpg");
+		Piece suspensionSport = new Piece("suspension",9000,null, null,null,true,null,"/Images/suspensionSport.jpg");
+		Piece suspensionLuxe = new Piece("suspension",9000,null, null,null,false,luxe,"/Images/suspensionSport.jpg");
+		Piece suspensionRouteBerlin = new Piece("suspension",9000,route, null,famille,false,null,"/Images/suspensionRouteBerlin.jpg");
+		
+		//Save BDD
+		Context.getInstance().getDaoP().save(suspensionClassic);
+		Context.getInstance().getDaoP().save(suspensionAdaptative);
+		Context.getInstance().getDaoP().save(suspensionToutTerrain);
+		Context.getInstance().getDaoP().save(suspensionSport);
+		Context.getInstance().getDaoP().save(suspensionLuxe);
+		Context.getInstance().getDaoP().save(suspensionRouteBerlin);
+		
+>>>>>>> Suspension
+		
 		//SAUVEGARDE PIECE PNEU
 		Context.getInstance().getDaoP().save(pneuBoue);
 		Context.getInstance().getDaoP().save(pneuGlace);
