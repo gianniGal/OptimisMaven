@@ -143,7 +143,7 @@ public class ChoixContraintes {
 
 		for(Meteo m : Context.getInstance().getTerrainSelected().getMeteos()) 
 		{
-			System.out.println(yRadioButton);
+			
 
 			//CREATION BOUTON RADIO POUR LE TERRAIN
 			JRadioButton rdbtnNewRadioButton = new JRadioButton(m.getMeteo());		
@@ -200,7 +200,7 @@ public class ChoixContraintes {
 
 		for(NbDePlaces nb : Context.getInstance().getTerrainSelected().getNombrePlaces()) 
 		{
-			System.out.println(yRadioButton);
+			
 
 			//CREATION BOUTON RADIO POUR LE TERRAIN
 			JRadioButton rdbtnNewRadioButton = new JRadioButton(nb.getNombrePlaces());		
@@ -259,7 +259,7 @@ public class ChoixContraintes {
 
 		for(Surclasser o : Context.getInstance().getTerrainSelected().getSurclasser()) 
 		{
-			System.out.println(yRadioButton);
+			
 
 			//CREATION BOUTON RADIO POUR LE TERRAIN
 			JRadioButton rdbtnNewRadioButton = new JRadioButton(o.getsurclasser());		

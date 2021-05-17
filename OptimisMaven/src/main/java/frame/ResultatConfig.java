@@ -56,57 +56,55 @@ public class ResultatConfig {
 		
 		JLabel lblNewLabel = new JLabel("pneu");
 		lblNewLabel.setIcon(new ImageIcon(ResultatConfig.class.getResource(roue.getLien())));
-		lblNewLabel.setBounds(613, 300, 163, 194);
+		lblNewLabel.setBounds(1021, 499, 322, 292);
 		frame.getContentPane().add(lblNewLabel);
 		
 		Piece moteur = Context.getInstance().getDaoP()
 				.findTypePiece("moteur", Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected(), Context.getInstance().getSurclasserSelected(), Context.getInstance().isCourseSelected());	
 		JLabel lblNewLabel_1 = new JLabel("moteur");
 		lblNewLabel_1.setIcon(new ImageIcon(ResultatConfig.class.getResource(moteur.getLien())));
-		lblNewLabel_1.setBounds(65, 63, 212, 139);
+		lblNewLabel_1.setBounds(66, 42, 293, 225);
 		frame.getContentPane().add(lblNewLabel_1);
 
 		Piece frein = Context.getInstance().getDaoP()
 				.findTypePiece("frein", Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected(), Context.getInstance().getSurclasserSelected(), Context.getInstance().isCourseSelected());	
 		JLabel lblNewLabel_2 = new JLabel("frein");
 		lblNewLabel_2.setIcon(new ImageIcon(ResultatConfig.class.getResource(frein.getLien())));
-		lblNewLabel_2.setBounds(65, 300, 99, 85);
+		lblNewLabel_2.setBounds(65, 300, 229, 216);
 		frame.getContentPane().add(lblNewLabel_2);
 
 		Piece suspension = Context.getInstance().getDaoP()
 				.findTypePiece("suspension", Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected(), Context.getInstance().getSurclasserSelected(), Context.getInstance().isCourseSelected());	
 		JLabel lblNewLabel_3 = new JLabel("suspension");
 		lblNewLabel_3.setIcon(new ImageIcon(ResultatConfig.class.getResource(suspension.getLien())));
-		lblNewLabel_3.setBounds(65, 439, 136, 133);
+		lblNewLabel_3.setBounds(53, 503, 278, 284);
 		frame.getContentPane().add(lblNewLabel_3);
 
 		Piece chassis = Context.getInstance().getDaoP()
 				.findTypePiece("chassis", Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected(), Context.getInstance().getSurclasserSelected(), Context.getInstance().isCourseSelected());	
 		JLabel lblNewLabel_4 = new JLabel("chassis");
 		lblNewLabel_4.setIcon(new ImageIcon(ResultatConfig.class.getResource(chassis.getLien())));
-		lblNewLabel_4.setBounds(255, 183, 322, 248);
+		lblNewLabel_4.setBounds(392, 255, 406, 417);
 		frame.getContentPane().add(lblNewLabel_4);
 
 		Piece phare = Context.getInstance().getDaoP()
 				.findTypePiece("phare", Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected(), Context.getInstance().getSurclasserSelected(), Context.getInstance().isCourseSelected());	
 		JLabel lblNewLabel_5 = new JLabel("phare");
 		lblNewLabel_5.setIcon(new ImageIcon(ResultatConfig.class.getResource(phare.getLien())));
-		lblNewLabel_5.setBounds(603, 93, 204, 210);
+		lblNewLabel_5.setBounds(965, 115, 302, 303);
 		frame.getContentPane().add(lblNewLabel_5);
 		
 		JButton btnNewButton = new JButton("Sauvegarder");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				
-				
 			}
 		});
-		btnNewButton.setBounds(637, 526, 89, 23);
+		btnNewButton.setBounds(1254, 827, 89, 23);
 		frame.getContentPane().add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Back");
-		btnNewButton_1.setBounds(740, 526, 89, 23);
+		btnNewButton_1.setBounds(1367, 827, 89, 23);
 		frame.getContentPane().add(btnNewButton_1);		
 		
 	}
