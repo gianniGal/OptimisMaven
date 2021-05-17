@@ -262,7 +262,7 @@ public class ChoixContraintes {
 			
 
 			//CREATION BOUTON RADIO POUR LE TERRAIN
-			JRadioButton rdbtnNewRadioButton = new JRadioButton(o.getsurclasser());		
+			JRadioButton rdbtnNewRadioButton = new JRadioButton(o.getSurclasser());		
 			rdbtnNewRadioButton.addItemListener(new ItemListener() {    
 				public void itemStateChanged(ItemEvent e) {                 
 					String check =  e.getStateChange()==1?"checked":"unchecked"; 

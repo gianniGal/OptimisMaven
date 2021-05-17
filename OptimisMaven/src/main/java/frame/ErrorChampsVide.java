@@ -58,16 +58,19 @@ public class ErrorChampsVide extends javax.swing.JFrame{
 				frame.dispose();
 			} 
 		});
-		btnSearch.setBounds(90 , 71, 89, 23);
+		btnSearch.setBounds(106 , 78, 89, 23);
 		frame.getContentPane().add(btnSearch);
 		
-		JLabel lblNewLabel_1 = new JLabel("ERREUR CHAMPS VIDE");
+		JLabel lblNewLabel_1 = new JLabel("DONNEES INCOMPLETTES");
 		lblNewLabel_1.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-		lblNewLabel_1.setBounds(75, 46, 171, 14);
+		lblNewLabel_1.setBounds(80, 46, 171, 14);
 		frame.getContentPane().add(lblNewLabel_1);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon(ErrorChampsVide.class.getResource("/Images/BGterrain.jpg")));
+		lblNewLabel.setBounds(0, 0, 304, 166);
+		frame.getContentPane().add(lblNewLabel);
 		
 
 	}
-	
-
 }

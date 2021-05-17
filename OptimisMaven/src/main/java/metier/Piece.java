@@ -46,12 +46,10 @@ public class Piece {
 		this.prix = prix;
 		//		this.terrains = terrains;
 		this.lien=lien;
-		
-
-
+	
 	}
 
-	public Piece(String libelle, double prix, Sol sol, Meteo meteo,NbDePlaces nombrePlaces,  boolean course, Surclasser surclasser ,String lien ) {
+	public Piece(String libelle, double prix, Sol sol, Meteo meteo,NbDePlaces nombrePlaces,  boolean course,Surclasser surclasser ,String lien ) {
 
 		//		this.id = id;
 		this.libelle = libelle;

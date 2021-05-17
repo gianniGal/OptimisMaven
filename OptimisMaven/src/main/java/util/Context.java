@@ -1,11 +1,14 @@
 package util;
 
+import java.util.List;
+
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 import dao.DAOClient;
 import dao.DAOPiece;
 import dao.DAOTerrain;
+import metier.Piece;
 import metier.FiltresTerrain.Meteo;
 import metier.FiltresTerrain.NbDePlaces;
 import metier.FiltresTerrain.Surclasser;
@@ -23,6 +26,9 @@ public class Context {
 	private NbDePlaces nombrePlacesSelected;
 	private Surclasser surclasserSelected;
 	private boolean courseSelected;
+
+	private List<Piece> config;
+    private Terrain contrainte; 
 
 	private  DAOClient daoC = new DAOClient();
 	private  DAOPiece daoP = new DAOPiece();
@@ -171,7 +177,27 @@ public class Context {
 
 
 
+    public List<Piece> getConfig() {
+		return config;
+	}
 
+
+
+	public void setConfig(List<Piece> config) {
+		this.config = config;
+	}
+
+
+
+	public Terrain getContrainte() {
+		return contrainte;
+	}
+
+
+
+	public void setContrainte(Terrain contrainte) {
+		this.contrainte = contrainte;
+	}
 
 
 

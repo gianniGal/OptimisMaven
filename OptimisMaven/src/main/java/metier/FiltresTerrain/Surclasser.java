@@ -36,11 +36,13 @@ public class Surclasser {
 		this.id = id;
 	}
 
-	public String getsurclasser() {
+	
+
+	public String getSurclasser() {
 		return surclasser;
 	}
 
-	public void setsurclasser(String surclasser) {
+	public void setSurclasser(String surclasser) {
 		this.surclasser = surclasser;
 	}
 

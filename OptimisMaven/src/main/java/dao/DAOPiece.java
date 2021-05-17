@@ -32,6 +32,84 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 	}
 
 
+	public Piece findTypePieceTEST(String typePiece, Sol sol, Meteo meteo, Surclasser surclasser, boolean course ) {
+		EntityManager em = Context.getInstance().getEmf().createEntityManager();
+		List<Piece> pieces=null;
+		String requete ="Select p from Piece p";
+
+		if (sol!=null) {
+
+			requete +=" JOIN fetch p.sol s";
+		}
+
+
+		if (meteo != null) {
+			requete+=" JOIN fetch p.meteo m";
+		}
+		
+		if (surclasser != null) {
+			requete+=" JOIN fetch p.surclasser su";
+		}
+
+			requete+=" where p.libelle=:lelibelle" ;
+		
+		if (sol!=null) {
+
+			requete +=" and s.sol=:sol";
+		}
+
+		
+
+		if (meteo != null) {
+			requete+=" and m.meteo=:meteo";
+		}
+		
+		if (surclasser != null) {
+			requete+=" and su.surclasser=:surclasser";
+		}
+		
+		Query query = em.createQuery(requete);
+		query.setParameter("lelibelle", typePiece);
+		
+		if (sol!=null) {
+
+			query.setParameter("sol", sol.getSol());
+		}
+
+
+		if (meteo != null) {
+			query.setParameter("meteo", meteo.getMeteo());
+		}
+		if (surclasser != null) {
+			query.setParameter("surclasser", surclasser.getSurclasser());
+		}
+		
+		
+		
+		try {
+			pieces=(List<Piece>) query.getResultList();
+
+			System.out.println(pieces);
+
+		}
+		catch(Exception e) {
+			System.out.println(pieces);
+		}
+
+		if (pieces.isEmpty() ) {
+			ChoixContraintes.main(null);
+			ErrorChampsVide.main(null);		
+		}
+
+		Piece piece = pieces.get(0);
+		em.close();
+		return piece;
+
+
+
+
+
+	}
 
 	public Piece findTypePiece(String typePiece, Sol sol, Meteo meteo, Surclasser surclasser, boolean course ) {
 		EntityManager em = Context.getInstance().getEmf().createEntityManager();
@@ -57,7 +135,7 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 
 		if (surclasser!=null) {
 			System.out.println("SURRCLLAAAASSS");
-			filtresPieces.put("surclasser", surclasser.getsurclasser());
+			filtresPieces.put("surclasser", surclasser.getSurclasser());
 			filtersJoin+=" JOIN fetch p.surclasser su";
 			filtersWhere+=" and su.surclasser=:surclasser";
 		}
@@ -70,6 +148,7 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 
 
 		}
+		    
 
 		Iterator<String>  it=filtresPieces.keySet().iterator();
 		Query query = em.createQuery(filtersJoin+""+filtersWhere);
