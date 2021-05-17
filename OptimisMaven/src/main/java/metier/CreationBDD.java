@@ -208,8 +208,8 @@ public  class CreationBDD {
 //		Piece chassisTerre = new Piece("chassis",4500,terre, null,null,"/Images/chassisTerre.jpg");
 //		Piece chassisNeige = new Piece("chassis",4500,neige, null,null,"/Images/chassisNeige.jpg");
 //		Piece chassisRouteSec = new Piece("chassis",4500,route, sec,null,"/Images/chassisEte.jpg");
-//		Piece chassisRoutePluie = new Piece("chassis",4500,route, pluie,null,"/Images/chassisHiver.jpg");
-//		
+//		Piece chassisRoutePluie = new Piece("chassis",4500,route, pluie,null,"/Images/chassisHiver.jpg");	
+		
 		//SAUVEGARDE PIECE PNEU
 		Context.getInstance().getDaoP().save(pneuBoue);
 		Context.getInstance().getDaoP().save(pneuGlace);
