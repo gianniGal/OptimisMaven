@@ -1,17 +1,15 @@
 package metier;
 
-import java.util.List;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 import metier.FiltresTerrain.Meteo;
 import metier.FiltresTerrain.NbDePlaces;
+import metier.FiltresTerrain.Surclasser;
 import metier.FiltresTerrain.Sol;
 
 @Entity
@@ -31,6 +29,11 @@ public class Piece {
 	private String lien;
 	@ManyToOne (cascade = {CascadeType.MERGE,CascadeType.REMOVE})
 	protected NbDePlaces nombrePlaces;
+	private boolean course;
+	@ManyToOne (cascade = {CascadeType.MERGE,CascadeType.REMOVE})
+	private Surclasser surclasser;
+	
+	
 
 	public Piece() {
 
@@ -43,11 +46,12 @@ public class Piece {
 		this.prix = prix;
 		//		this.terrains = terrains;
 		this.lien=lien;
+		
 
 
 	}
 
-	public Piece(String libelle, double prix, Sol sol, Meteo meteo,NbDePlaces nombrePlaces, String lien ) {
+	public Piece(String libelle, double prix, Sol sol, Meteo meteo,NbDePlaces nombrePlaces,  boolean course,Surclasser surclasser ,String lien ) {
 
 		//		this.id = id;
 		this.libelle = libelle;
@@ -56,8 +60,10 @@ public class Piece {
 		//		this.typePiece = typePiece;
 		this.sol=sol;
 		this.meteo=meteo;
-		NbDePlaces nombrePlaces
+		this.nombrePlaces=nombrePlaces;
 		this.lien=lien;
+		this.course=course;
+		this.surclasser=surclasser;
 	}
 
 	public Piece(String libelle, double prix) {
@@ -136,16 +142,28 @@ public class Piece {
 		this.nombrePlaces = nombrePlaces;
 	}
 
+	public boolean isCourse() {
+		return course;
+	}
+
+	public void setCourse(boolean course) {
+		this.course = course;
+	}
+
+	public Surclasser getSurclasser() {
+		return surclasser;
+	}
+
+	public void setSurclasser(Surclasser surclasser) {
+		this.surclasser = surclasser;
+	}
+
 	@Override
 	public String toString() {
 		return "Piece [id=" + id + ", libelle=" + libelle + ", prix=" + prix + ", sol=" + sol + ", meteo=" + meteo
-				+ ", lien=" + lien + "]";
+				+ ", lien=" + lien + ", nombrePlaces=" + nombrePlaces + ", course=" + course + ", surclasser=" + surclasser
+				+ "]";
 	}
-
-
-
-
-
 
 
 }

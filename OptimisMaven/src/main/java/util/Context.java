@@ -8,6 +8,7 @@ import dao.DAOPiece;
 import dao.DAOTerrain;
 import metier.FiltresTerrain.Meteo;
 import metier.FiltresTerrain.NbDePlaces;
+import metier.FiltresTerrain.Surclasser;
 import metier.FiltresTerrain.Sol;
 import metier.FiltresTerrain.Terrain;
 
@@ -20,6 +21,8 @@ public class Context {
 	private Meteo meteoSelected;
 	private Sol solSelected;
 	private NbDePlaces nombrePlacesSelected;
+	private Surclasser surclasserSelected;
+	private boolean courseSelected;
 
 	private  DAOClient daoC = new DAOClient();
 	private  DAOPiece daoP = new DAOPiece();
@@ -138,6 +141,32 @@ public class Context {
 
 	public void setNombrePlacesSelected(NbDePlaces nombrePlacesSelected) {
 		this.nombrePlacesSelected = nombrePlacesSelected;
+	}
+
+
+
+	
+
+	public Surclasser getSurclasserSelected() {
+		return surclasserSelected;
+	}
+
+
+
+	public void setSurclasserSelected(Surclasser surclasserSelected) {
+		this.surclasserSelected = surclasserSelected;
+	}
+
+
+
+	public boolean isCourseSelected() {
+		return courseSelected;
+	}
+
+
+
+	public void setCourseSelected(boolean courseSelected) {
+		this.courseSelected = courseSelected;
 	}
 
 

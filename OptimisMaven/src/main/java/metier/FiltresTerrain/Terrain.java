@@ -25,8 +25,6 @@ public class Terrain {
 	private int id ;
 	private String lien;
 	//@Column(name="Course", columnDefinition="boolean default false")
-	protected boolean course ;
-
 	@ManyToMany (cascade = {CascadeType.MERGE,CascadeType.REMOVE})
 	//@ElementCollection(fetch = FetchType.LAZY)
 	//@Enumerated(EnumType.STRING)
@@ -38,18 +36,26 @@ public class Terrain {
 	
 	@ManyToMany (cascade = {CascadeType.MERGE,CascadeType.REMOVE})
 	protected List<NbDePlaces> nombrePlaces;
+	protected boolean course ;
+	@ManyToMany (cascade = {CascadeType.MERGE,CascadeType.REMOVE})
+	protected List<Surclasser> surclasser;
+
+	
 	
 	
 	public Terrain() {
 		
 	}
-	public Terrain( String lien, boolean course, List<Sol> sols, List<Meteo> meteos, List<NbDePlaces> nombrePlaces) {
+	public Terrain( String lien,  List<Sol> sols, List<Meteo> meteos, List<NbDePlaces> nombrePlaces, boolean course, List<Surclasser> surclasser ) {
 		
 		this.lien = lien;
-		this.course = course;
 		this.sols = sols;
 		this.meteos = meteos;
 		this.nombrePlaces = nombrePlaces;
+		this.course = course;
+		this.surclasser=surclasser;
+		
+		
 	}
 	public int getId() {
 		return id;
@@ -87,14 +93,19 @@ public class Terrain {
 	public void setNombrePlaces(List<NbDePlaces> nombrePlaces) {
 		this.nombrePlaces = nombrePlaces;
 	}
-	
-	
+	public List<Surclasser> getSurclasser() {
+		return surclasser;
+	}
+	public void setSurclasser(List<Surclasser> surclasser) {
+		this.surclasser = surclasser;
+	}
 	@Override
 	public String toString() {
-		return "Terrain [id=" + id + ", lien=" + lien + ", course=" + course + ", sols=" + sols + ", meteos=" + meteos
-				+ ", nombrePlaces=" + nombrePlaces + "]";
+		return "Terrain [id=" + id + ", lien=" + lien + ", sols=" + sols + ", meteos=" + meteos + ", nombrePlaces="
+				+ nombrePlaces + ", course=" + course + ", surclasser=" + surclasser + "]";
 	}
 
+	
 	
 	
 	
