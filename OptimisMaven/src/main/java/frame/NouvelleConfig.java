@@ -1,21 +1,24 @@
 package frame;
 
-import java.awt.event.*;
-import java.awt.*;
-
-
-import javax.swing.*;
-
-import dao.DAOVehicule;
-
-import java.util.ArrayList;
+import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.util.List;
 
-import metier.FiltresTerrain.Desert;
-import metier.FiltresTerrain.Meteo;
-import metier.FiltresTerrain.Montagne;
-import metier.FiltresTerrain.NbDePlaces;
-import metier.FiltresTerrain.Sol;
+import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JRadioButton;
+import javax.swing.SwingConstants;
+
 import metier.FiltresTerrain.Terrain;
 import util.Context;
 
@@ -76,25 +79,8 @@ public class NouvelleConfig extends javax.swing.JFrame{
 
 		// INITIALISATION DE LA BOUCLE DES TERRAINS (TROUVER MOYEN AUTOMATISATION
 		// CHERCHER TOUS LES TYPES DIFFERENTS DE TERRAINS SANS LEUR VARIATIONS
-//		Terrain t1 = new Desert();
-//		t1.lien="/Images/d3.png";
-//		Terrain t2=new Montagne();
-//		t2.lien="/Images/montagne2.png";
+
 		List<Terrain> terrains= Context.getInstance().getDaoT().findAll();
-		
-        System.out.println(terrains);
-		
-//		terrains.add(t1);
-//		terrains.add(t2);
-//		terrains.add(t1);
-//		terrains.add(t2);
-//		terrains.add(t1);
-//		terrains.add(t2);
-//		terrains.add(t2);
-//		terrains.add(t1);
-
-
-         
 
 		//POSITION INITIAL DU 1ER TERRAIN AFFICHE
 		int xRadioButton = 75 ;

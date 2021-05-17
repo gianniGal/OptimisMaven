@@ -1,13 +1,17 @@
 package metier;
 
+import java.util.List;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 import metier.FiltresTerrain.Meteo;
+import metier.FiltresTerrain.NbDePlaces;
 import metier.FiltresTerrain.Sol;
 
 @Entity
@@ -25,8 +29,8 @@ public class Piece {
 	@ManyToOne (cascade = {CascadeType.MERGE,CascadeType.REMOVE})
 	private Meteo meteo;
 	private String lien;
-
-
+	@ManyToOne (cascade = {CascadeType.MERGE,CascadeType.REMOVE})
+	protected NbDePlaces nombrePlaces;
 
 	public Piece() {
 
@@ -43,7 +47,7 @@ public class Piece {
 
 	}
 
-	public Piece(String libelle, double prix, Sol sol, Meteo meteo, String lien ) {
+	public Piece(String libelle, double prix, Sol sol, Meteo meteo,NbDePlaces nombrePlaces, String lien ) {
 
 		//		this.id = id;
 		this.libelle = libelle;
@@ -52,6 +56,7 @@ public class Piece {
 		//		this.typePiece = typePiece;
 		this.sol=sol;
 		this.meteo=meteo;
+		NbDePlaces nombrePlaces
 		this.lien=lien;
 	}
 
@@ -120,6 +125,15 @@ public class Piece {
 
 	public void setLien(String lien) {
 		this.lien = lien;
+	}
+
+
+	public NbDePlaces getNombrePlaces() {
+		return nombrePlaces;
+	}
+
+	public void setNombrePlaces(NbDePlaces nombrePlaces) {
+		this.nombrePlaces = nombrePlaces;
 	}
 
 	@Override

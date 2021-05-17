@@ -35,14 +35,15 @@ public class Terrain {
 	//@ElementCollection(fetch = FetchType.LAZY)
 	//@Enumerated(EnumType.STRING)
 	protected List<Meteo> meteos;
-	@Enumerated(EnumType.STRING)
-	protected NbDePlaces nombrePlaces;
+	
+	@ManyToMany (cascade = {CascadeType.MERGE,CascadeType.REMOVE})
+	protected List<NbDePlaces> nombrePlaces;
 	
 	
 	public Terrain() {
 		
 	}
-	public Terrain( String lien, boolean course, List<Sol> sols, List<Meteo> meteos, NbDePlaces nombrePlaces) {
+	public Terrain( String lien, boolean course, List<Sol> sols, List<Meteo> meteos, List<NbDePlaces> nombrePlaces) {
 		
 		this.lien = lien;
 		this.course = course;
@@ -80,17 +81,22 @@ public class Terrain {
 	public void setMeteos(List<Meteo> meteos) {
 		this.meteos = meteos;
 	}
-	public NbDePlaces getNombrePlaces() {
+	public List<NbDePlaces> getNombrePlaces() {
 		return nombrePlaces;
 	}
-	public void setNombrePlaces(NbDePlaces nombrePlaces) {
+	public void setNombrePlaces(List<NbDePlaces> nombrePlaces) {
 		this.nombrePlaces = nombrePlaces;
 	}
+	
+	
 	@Override
 	public String toString() {
 		return "Terrain [id=" + id + ", lien=" + lien + ", course=" + course + ", sols=" + sols + ", meteos=" + meteos
 				+ ", nombrePlaces=" + nombrePlaces + "]";
 	}
+
+	
+	
 	
 	
 	

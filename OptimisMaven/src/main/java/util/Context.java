@@ -7,6 +7,7 @@ import dao.DAOClient;
 import dao.DAOPiece;
 import dao.DAOTerrain;
 import metier.FiltresTerrain.Meteo;
+import metier.FiltresTerrain.NbDePlaces;
 import metier.FiltresTerrain.Sol;
 import metier.FiltresTerrain.Terrain;
 
@@ -14,15 +15,16 @@ import metier.FiltresTerrain.Terrain;
 public class Context {
 
 	private  EntityManagerFactory emf = Persistence.createEntityManagerFactory("optimiseur");
+	
 	private Terrain terrainSelected ;
-	//private Sol solSelected ;
 	private Meteo meteoSelected;
 	private Sol solSelected;
+	private NbDePlaces nombrePlacesSelected;
 
 	private  DAOClient daoC = new DAOClient();
 	private  DAOPiece daoP = new DAOPiece();
 	private  DAOTerrain daoT = new DAOTerrain();
-	//	private IDAO daoP = new DAOProduit();
+
 
 	private static Context _instance=null; 
 
@@ -91,15 +93,6 @@ public class Context {
 
 
 
-//	public Sol getSolSelected() {
-//		return solSelected;
-//	}
-
-
-
-//	public void setSolSelected(Sol solSelected) {
-//		this.solSelected = solSelected;
-//	}
 
 
 
@@ -137,17 +130,16 @@ public class Context {
 		this.meteoSelected = meteoSelected;
 	}
 
+	public NbDePlaces getNombrePlacesSelected() {
+		return nombrePlacesSelected;
+	}
 
 
-//	public Meteo getMeteoSelected() {
-//		return meteoSelected;
-//	}
-//
 
-//
-//	public void setMeteoSelected(Meteo meteoSelected) {
-//		this.meteoSelected = meteoSelected;
-//	}
+	public void setNombrePlacesSelected(NbDePlaces nombrePlacesSelected) {
+		this.nombrePlacesSelected = nombrePlacesSelected;
+	}
+
 
 
 
