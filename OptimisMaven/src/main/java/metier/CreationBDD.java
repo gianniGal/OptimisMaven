@@ -5,6 +5,7 @@ import java.util.List;
 
 import metier.FiltresTerrain.Meteo;
 import metier.FiltresTerrain.NbDePlaces;
+import metier.FiltresTerrain.Surclasser;
 import metier.FiltresTerrain.Sol;
 import metier.FiltresTerrain.Terrain;
 import util.Context;
@@ -35,6 +36,7 @@ public  class CreationBDD {
 		List<NbDePlaces> placeSavane = new ArrayList();
 		List<NbDePlaces> placeVille = new ArrayList();
 		List<NbDePlaces> placeCircuit = new ArrayList();
+		List<Surclasser> surclasser = new ArrayList();
 		
 		//DECLARATION SOL
 		Sol boue= new Sol("Boue");
@@ -144,14 +146,26 @@ public  class CreationBDD {
 		placeCircuit.add(famille);
 		placeCircuit.add(tourisme);
 		
+		//DECLARATION OPTION
+		
+				Surclasser luxe= new Surclasser("luxe");
+				Surclasser tuning = new Surclasser("tuning");
+				
+				surclasser.add(luxe);
+				surclasser.add(tuning);
+		
 		
 		//DECLARATION TERRAIN
-		Terrain terrainDesert = new Terrain("/Images/d3.png",false,solDesert,meteoDesert,placeDesert);
-		Terrain terrainMontagne = new Terrain("/Images/montagne2.png", false, solMontagne,meteoMontagne,placeMontagne);
-		Terrain terrainForet = new Terrain("/Images/d3.png",false,solForet,meteoForet,placeForet);
-		Terrain terrainSavane = new Terrain("/Images/montagne2.png", false, solSavane,meteoSavane,placeSavane);
-		Terrain terrainVille= new Terrain("/Images/d3.png",false,solVille,meteoVille,placeVille);
-		Terrain terrainCircuit = new Terrain("/Images/montagne2.png", false, solCircuit,meteoCircuit,placeCircuit);
+		Terrain terrainDesert = new Terrain("/Images/d3.png",solDesert,meteoDesert,placeDesert,false, null);
+		Terrain terrainMontagne = new Terrain("/Images/montagne2.png",  solMontagne,meteoMontagne,placeMontagne,false, null);
+		Terrain terrainForet = new Terrain("/Images/d3.png",solForet,meteoForet,placeForet,false, null);
+		Terrain terrainSavane = new Terrain("/Images/montagne2.png", solSavane,meteoSavane,placeSavane,false, null);
+		Terrain terrainVille= new Terrain("/Images/d3.png",solVille,meteoVille,placeVille,false, null);
+		Terrain terrainCircuit = new Terrain("/Images/montagne2.png", solCircuit,meteoCircuit,placeCircuit,false, null);
+		
+		Terrain terrainCircuitCourse = new Terrain("/Images/montagne2.png", solCircuit,meteoCircuit,placeCircuit,true, surclasser);
+		
+		
 		
 		//SAUVEGARDE TERRAIN DANS BDD
 		Context.getInstance().getDaoT().save(terrainDesert);
@@ -160,15 +174,19 @@ public  class CreationBDD {
 		Context.getInstance().getDaoT().save(terrainSavane);
 		Context.getInstance().getDaoT().save(terrainVille);
 		Context.getInstance().getDaoT().save(terrainCircuit);
+		Context.getInstance().getDaoT().save(terrainCircuitCourse);
+		
+		
 		
 	    //DECLARATION PIECE 
-		Piece pneuBoue = new Piece("pneu",4500,boue, null,null,"/Images/pneuBoue.jpg");
-		Piece pneuGlace = new Piece("pneu",4500,glace, null,null,"/Images/pneuGlace.jpg");
-		Piece pneuSable = new Piece("pneu",4500,sable, null,null,"/Images/pneuSable.jpg");
-		Piece pneuTerre = new Piece("pneu",4500,terre, null,null,"/Images/pneuTerre.jpg");
-		Piece pneuNeige = new Piece("pneu",4500,neige, null,null,"/Images/pneuNeige.jpg");
-		Piece pneuRouteSec = new Piece("pneu",4500,route, sec,null,"/Images/pneuEte.jpg");
-		Piece pneuRoutePluie = new Piece("pneu",4500,route, pluie,null,"/Images/pneuHiver.jpg");
+		Piece pneuBoue = new Piece("pneu",4500,boue, null,null,false,null,"/Images/pneuBoue.jpg");
+		Piece pneuGlace = new Piece("pneu",4500,glace, null,null,false,null,"/Images/pneuGlace.jpg");
+		Piece pneuSable = new Piece("pneu",4500,sable, null,null,false,null,"/Images/pneuSable.jpg");
+		Piece pneuTerre = new Piece("pneu",4500,terre, null,null,false,null,"/Images/pneuTerre.jpg");
+		Piece pneuNeige = new Piece("pneu",4500,neige, null,null,false,null,"/Images/pneuNeige.jpg");
+		Piece pneuRouteSec = new Piece("pneu",4500,route, sec,null,false,null,"/Images/pneuEte.jpg");
+		Piece pneuRoutePluie = new Piece("pneu",4500,route, pluie,null,false,null,"/Images/pneuHiver.jpg");
+		Piece pneuNull = new Piece("pneu",4500,null, null,null,false,null,"/Images/pneuBoue.jpg");
 		
 	  
 //		Piece chassisBoue = new Piece("chassis",4500,boue, null,null,"/Images/chassisBoue.jpg");
@@ -187,6 +205,7 @@ public  class CreationBDD {
 		Context.getInstance().getDaoP().save(pneuNeige);
 		Context.getInstance().getDaoP().save(pneuRouteSec);
 		Context.getInstance().getDaoP().save(pneuRoutePluie);
+		Context.getInstance().getDaoP().save(pneuNull);
 	}
 
 }
