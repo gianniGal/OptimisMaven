@@ -107,11 +107,7 @@ public class ResultatConfig {
 		
 		JButton btnNewButton_1 = new JButton("Back");
 		btnNewButton_1.setBounds(740, 526, 89, 23);
-		frame.getContentPane().add(btnNewButton_1);
-
-
-		
-		
+		frame.getContentPane().add(btnNewButton_1);		
 		
 	}
 }
