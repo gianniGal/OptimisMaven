@@ -8,6 +8,9 @@ import javax.swing.JLabel;
 
 import metier.Piece;
 import util.Context;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class ResultatConfig {
 
@@ -45,43 +48,70 @@ public class ResultatConfig {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
-		Piece roue = Context.getInstance().getDaoP()
-				.findTypePiece("Pneu", Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected(), Context.getInstance().getSurclasserSelected(), Context.getInstance().isCourseSelected());	
-		String ValueRoue = roue.getLien();
-		System.out.println(ValueRoue);
+		System.out.println(Context.getInstance().getSolSelected());
+		Piece roue = Context.getInstance().getDaoP().findTypePiece("pneu", Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected(), Context.getInstance().getSurclasserSelected(), Context.getInstance().isCourseSelected());	
+//		String ValueRoue = roue.getLien();
+//		System.out.println(ValueRoue);
 		
 		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon(ResultatConfig.class.getResource(ValueRoue)));
-		lblNewLabel.setBounds(287, 146, 379, 323);
+		JLabel lblNewLabel = new JLabel("pneu");
+		lblNewLabel.setIcon(new ImageIcon(ResultatConfig.class.getResource(roue.getLien())));
+		lblNewLabel.setBounds(613, 300, 163, 194);
 		frame.getContentPane().add(lblNewLabel);
-
-		JLabel lblNewLabel_1 = new JLabel("New label");
+		
+		Piece moteur = Context.getInstance().getDaoP()
+				.findTypePiece("moteur", Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected(), Context.getInstance().getSurclasserSelected(), Context.getInstance().isCourseSelected());	
+		JLabel lblNewLabel_1 = new JLabel("moteur");
+		lblNewLabel_1.setIcon(new ImageIcon(ResultatConfig.class.getResource(moteur.getLien())));
 		lblNewLabel_1.setBounds(65, 63, 212, 139);
 		frame.getContentPane().add(lblNewLabel_1);
 
-		JLabel lblNewLabel_2 = new JLabel("New label");
-		lblNewLabel_2.setBounds(65, 300, 46, 14);
+		Piece frein = Context.getInstance().getDaoP()
+				.findTypePiece("frein", Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected(), Context.getInstance().getSurclasserSelected(), Context.getInstance().isCourseSelected());	
+		JLabel lblNewLabel_2 = new JLabel("frein");
+		lblNewLabel_2.setIcon(new ImageIcon(ResultatConfig.class.getResource(frein.getLien())));
+		lblNewLabel_2.setBounds(65, 300, 99, 85);
 		frame.getContentPane().add(lblNewLabel_2);
 
-		JLabel lblNewLabel_3 = new JLabel("New label");
-		lblNewLabel_3.setBounds(65, 487, 46, 14);
+		Piece suspension = Context.getInstance().getDaoP()
+				.findTypePiece("suspension", Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected(), Context.getInstance().getSurclasserSelected(), Context.getInstance().isCourseSelected());	
+		JLabel lblNewLabel_3 = new JLabel("suspension");
+		lblNewLabel_3.setIcon(new ImageIcon(ResultatConfig.class.getResource(suspension.getLien())));
+		lblNewLabel_3.setBounds(65, 439, 136, 133);
 		frame.getContentPane().add(lblNewLabel_3);
 
-		JLabel lblNewLabel_4 = new JLabel("New label");
-		lblNewLabel_4.setBounds(779, 81, 46, 14);
+		Piece chassis = Context.getInstance().getDaoP()
+				.findTypePiece("chassis", Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected(), Context.getInstance().getSurclasserSelected(), Context.getInstance().isCourseSelected());	
+		JLabel lblNewLabel_4 = new JLabel("chassis");
+		lblNewLabel_4.setIcon(new ImageIcon(ResultatConfig.class.getResource(chassis.getLien())));
+		lblNewLabel_4.setBounds(255, 183, 322, 248);
 		frame.getContentPane().add(lblNewLabel_4);
 
-		JLabel lblNewLabel_5 = new JLabel("New label");
-		lblNewLabel_5.setBounds(779, 209, 46, 14);
+		Piece phare = Context.getInstance().getDaoP()
+				.findTypePiece("phare", Context.getInstance().getSolSelected(),Context.getInstance().getMeteoSelected(), Context.getInstance().getSurclasserSelected(), Context.getInstance().isCourseSelected());	
+		JLabel lblNewLabel_5 = new JLabel("phare");
+		lblNewLabel_5.setIcon(new ImageIcon(ResultatConfig.class.getResource(phare.getLien())));
+		lblNewLabel_5.setBounds(603, 93, 204, 210);
 		frame.getContentPane().add(lblNewLabel_5);
+		
+		JButton btnNewButton = new JButton("Sauvegarder");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				
+				
+			}
+		});
+		btnNewButton.setBounds(637, 526, 89, 23);
+		frame.getContentPane().add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("Back");
+		btnNewButton_1.setBounds(740, 526, 89, 23);
+		frame.getContentPane().add(btnNewButton_1);
 
-		JLabel lblNewLabel_6 = new JLabel("New label");
-		lblNewLabel_6.setBounds(779, 344, 46, 14);
-		frame.getContentPane().add(lblNewLabel_6);
 
-		JLabel lblNewLabel_7 = new JLabel("New label");
-		lblNewLabel_7.setBounds(779, 499, 46, 14);
-		frame.getContentPane().add(lblNewLabel_7);
+		
+		
+		
 	}
 }

@@ -156,12 +156,12 @@ public  class CreationBDD {
 		
 		
 		//DECLARATION TERRAIN
-		Terrain terrainDesert = new Terrain("/Images/d3.png",solDesert,meteoDesert,placeDesert,false, null);
-		Terrain terrainMontagne = new Terrain("/Images/montagne2.png",  solMontagne,meteoMontagne,placeMontagne,false, null);
-		Terrain terrainForet = new Terrain("/Images/d3.png",solForet,meteoForet,placeForet,false, null);
-		Terrain terrainSavane = new Terrain("/Images/montagne2.png", solSavane,meteoSavane,placeSavane,false, null);
-		Terrain terrainVille= new Terrain("/Images/d3.png",solVille,meteoVille,placeVille,false, null);
-		Terrain terrainCircuit = new Terrain("/Images/montagne2.png", solCircuit,meteoCircuit,placeCircuit,false, null);
+		Terrain terrainDesert = new Terrain("/Images/d3.png",solDesert,meteoDesert,placeDesert,false, surclasser);
+		Terrain terrainMontagne = new Terrain("/Images/montagne2.png",  solMontagne,meteoMontagne,placeMontagne,false, surclasser);
+		Terrain terrainForet = new Terrain("/Images/d3.png",solForet,meteoForet,placeForet,false, surclasser);
+		Terrain terrainSavane = new Terrain("/Images/montagne2.png", solSavane,meteoSavane,placeSavane,false, surclasser);
+		Terrain terrainVille= new Terrain("/Images/d3.png",solVille,meteoVille,placeVille,false, surclasser);
+		Terrain terrainCircuit = new Terrain("/Images/montagne2.png", solCircuit,meteoCircuit,placeCircuit,false, surclasser);
 		
 		Terrain terrainCircuitCourse = new Terrain("/Images/montagne2.png", solCircuit,meteoCircuit,placeCircuit,true, surclasser);
 		
@@ -188,6 +188,19 @@ public  class CreationBDD {
 		Piece pneuRoutePluie = new Piece("pneu",4500,route, pluie,null,false,null,"/Images/pneuHiver.jpg");
 		Piece pneuNull = new Piece("pneu",4500,null, null,null,false,null,"/Images/pneuBoue.jpg");
 		
+//		Piece freinSport = new Piece("frein",4500,null, null,null,true,null,"/Images/freinBoue.jpg");
+//		Piece freinClassic = new Piece("frein",4500,null, null,null,false,null,"/Images/freinGlace.jpg");
+//
+//		
+//		Piece moteurSport = new Piece("moteur",4500,null, null,null,true,null,"/Images/moteurBoue.jpg");
+		Piece moteurClassic = new Piece("moteur",4500,null, null,null,false,null,"/Images/moteurClassic.jpg");
+		Piece moteurSable = new Piece("moteur",4500,sable, null,null,false,null,"/Images/moteurSableNeige.jpg");
+		Piece moteurNeige = new Piece("moteur",4500,neige, null,null,false,null,"/Images/moteurSableNeige.jpg");
+//		Piece moteurBoue = new Piece("moteur",4500,boue, null,null,false,null,"/Images/moteurBoue.jpg");
+//		Piece moteurGlace = new Piece("moteur",4500,glace, null,null,false,null,"/Images/moteurGlace.jpg");
+//		Piece moteurTerre = new Piece("moteur",4500,terre, null,null,false,null,"/Images/moteurTerre.jpg");
+//		Piece moteurRouteSec = new Piece("moteur",4500,route, null,null,false,null,"/Images/moteurEte.jpg");
+//		
 	  
 //		Piece chassisBoue = new Piece("chassis",4500,boue, null,null,"/Images/chassisBoue.jpg");
 //		Piece chassisGlace = new Piece("chassis",4500,glace, null,null,"/Images/chassisGlace.jpg");
@@ -197,7 +210,7 @@ public  class CreationBDD {
 //		Piece chassisRouteSec = new Piece("chassis",4500,route, sec,null,"/Images/chassisEte.jpg");
 //		Piece chassisRoutePluie = new Piece("chassis",4500,route, pluie,null,"/Images/chassisHiver.jpg");
 //		
-		//AUVEGARDE PIECE DANS BDD
+		//SAUVEGARDE PIECE PNEU
 		Context.getInstance().getDaoP().save(pneuBoue);
 		Context.getInstance().getDaoP().save(pneuGlace);
 		Context.getInstance().getDaoP().save(pneuSable);
@@ -206,6 +219,17 @@ public  class CreationBDD {
 		Context.getInstance().getDaoP().save(pneuRouteSec);
 		Context.getInstance().getDaoP().save(pneuRoutePluie);
 		Context.getInstance().getDaoP().save(pneuNull);
+		
+		//SAUVEGARDE PIECE MOTEUR
+//		Context.getInstance().getDaoP().save(moteurSport);
+		Context.getInstance().getDaoP().save(moteurClassic);
+		Context.getInstance().getDaoP().save(moteurSable);
+		Context.getInstance().getDaoP().save(moteurNeige);
+//		Context.getInstance().getDaoP().save(moteurBoue);
+//		Context.getInstance().getDaoP().save(pneuRouteSec);
+//		Context.getInstance().getDaoP().save(pneuRoutePluie);
+//		Context.getInstance().getDaoP().save(pneuNull);
+		
 	}
 
 }

@@ -74,8 +74,8 @@ public class ChoixContraintes {
 		ButtonGroup group3 = new ButtonGroup();
 		ButtonGroup group4 = new ButtonGroup();
 		ButtonGroup group5 = new ButtonGroup();
-		
-		
+
+
 
 
 		//POSITION INITIAL DU 1ER TERRAIN AFFICHE
@@ -113,7 +113,7 @@ public class ChoixContraintes {
 			// INCREMENTATION POUR LA MISE EN PLACE DU PROCHAIN TERRAIN
 			xRadioButton+=210;
 			yRadioButton = 55;
-			
+
 
 			//MISE A LA LIGNE SI ON ARRIVE AU BORD DU TERRAIN
 			if ( xRadioButton + 100 > frame.getWidth() ) {
@@ -143,8 +143,8 @@ public class ChoixContraintes {
 
 		for(Meteo m : Context.getInstance().getTerrainSelected().getMeteos()) 
 		{
-          System.out.println(yRadioButton);
-             
+			System.out.println(yRadioButton);
+
 			//CREATION BOUTON RADIO POUR LE TERRAIN
 			JRadioButton rdbtnNewRadioButton = new JRadioButton(m.getMeteo());		
 			rdbtnNewRadioButton.addItemListener(new ItemListener() {    
@@ -188,7 +188,7 @@ public class ChoixContraintes {
 
 
 		}
-		
+
 		//Contraintes NbPlace
 
 
@@ -200,8 +200,8 @@ public class ChoixContraintes {
 
 		for(NbDePlaces nb : Context.getInstance().getTerrainSelected().getNombrePlaces()) 
 		{
-          System.out.println(yRadioButton);
-             
+			System.out.println(yRadioButton);
+
 			//CREATION BOUTON RADIO POUR LE TERRAIN
 			JRadioButton rdbtnNewRadioButton = new JRadioButton(nb.getNombrePlaces());		
 			rdbtnNewRadioButton.addItemListener(new ItemListener() {    
@@ -246,121 +246,121 @@ public class ChoixContraintes {
 
 		}
 
-		
+
 
 		//Contraintes OPTION
 
 
-				xRadioButton = 75;
-				yRadioButton += 75;
-				tmp = yRadioButton;
-				aboveBorder = false;
-				cpt=0;
+		xRadioButton = 75;
+		yRadioButton += 75;
+		tmp = yRadioButton;
+		aboveBorder = false;
+		cpt=0;
 
-				for(Surclasser o : Context.getInstance().getTerrainSelected().getSurclasser()) 
-				{
-		          System.out.println(yRadioButton);
-		             
-					//CREATION BOUTON RADIO POUR LE TERRAIN
-					JRadioButton rdbtnNewRadioButton = new JRadioButton(o.getsurclasser());		
-					rdbtnNewRadioButton.addItemListener(new ItemListener() {    
-						public void itemStateChanged(ItemEvent e) {                 
-							String check =  e.getStateChange()==1?"checked":"unchecked"; 
+		for(Surclasser o : Context.getInstance().getTerrainSelected().getSurclasser()) 
+		{
+			System.out.println(yRadioButton);
 
-							if (check.equals("checked") ) {
-								Context.getInstance().setSurclasserSelected(o);
+			//CREATION BOUTON RADIO POUR LE TERRAIN
+			JRadioButton rdbtnNewRadioButton = new JRadioButton(o.getsurclasser());		
+			rdbtnNewRadioButton.addItemListener(new ItemListener() {    
+				public void itemStateChanged(ItemEvent e) {                 
+					String check =  e.getStateChange()==1?"checked":"unchecked"; 
 
-							}
-						}    
-					});   
+					if (check.equals("checked") ) {
+						Context.getInstance().setSurclasserSelected(o);
 
-
-					rdbtnNewRadioButton.setBackground(new Color(255, 255, 255));
-					rdbtnNewRadioButton.setFont(new Font("Segoe UI", Font.PLAIN, 14));
-					rdbtnNewRadioButton.setBounds(xRadioButton, yRadioButton, 97, 23);
-					frame.getContentPane().add(rdbtnNewRadioButton);
-
-					//MISE DANS LE GROUPE BOUTON RADIO POUR N'AVOIR QU'UN SEUL BOUTON ACTIF A LA FOIS
-					group4.add(rdbtnNewRadioButton);
-
-
-
-
-
-
-					// INCREMENTATION POUR LA MISE EN PLACE DU PROCHAIN TERRAIN
-					xRadioButton+=210;
-					yRadioButton = tmp;
-
-					//MISE A LA LIGNE SI ON ARRIVE AU BORD DU TERRAIN
-					if ( xRadioButton + 100 > frame.getWidth() ) {
-						cpt++;
-						xRadioButton=75;
-						yRadioButton+=50*cpt;
-						aboveBorder = true;
-					}else if (aboveBorder == true && xRadioButton < frame.getWidth() ) {
-						yRadioButton+=50*cpt;
 					}
+				}    
+			});   
 
+
+			rdbtnNewRadioButton.setBackground(new Color(255, 255, 255));
+			rdbtnNewRadioButton.setFont(new Font("Segoe UI", Font.PLAIN, 14));
+			rdbtnNewRadioButton.setBounds(xRadioButton, yRadioButton, 97, 23);
+			frame.getContentPane().add(rdbtnNewRadioButton);
+
+			//MISE DANS LE GROUPE BOUTON RADIO POUR N'AVOIR QU'UN SEUL BOUTON ACTIF A LA FOIS
+			group4.add(rdbtnNewRadioButton);
+
+
+
+
+
+
+			// INCREMENTATION POUR LA MISE EN PLACE DU PROCHAIN TERRAIN
+			xRadioButton+=210;
+			yRadioButton = tmp;
+
+			//MISE A LA LIGNE SI ON ARRIVE AU BORD DU TERRAIN
+			if ( xRadioButton + 100 > frame.getWidth() ) {
+				cpt++;
+				xRadioButton=75;
+				yRadioButton+=50*cpt;
+				aboveBorder = true;
+			}else if (aboveBorder == true && xRadioButton < frame.getWidth() ) {
+				yRadioButton+=50*cpt;
+			}
+
+
+		}
+
+
+
+		//Contrainte COURSE
+
+
+
+		xRadioButton = 75;
+		yRadioButton += 75;
+		tmp = yRadioButton;
+		aboveBorder = false;
+		cpt=0;
+
+
+		//CREATION BOUTON RADIO POUR LE TERRAIN
+		JRadioButton rdbtnNewRadioButton = new JRadioButton("course");		
+		rdbtnNewRadioButton.addItemListener(new ItemListener() {    
+			public void itemStateChanged(ItemEvent e) {                 
+				String check =  e.getStateChange()==1?"checked":"unchecked"; 
+
+				if (check.equals("checked") ) {
+					Context.getInstance().setCourseSelected(true);
 
 				}
-		
-		
-		
-		//Contrainte COURSE
-				
-			
-
-				xRadioButton = 75;
-				yRadioButton += 75;
-				tmp = yRadioButton;
-				aboveBorder = false;
-				cpt=0;
-
-				
-					//CREATION BOUTON RADIO POUR LE TERRAIN
-					JRadioButton rdbtnNewRadioButton = new JRadioButton("course");		
-					rdbtnNewRadioButton.addItemListener(new ItemListener() {    
-						public void itemStateChanged(ItemEvent e) {                 
-							String check =  e.getStateChange()==1?"checked":"unchecked"; 
-
-							if (check.equals("checked") ) {
-								Context.getInstance().setCourseSelected(true);
-
-							}
-						}    
-					});   
+			}    
+		});   
 
 
-					rdbtnNewRadioButton.setBackground(new Color(255, 255, 255));
-					rdbtnNewRadioButton.setFont(new Font("Segoe UI", Font.PLAIN, 14));
-					rdbtnNewRadioButton.setBounds(xRadioButton, yRadioButton, 97, 23);
-					frame.getContentPane().add(rdbtnNewRadioButton);
+		rdbtnNewRadioButton.setBackground(new Color(255, 255, 255));
+		rdbtnNewRadioButton.setFont(new Font("Segoe UI", Font.PLAIN, 14));
+		rdbtnNewRadioButton.setBounds(xRadioButton, yRadioButton, 97, 23);
+		frame.getContentPane().add(rdbtnNewRadioButton);
 
-					//MISE DANS LE GROUPE BOUTON RADIO POUR N'AVOIR QU'UN SEUL BOUTON ACTIF A LA FOIS
-					group5.add(rdbtnNewRadioButton);
+		//MISE DANS LE GROUPE BOUTON RADIO POUR N'AVOIR QU'UN SEUL BOUTON ACTIF A LA FOIS
+		group5.add(rdbtnNewRadioButton);
 
 
 
 
 
 
-				
-				
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		//BOUTON DE RETOUR EN ARRIERE
 		JButton btnBack = new JButton("Back");
@@ -392,11 +392,11 @@ public class ChoixContraintes {
 		lblNewLabel_1.setBounds(0, 0, 1044, 511);
 		frame.getContentPane().add(lblNewLabel_1);
 
-		
+
 	}
 
-	
-	
-	
+
+
+
 
 }
