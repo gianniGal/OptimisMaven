@@ -44,7 +44,7 @@ public class ResultatConfig {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 920,696);
+		frame.setBounds(100, 100, 1500,900);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
