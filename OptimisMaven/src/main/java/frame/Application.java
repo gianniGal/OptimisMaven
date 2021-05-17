@@ -77,6 +77,12 @@ public class Application {
 		
 		//BOUTON EXIT APPLICATION
 		JLabel lblNewLabel_4_2_2 = new JLabel("Exit");
+		lblNewLabel_4_2_2.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				frame.dispose();
+			}
+		});
 		lblNewLabel_4_2_2.setFont(new Font("Segoe UI", Font.PLAIN, 14));
 		lblNewLabel_4_2_2.setBounds(933, 0, 45, 27);
 		frame.getContentPane().add(lblNewLabel_4_2_2);

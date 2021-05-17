@@ -56,7 +56,7 @@ public class Userlogin {
 	private void initialize() {
 		frame = new JFrame();
 		frame.getContentPane().setBackground(Color.WHITE);
-		frame.setBounds(100, 100, 1020, 556);
+		frame.setBounds(100, 100, 1000, 530);
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
@@ -136,7 +136,7 @@ public class Userlogin {
 		
 		lblNewLabel = new JLabel("New label");
 		lblNewLabel.setBackground(Color.WHITE);
-		lblNewLabel.setIcon(new ImageIcon(Userlogin.class.getResource("/Images/wallpaperLOGINholes.jpg")));
+		lblNewLabel.setIcon(new ImageIcon(Userlogin.class.getResource("/Images/wallpaperLOGIN.jpg")));
 		lblNewLabel.setBounds(1, 0, 1004, 517);
 		frame.getContentPane().add(lblNewLabel);
 

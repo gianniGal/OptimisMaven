@@ -8,7 +8,7 @@ import util.Context;
 
 public class SuspensionBDD {
 	
-	public static void donneesuspensionBDD() {
+	public static void donneeSuspensionBDD() {
 		
 		//DECLARATION SOL
 //		Sol boue= new Sol("Boue");

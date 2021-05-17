@@ -8,7 +8,7 @@ import util.Context;
 
 public class PhareBDD {
 	
-	public static void donneephareBDD() {
+	public static void donneePhareBDD() {
 		
 		//DECLARATION SOL
 //		Sol boue= new Sol("Boue");

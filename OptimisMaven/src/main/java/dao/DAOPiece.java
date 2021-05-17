@@ -126,7 +126,7 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 
 
 		if (meteo != null) {
-			System.out.println("METEEOOOOOOO");
+		
 			filtresPieces.put("meteo",meteo.getMeteo());
 			filtersJoin+=" JOIN fetch p.meteo m";
 			filtersWhere+=" and m.meteo=:meteo";
@@ -134,7 +134,7 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 
 
 		if (surclasser!=null) {
-			System.out.println("SURRCLLAAAASSS");
+		
 			filtresPieces.put("surclasser", surclasser.getSurclasser());
 			filtersJoin+=" JOIN fetch p.surclasser su";
 			filtersWhere+=" and su.surclasser=:surclasser";
@@ -142,7 +142,7 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 
 
 		if (course == true) {
-			System.out.println("COUUUURSSEEE");
+			
 			filtresPieces.put("course","true");
 			filtersWhere+=" and p.course=:course";
 
@@ -186,12 +186,6 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 
 
 	}
-
-
-
-
-
-
 
 
 

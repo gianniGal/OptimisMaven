@@ -221,26 +221,16 @@ public class CreationCompte {
 				String mail=mailField.getText();
 
 
+				
 
 				Adresse a = new Adresse(rue, numero, ville, codePostal) ;
 				Client c = new Client(username,password,a,telephone,mail);
 				Context.getInstance().getDaoC().save(c);
 
 				
-				ErrorChampsVide.main(null);
-				//COMMENT GERER LERREUR
-//				ErrorChampsVide.main(null);
-				//					btnNewButton_1 = new JButton("ERREUR champs vide");
-				//					btnNewButton_1.addActionListener(new ActionListener() {
-				//						public void actionPerformed(ActionEvent e) {
-				//							btnNewButton_1.setVisible(false);
-				//						}
-				//					});
-				//					btnNewButton_1.setBounds(97, 384, 89, 23);
-				//					frame.getContentPane().add(btnNewButton_1);
+				
+				ValidationPopUp.main(null);
 
-//			
-			//IF SMTHG EGAL NULL NO ! 
 
 
 		}

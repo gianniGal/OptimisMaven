@@ -18,33 +18,6 @@ public class optimiz {
 
 
 
-//	public static String saisieString(String msg) 
-//	{
-//		Scanner sc = new Scanner(System.in);
-//		System.out.println(msg);
-//		return sc.nextLine();
-//	}
-//
-//	public static int saisieInt(String msg) 
-//	{
-//		Scanner sc = new Scanner(System.in);
-//		System.out.println(msg);
-//		return sc.nextInt();
-//	}
-//
-//	public static double saisieDouble(String msg) 
-//	{
-//		Scanner sc = new Scanner(System.in);
-//		System.out.println(msg);
-//		return sc.nextDouble();
-//	}
-//
-//	public static boolean saisieBoolean(String msg) 
-//	{
-//		Scanner sc = new Scanner(System.in);
-//		System.out.println(msg);
-//		return sc.nextBoolean();
-//	}
 
 
 	public static void main(String[] args) {
