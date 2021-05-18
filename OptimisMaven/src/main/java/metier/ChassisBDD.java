@@ -102,7 +102,7 @@ public class ChassisBDD {
 		Piece chassisterre51 = new Piece("chassis",90000,terre, brouillard,tourisme,false,tuning,"/Images/ChassisTouFalseTu.jpg"); 
 		
 		Piece chassisterre52 = new Piece("chassis",35000,terre, brouillard,tourisme,true,ecoPlus,"/Images/ChassisTouFalseEp.png");
-		Piece chassisterre53 = new Piece("chassis",95000,terre, brouillard,tourisme,true,luxe,"/Images/ChassisTouTrueLu.jpg\"");
+		Piece chassisterre53 = new Piece("chassis",95000,terre, brouillard,tourisme,true,luxe,"/Images/ChassisTouTrueLu.jpg");
 		Piece chassisterre54 = new Piece("chassis",75500,terre, brouillard,tourisme,true,tuning,"/Images/ChassisTouTrueTu.jpg"); 
 		
 		Context.getInstance().getDaoP().save(chassisterre1);
@@ -233,7 +233,7 @@ public class ChassisBDD {
 		Piece chassissable51 = new Piece("chassis",90000,sable, brouillard,tourisme,false,tuning,"/Images/ChassisTouFalseTu.jpg"); 
 		
 		Piece chassissable52 = new Piece("chassis",35000,sable, brouillard,tourisme,true,ecoPlus,"/Images/ChassisTouFalseEp.png");
-		Piece chassissable53 = new Piece("chassis",95000,sable, brouillard,tourisme,true,luxe,"/Images/ChassisTouTrueLu.jpg\"");
+		Piece chassissable53 = new Piece("chassis",95000,sable, brouillard,tourisme,true,luxe,"/Images/ChassisTouTrueLu.jpg");
 		Piece chassissable54 = new Piece("chassis",75500,sable, brouillard,tourisme,true,tuning,"/Images/ChassisTouTrueTu.jpg"); 
 		
 		
@@ -362,7 +362,7 @@ public class ChassisBDD {
 		Piece chassisglace51 = new Piece("chassis",90000,glace, brouillard,tourisme,false,tuning,"/Images/ChassisTouFalseTu.jpg"); 
 		
 		Piece chassisglace52 = new Piece("chassis",35000,glace, brouillard,tourisme,true,ecoPlus,"/Images/ChassisTouFalseEp.png");
-		Piece chassisglace53 = new Piece("chassis",95000,glace, brouillard,tourisme,true,luxe,"/Images/ChassisTouTrueLu.jpg\"");
+		Piece chassisglace53 = new Piece("chassis",95000,glace, brouillard,tourisme,true,luxe,"/Images/ChassisTouTrueLu.jpg");
 		Piece chassisglace54 = new Piece("chassis",75500,glace, brouillard,tourisme,true,tuning,"/Images/ChassisTouTrueTu.jpg"); 
 		
 		Context.getInstance().getDaoP().save(chassisglace1);

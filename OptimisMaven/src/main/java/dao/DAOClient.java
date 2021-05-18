@@ -1,6 +1,8 @@
 package dao;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
@@ -9,6 +11,9 @@ import metier.Client;
 import metier.Compte;
 import metier.Piece;
 import metier.configClient;
+import metier.FiltresTerrain.Meteo;
+import metier.FiltresTerrain.Sol;
+import metier.FiltresTerrain.Surclasser;
 import util.Context;
 
 
@@ -98,6 +103,16 @@ public class DAOClient implements IDAO<Client, Integer>
 
 	        em.close();
 	    }
+	 
+		public List<Piece> findConfig(int i) {
+			EntityManager em = Context.getInstance().getEmf().createEntityManager();
+
+			Query myQuery = em.createQuery("SELECT c from configClient c where c.idConfig=:id",Client.class).setParameter("id", i);
+			List<Piece> config=myQuery.getResultList();
+			em.close();
+			return config;
+			
+		}
 
 
 }

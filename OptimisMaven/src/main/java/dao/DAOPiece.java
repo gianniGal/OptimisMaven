@@ -107,7 +107,7 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 
 	}
 
-	public Piece findTypePiece(String typePiece, Sol sol, Meteo meteo, Surclasser surclasser, boolean course ) {
+	public Piece findTypePiece(String typePiece, Sol sol, Meteo meteo,NbDePlaces nombrePlaces ,Surclasser surclasser, boolean course ) {
 		EntityManager em = Context.getInstance().getEmf().createEntityManager();
 		List<Piece> pieces=null;
 		Map<String,String> filtresPieces = new HashMap();
@@ -126,6 +126,13 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 			filtresPieces.put("meteo",meteo.getMeteo());
 			filtersJoin+=" JOIN fetch p.meteo m";
 			filtersWhere+=" and m.meteo=:meteo";
+		}
+		
+		if (nombrePlaces!=null) {
+			
+			filtresPieces.put("nombrePlaces", nombrePlaces.getNombrePlaces());
+			filtersJoin+=" JOIN fetch p.nombrePlaces nbp";
+			filtersWhere+=" and nbp.nombrePlaces=:nombrePlaces";
 		}
 
 

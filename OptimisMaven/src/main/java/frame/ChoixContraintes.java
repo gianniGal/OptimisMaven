@@ -154,6 +154,7 @@ public class ChoixContraintes {
 
 					if (check.equals("checked") ) {
 						Context.getInstance().setMeteoSelected(m);
+						System.out.println(m);
 
 					}
 				}    
