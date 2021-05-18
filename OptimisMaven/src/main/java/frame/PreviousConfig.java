@@ -64,11 +64,21 @@ public class PreviousConfig {
 		frame.getContentPane().add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("2\u00E8me configuration");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ResultatConfigPrevious.main(null);
+			}
+		});
 		btnNewButton_1.setFont(new Font("Segoe UI", Font.PLAIN, 20));
 		btnNewButton_1.setBounds(416, 165, 214, 171);
 		frame.getContentPane().add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("3\u00E8me configuration");
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ResultatConfigPrevious.main(null);
+			}
+		});
 		btnNewButton_2.setFont(new Font("Segoe UI", Font.PLAIN, 20));
 		btnNewButton_2.setBounds(723, 165, 224, 171);
 		frame.getContentPane().add(btnNewButton_2);
