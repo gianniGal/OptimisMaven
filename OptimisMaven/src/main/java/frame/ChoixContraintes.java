@@ -11,6 +11,7 @@ import java.awt.event.ItemListener;
 import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JRadioButton;
@@ -318,9 +319,28 @@ public class ChoixContraintes {
 		cpt=0;
 
 
-		//CREATION BOUTON RADIO POUR LE TERRAIN
-		JRadioButton rdbtnNewRadioButton = new JRadioButton("course");		
-		rdbtnNewRadioButton.addItemListener(new ItemListener() {    
+//		//CREATION BOUTON RADIO POUR LE TERRAIN
+//		JRadioButton rdbtnNewRadioButton = new JRadioButton("course");		
+//		rdbtnNewRadioButton.addItemListener(new ItemListener() {    
+//			public void itemStateChanged(ItemEvent e) {                 
+//				String check =  e.getStateChange()==1?"checked":"unchecked"; 
+//
+//				if (check.equals("checked") ) {
+//					Context.getInstance().setCourseSelected(true);
+//
+//				}
+//			}    
+//		});   
+//
+//
+//		rdbtnNewRadioButton.setBackground(new Color(255, 255, 255));
+//		rdbtnNewRadioButton.setFont(new Font("Segoe UI", Font.PLAIN, 14));
+//		rdbtnNewRadioButton.setBounds(xRadioButton, yRadioButton, 97, 23);
+//		frame.getContentPane().add(rdbtnNewRadioButton);
+
+
+		JCheckBox chckbxNewCheckBox = new JCheckBox("course");
+		chckbxNewCheckBox.addItemListener(new ItemListener() {    
 			public void itemStateChanged(ItemEvent e) {                 
 				String check =  e.getStateChange()==1?"checked":"unchecked"; 
 
@@ -330,18 +350,10 @@ public class ChoixContraintes {
 				}
 			}    
 		});   
-
-
-		rdbtnNewRadioButton.setBackground(new Color(255, 255, 255));
-		rdbtnNewRadioButton.setFont(new Font("Segoe UI", Font.PLAIN, 14));
-		rdbtnNewRadioButton.setBounds(xRadioButton, yRadioButton, 97, 23);
-		frame.getContentPane().add(rdbtnNewRadioButton);
-
-		//MISE DANS LE GROUPE BOUTON RADIO POUR N'AVOIR QU'UN SEUL BOUTON ACTIF A LA FOIS
-		group5.add(rdbtnNewRadioButton);
-
-
-
+		
+		chckbxNewCheckBox.setFont(new Font("Segoe UI", Font.PLAIN, 14));
+		chckbxNewCheckBox.setBounds(62, 97, 97, 23);
+		frame.getContentPane().add(chckbxNewCheckBox);
 
 
 

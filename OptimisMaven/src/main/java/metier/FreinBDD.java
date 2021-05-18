@@ -184,7 +184,7 @@ public class FreinBDD {
 		Piece freinsable13 = new Piece("frein",4500,sable, pluie,tourisme,false,ecoPlus,"/Images/freinClassic.jpg");
 		Piece freinsable14 = new Piece("frein",4500,sable, pluie,tourisme,false,luxe,"/Images/freinLuxe.jpg");
 		Piece freinsable15 = new Piece("frein",4500,sable, pluie,tourisme,false,tuning,"/Images/freinSport.jpg"); 
-		
+
 		Piece freinsable16 = new Piece("frein",4500,sable, pluie,tourisme,true,ecoPlus,"/Images/freinClassic.jpg");
 		Piece freinsable17 = new Piece("frein",4500,sable, pluie,tourisme,true,luxe,"/Images/freinLuxe.jpg");
 		Piece freinsable18 = new Piece("frein",4500,sable, pluie,tourisme,true,tuning,"/Images/freinSport.jpg"); 
