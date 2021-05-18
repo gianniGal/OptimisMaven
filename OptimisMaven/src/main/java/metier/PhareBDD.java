@@ -294,77 +294,77 @@ public class PhareBDD {
 		Context.getInstance().getDaoP().save(pharesable54);
 		
 		///////////////////////////////////////////////////////////////////////////////////////////////////////
-		Piece phareglace1 = new Piece("phare",200,glace, pluie,duo,false,ecoPlus,"/Images/phareEco,jpg");
-		Piece phareglace2 = new Piece("phare",1200,glace, pluie,duo,false,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace3 = new Piece("phare",400,glace, pluie,duo,false,tuning,"/Images/phareCourseRoute,jpg");
+		Piece phareglace1 = new Piece("phare",200,glace, pluie,duo,false,ecoPlus,"/Images/phareEco.jpg");
+		Piece phareglace2 = new Piece("phare",1200,glace, pluie,duo,false,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace3 = new Piece("phare",400,glace, pluie,duo,false,tuning,"/Images/phareCourseRoute.jpg");
 		
-		Piece phareglace4 = new Piece("phare",200,glace, pluie,duo,true,ecoPlus,"/Images/phareEco,jpg");
-		Piece phareglace5 = new Piece("phare",1200,glace, pluie,duo,true,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace6 = new Piece("phare",400,glace, pluie,duo,true,tuning,"/Images/phareCourseRoute,jpg");
+		Piece phareglace4 = new Piece("phare",200,glace, pluie,duo,true,ecoPlus,"/Images/phareEco.jpg");
+		Piece phareglace5 = new Piece("phare",1200,glace, pluie,duo,true,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace6 = new Piece("phare",400,glace, pluie,duo,true,tuning,"/Images/phareCourseRoute.jpg");
 		
-		Piece phareglace7 = new Piece("phare",200,glace, pluie,famille,false,ecoPlus,"/Images/phareEco,jpg");
-		Piece phareglace8 = new Piece("phare",1200,glace, pluie,famille,false,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace9 = new Piece("phare",400,glace, pluie,famille,false,tuning,"/Images/phareCourseRoute,jpg"); 
+		Piece phareglace7 = new Piece("phare",200,glace, pluie,famille,false,ecoPlus,"/Images/phareEco.jpg");
+		Piece phareglace8 = new Piece("phare",1200,glace, pluie,famille,false,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace9 = new Piece("phare",400,glace, pluie,famille,false,tuning,"/Images/phareCourseRoute.jpg"); 
 		
-		Piece phareglace10 = new Piece("phare",200,glace, pluie,famille,true,ecoPlus,"/Images/phareEco,jpg");
-		Piece phareglace11 = new Piece("phare",1200,glace, pluie,famille,true,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace12 = new Piece("phare",400,glace, pluie,famille,true,tuning,"/Images/phareCourseRoute,jpg"); 
+		Piece phareglace10 = new Piece("phare",200,glace, pluie,famille,true,ecoPlus,"/Images/phareEco.jpg");
+		Piece phareglace11 = new Piece("phare",1200,glace, pluie,famille,true,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace12 = new Piece("phare",400,glace, pluie,famille,true,tuning,"/Images/phareCourseRoute.jpg"); 
 		
-		Piece phareglace13 = new Piece("phare",200,glace, pluie,tourisme,false,ecoPlus,"/Images/phareEco,jpg");
-		Piece phareglace14 = new Piece("phare",1200,glace, pluie,tourisme,false,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace15 = new Piece("phare",400,glace, pluie,tourisme,false,tuning,"/Images/phareCourseRoute,jpg"); 
+		Piece phareglace13 = new Piece("phare",200,glace, pluie,tourisme,false,ecoPlus,"/Images/phareEco.jpg");
+		Piece phareglace14 = new Piece("phare",1200,glace, pluie,tourisme,false,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace15 = new Piece("phare",400,glace, pluie,tourisme,false,tuning,"/Images/phareCourseRoute.jpg"); 
 		
-		Piece phareglace16 = new Piece("phare",200,glace, pluie,tourisme,true,ecoPlus,"/Images/phareEco,jpg");
-		Piece phareglace17 = new Piece("phare",1200,glace, pluie,tourisme,true,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace18 = new Piece("phare",400,glace, pluie,tourisme,true,tuning,"/Images/phareCourseRoute,jpg"); 
+		Piece phareglace16 = new Piece("phare",200,glace, pluie,tourisme,true,ecoPlus,"/Images/phareEco.jpg");
+		Piece phareglace17 = new Piece("phare",1200,glace, pluie,tourisme,true,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace18 = new Piece("phare",400,glace, pluie,tourisme,true,tuning,"/Images/phareCourseRoute.jpg"); 
 		
-		Piece phareglace19 = new Piece("phare",200,glace, sec,duo,false,ecoPlus,"/Images/phareEco,jpg");
-		Piece phareglace20 = new Piece("phare",1200,glace, sec,duo,false,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace21 = new Piece("phare",400,glace, sec,duo,false,tuning,"/Images/phareCourseRoute,jpg");
+		Piece phareglace19 = new Piece("phare",200,glace, sec,duo,false,ecoPlus,"/Images/phareEco.jpg");
+		Piece phareglace20 = new Piece("phare",1200,glace, sec,duo,false,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace21 = new Piece("phare",400,glace, sec,duo,false,tuning,"/Images/phareCourseRoute.jpg");
 		
-		Piece phareglace22 = new Piece("phare",200,glace, sec,duo,true,ecoPlus,"/Images/phareEco,jpg");
-		Piece phareglace23 = new Piece("phare",1200,glace, sec,duo,true,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace24 = new Piece("phare",400,glace, sec,duo,true,tuning,"/Images/phareCourseRoute,jpg");
+		Piece phareglace22 = new Piece("phare",200,glace, sec,duo,true,ecoPlus,"/Images/phareEco.jpg");
+		Piece phareglace23 = new Piece("phare",1200,glace, sec,duo,true,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace24 = new Piece("phare",400,glace, sec,duo,true,tuning,"/Images/phareCourseRoute.jpg");
 		
-		Piece phareglace25 = new Piece("phare",200,glace, sec,famille,false,ecoPlus,"/Images/phareEco,jpg");
-		Piece phareglace26 = new Piece("phare",1200,glace, sec,famille,false,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace27 = new Piece("phare",400,glace, sec,famille,false,tuning,"/Images/phareCourseRoute,jpg"); 
+		Piece phareglace25 = new Piece("phare",200,glace, sec,famille,false,ecoPlus,"/Images/phareEco.jpg");
+		Piece phareglace26 = new Piece("phare",1200,glace, sec,famille,false,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace27 = new Piece("phare",400,glace, sec,famille,false,tuning,"/Images/phareCourseRoute.jpg"); 
 		
-		Piece phareglace28 = new Piece("phare",200,glace, sec,famille,true,ecoPlus,"/Images/phareEco,jpg");
-		Piece phareglace29 = new Piece("phare",1200,glace, sec,famille,true,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace30 = new Piece("phare",400,glace, sec,famille,true,tuning,"/Images/phareCourseRoute,jpg"); 
+		Piece phareglace28 = new Piece("phare",200,glace, sec,famille,true,ecoPlus,"/Images/phareEco.jpg");
+		Piece phareglace29 = new Piece("phare",1200,glace, sec,famille,true,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace30 = new Piece("phare",400,glace, sec,famille,true,tuning,"/Images/phareCourseRoute.jpg"); 
 		
-		Piece phareglace31 = new Piece("phare",200,glace, sec,tourisme,false,ecoPlus,"/Images/phareEco,jpg");
-		Piece phareglace32 = new Piece("phare",1200,glace, sec,tourisme,false,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace33 = new Piece("phare",400,glace, sec,tourisme,false,tuning,"/Images/phareCourseRoute,jpg"); 
+		Piece phareglace31 = new Piece("phare",200,glace, sec,tourisme,false,ecoPlus,"/Images/phareEco.jpg");
+		Piece phareglace32 = new Piece("phare",1200,glace, sec,tourisme,false,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace33 = new Piece("phare",400,glace, sec,tourisme,false,tuning,"/Images/phareCourseRoute.jpg"); 
 		
-		Piece phareglace34 = new Piece("phare",200,glace, sec,tourisme,true,ecoPlus,"/Images/phareEco,jpg");
-		Piece phareglace35 = new Piece("phare",1200,glace, sec,tourisme,true,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace36 = new Piece("phare",400,glace, sec,tourisme,true,tuning,"/Images/phareCourseRoute,jpg"); 
+		Piece phareglace34 = new Piece("phare",200,glace, sec,tourisme,true,ecoPlus,"/Images/phareEco.jpg");
+		Piece phareglace35 = new Piece("phare",1200,glace, sec,tourisme,true,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace36 = new Piece("phare",400,glace, sec,tourisme,true,tuning,"/Images/phareCourseRoute.jpg"); 
 		
-		Piece phareglace37 = new Piece("phare",200,glace, brouillard,duo,false,ecoPlus,"/Images/phareTune,jpg");
-		Piece phareglace38 = new Piece("phare",1200,glace, brouillard,duo,false,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace39 = new Piece("phare",400,glace, brouillard,duo,false,tuning,"/Images/phareCourseRoute,jpg");
+		Piece phareglace37 = new Piece("phare",200,glace, brouillard,duo,false,ecoPlus,"/Images/phareTune.jpg");
+		Piece phareglace38 = new Piece("phare",1200,glace, brouillard,duo,false,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace39 = new Piece("phare",400,glace, brouillard,duo,false,tuning,"/Images/phareCourseRoute.jpg");
 		
-		Piece phareglace40 = new Piece("phare",200,glace, brouillard,duo,true,ecoPlus,"/Images/phareTune,jpg");
-		Piece phareglace41 = new Piece("phare",1200,glace, brouillard,duo,true,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace42 = new Piece("phare",400,glace, brouillard,duo,true,tuning,"/Images/phareCourseRoute,jpg");
+		Piece phareglace40 = new Piece("phare",200,glace, brouillard,duo,true,ecoPlus,"/Images/phareTune.jpg");
+		Piece phareglace41 = new Piece("phare",1200,glace, brouillard,duo,true,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace42 = new Piece("phare",400,glace, brouillard,duo,true,tuning,"/Images/phareCourseRoute.jpg");
 		
-		Piece phareglace43 = new Piece("phare",200,glace, brouillard,famille,false,ecoPlus,"/Images/phareTune,jpg");
-		Piece phareglace44 = new Piece("phare",1200,glace, brouillard,famille,false,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace45 = new Piece("phare",400,glace, brouillard,famille,false,tuning,"/Images/phareCourseRoute,jpg"); 
+		Piece phareglace43 = new Piece("phare",200,glace, brouillard,famille,false,ecoPlus,"/Images/phareTune.jpg");
+		Piece phareglace44 = new Piece("phare",1200,glace, brouillard,famille,false,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace45 = new Piece("phare",400,glace, brouillard,famille,false,tuning,"/Images/phareCourseRoute.jpg"); 
 		
-		Piece phareglace46 = new Piece("phare",200,glace, brouillard,famille,true,ecoPlus,"/Images/phareTune,jpg");
-		Piece phareglace47 = new Piece("phare",1200,glace, brouillard,famille,true,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace48 = new Piece("phare",400,glace, brouillard,famille,true,tuning,"/Images/phareCourseRoute,jpg"); 
+		Piece phareglace46 = new Piece("phare",200,glace, brouillard,famille,true,ecoPlus,"/Images/phareTune.jpg");
+		Piece phareglace47 = new Piece("phare",1200,glace, brouillard,famille,true,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace48 = new Piece("phare",400,glace, brouillard,famille,true,tuning,"/Images/phareCourseRoute.jpg"); 
 		
-		Piece phareglace49 = new Piece("phare",200,glace, brouillard,tourisme,false,ecoPlus,"/Images/phareTune,jpg");
-		Piece phareglace200 = new Piece("phare",1200,glace, brouillard,tourisme,false,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace51 = new Piece("phare",400,glace, brouillard,tourisme,false,tuning,"/Images/phareCourseRoute,jpg"); 
+		Piece phareglace49 = new Piece("phare",200,glace, brouillard,tourisme,false,ecoPlus,"/Images/phareTune.jpg");
+		Piece phareglace200 = new Piece("phare",1200,glace, brouillard,tourisme,false,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace51 = new Piece("phare",400,glace, brouillard,tourisme,false,tuning,"/Images/phareCourseRoute.jpg"); 
 		
-		Piece phareglace52 = new Piece("phare",200,glace, brouillard,tourisme,true,ecoPlus,"/Images/phareTune,jpg");
-		Piece phareglace53 = new Piece("phare",1200,glace, brouillard,tourisme,true,luxe,"/Images/phareCourseRoute,jpg");
-		Piece phareglace54 = new Piece("phare",400,glace, brouillard,tourisme,true,tuning,"/Images/phareCourseRoute,jpg"); 
+		Piece phareglace52 = new Piece("phare",200,glace, brouillard,tourisme,true,ecoPlus,"/Images/phareTune.jpg");
+		Piece phareglace53 = new Piece("phare",1200,glace, brouillard,tourisme,true,luxe,"/Images/phareCourseRoute.jpg");
+		Piece phareglace54 = new Piece("phare",400,glace, brouillard,tourisme,true,tuning,"/Images/phareCourseRoute.jpg"); 
 		
 		Context.getInstance().getDaoP().save(phareglace1);
 		Context.getInstance().getDaoP().save(phareglace2);
@@ -491,7 +491,7 @@ public class PhareBDD {
 		Piece pharebitume200 = new Piece("phare",1200,bitume, brouillard,tourisme,false,luxe,"/Images/phareTune.jpg");
 		Piece pharebitume51 = new Piece("phare",400,bitume, brouillard,tourisme,false,tuning,"/Images/phareCourseRoute.jpg"); 
 		
-		Piece pharebitume52 = new Piece("phare",200,bitume, brouillard,tourisme,true,ecoPlus,"/Images/phareTune,jpg");
+		Piece pharebitume52 = new Piece("phare",200,bitume, brouillard,tourisme,true,ecoPlus,"/Images/phareTune.jpg");
 		Piece pharebitume53 = new Piece("phare",1200,bitume, brouillard,tourisme,true,luxe,"/Images/phareTune.jpg");
 		Piece pharebitume54 = new Piece("phare",400,bitume, brouillard,tourisme,true,tuning,"/Images/phareCourseRoute.jpg"); 
 		

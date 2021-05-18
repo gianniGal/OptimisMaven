@@ -72,7 +72,7 @@ public class CreationCompte {
 
 
 		int x= 270;
-		int y=110;
+		int y=107;
 
 		//USERNAME
 		usernameField = new JTextField();
@@ -230,22 +230,18 @@ public class CreationCompte {
 				
 				
 				ValidationPopUp.main(null);
-
-
-
 		}
 	});
 		lblNewLabel_2.setForeground(Color.BLACK);
-		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_2.setBackground(new Color(224, 255, 255));
-		lblNewLabel_2.setBounds(x-25, y+40, 77, 20);
+		lblNewLabel_2.setBounds(x, y+30, 77, 20);
 		frame.getContentPane().add(lblNewLabel_2);
 
 
 		//BOUTON RETOUR ACCUEIL
 		JLabel lblNewLabel_1 = 
 				new JLabel("Back");
-		lblNewLabel_1.setFont(new Font("Segoe UI", Font.PLAIN, 12));
+		lblNewLabel_1.setFont(new Font("Segoe UI", Font.PLAIN, 14));
 		lblNewLabel_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
