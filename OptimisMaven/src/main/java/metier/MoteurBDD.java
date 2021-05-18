@@ -34,76 +34,76 @@ public class MoteurBDD {
 		Surclasser tuning = new Surclasser("tuning");
 		
 		Piece moteurterre1 = new Piece("moteur",4500,terre, pluie,duo,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre2 = new Piece("moteur",4500,terre, pluie,duo,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre3 = new Piece("moteur",4500,terre, pluie,duo,false,tuning,"/Images/moteurTT.jpg");
+		Piece moteurterre2 = new Piece("moteur",14500,terre, pluie,duo,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre3 = new Piece("moteur",24500,terre, pluie,duo,false,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurterre4 = new Piece("moteur",4500,terre, pluie,duo,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre5 = new Piece("moteur",4500,terre, pluie,duo,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre6 = new Piece("moteur",4500,terre, pluie,duo,true,tuning,"/Images/moteurTT.jpg");
+		Piece moteurterre5 = new Piece("moteur",14500,terre, pluie,duo,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre6 = new Piece("moteur",24500,terre, pluie,duo,true,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurterre7 = new Piece("moteur",4500,terre, pluie,famille,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre8 = new Piece("moteur",4500,terre, pluie,famille,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre9 = new Piece("moteur",4500,terre, pluie,famille,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurterre8 = new Piece("moteur",14500,terre, pluie,famille,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre9 = new Piece("moteur",24500,terre, pluie,famille,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurterre10 = new Piece("moteur",4500,terre, pluie,famille,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre11 = new Piece("moteur",4500,terre, pluie,famille,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre12 = new Piece("moteur",4500,terre, pluie,famille,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurterre11 = new Piece("moteur",14500,terre, pluie,famille,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre12 = new Piece("moteur",24500,terre, pluie,famille,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurterre13 = new Piece("moteur",4500,terre, pluie,tourisme,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre14 = new Piece("moteur",4500,terre, pluie,tourisme,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre15 = new Piece("moteur",4500,terre, pluie,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurterre14 = new Piece("moteur",14500,terre, pluie,tourisme,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre15 = new Piece("moteur",24500,terre, pluie,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurterre16 = new Piece("moteur",4500,terre, pluie,tourisme,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre17 = new Piece("moteur",4500,terre, pluie,tourisme,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre18 = new Piece("moteur",4500,terre, pluie,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
-		
+		Piece moteurterre17 = new Piece("moteur",14500,terre, pluie,tourisme,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre18 = new Piece("moteur",24500,terre, pluie,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////
 		Piece moteurterre19 = new Piece("moteur",4500,terre, sec,duo,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre20 = new Piece("moteur",4500,terre, sec,duo,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre21 = new Piece("moteur",4500,terre, sec,duo,false,tuning,"/Images/moteurTT.jpg");
+		Piece moteurterre20 = new Piece("moteur",14500,terre, sec,duo,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre21 = new Piece("moteur",24500,terre, sec,duo,false,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurterre22 = new Piece("moteur",4500,terre, sec,duo,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre23 = new Piece("moteur",4500,terre, sec,duo,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre24 = new Piece("moteur",4500,terre, sec,duo,true,tuning,"/Images/moteurTT.jpg");
+		Piece moteurterre23 = new Piece("moteur",14500,terre, sec,duo,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre24 = new Piece("moteur",24500,terre, sec,duo,true,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurterre25 = new Piece("moteur",4500,terre, sec,famille,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre26 = new Piece("moteur",4500,terre, sec,famille,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre27 = new Piece("moteur",4500,terre, sec,famille,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurterre26 = new Piece("moteur",14500,terre, sec,famille,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre27 = new Piece("moteur",24500,terre, sec,famille,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurterre28 = new Piece("moteur",4500,terre, sec,famille,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre29 = new Piece("moteur",4500,terre, sec,famille,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre30 = new Piece("moteur",4500,terre, sec,famille,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurterre29 = new Piece("moteur",14500,terre, sec,famille,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre30 = new Piece("moteur",24500,terre, sec,famille,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurterre31 = new Piece("moteur",4500,terre, sec,tourisme,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre32 = new Piece("moteur",4500,terre, sec,tourisme,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre33 = new Piece("moteur",4500,terre, sec,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurterre32 = new Piece("moteur",14500,terre, sec,tourisme,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre33 = new Piece("moteur",24500,terre, sec,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurterre34 = new Piece("moteur",4500,terre, sec,tourisme,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre35 = new Piece("moteur",4500,terre, sec,tourisme,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre36 = new Piece("moteur",4500,terre, sec,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
-		
+		Piece moteurterre35 = new Piece("moteur",14500,terre, sec,tourisme,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre36 = new Piece("moteur",24500,terre, sec,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
+//		////////////////////////////////////////////////////////////////////////////////////////////////////////
 		Piece moteurterre37 = new Piece("moteur",4500,terre, brouillard,duo,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre38 = new Piece("moteur",4500,terre, brouillard,duo,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre39 = new Piece("moteur",4500,terre, brouillard,duo,false,tuning,"/Images/moteurTT.jpg");
+		Piece moteurterre38 = new Piece("moteur",14500,terre, brouillard,duo,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre39 = new Piece("moteur",24500,terre, brouillard,duo,false,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurterre40 = new Piece("moteur",4500,terre, brouillard,duo,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre41 = new Piece("moteur",4500,terre, brouillard,duo,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre42 = new Piece("moteur",4500,terre, brouillard,duo,true,tuning,"/Images/moteurTT.jpg");
+		Piece moteurterre41 = new Piece("moteur",14500,terre, brouillard,duo,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre42 = new Piece("moteur",24500,terre, brouillard,duo,true,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurterre43 = new Piece("moteur",4500,terre, brouillard,famille,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre44 = new Piece("moteur",4500,terre, brouillard,famille,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre45 = new Piece("moteur",4500,terre, brouillard,famille,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurterre44 = new Piece("moteur",14500,terre, brouillard,famille,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre45 = new Piece("moteur",24500,terre, brouillard,famille,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurterre46 = new Piece("moteur",4500,terre, brouillard,famille,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre47 = new Piece("moteur",4500,terre, brouillard,famille,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre48 = new Piece("moteur",4500,terre, brouillard,famille,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurterre47 = new Piece("moteur",14500,terre, brouillard,famille,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre48 = new Piece("moteur",24500,terre, brouillard,famille,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurterre49 = new Piece("moteur",4500,terre, brouillard,tourisme,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre50 = new Piece("moteur",4500,terre, brouillard,tourisme,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre51 = new Piece("moteur",4500,terre, brouillard,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurterre50 = new Piece("moteur",14500,terre, brouillard,tourisme,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre51 = new Piece("moteur",24500,terre, brouillard,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurterre52 = new Piece("moteur",4500,terre, brouillard,tourisme,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteurterre53 = new Piece("moteur",4500,terre, brouillard,tourisme,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurterre54 = new Piece("moteur",4500,terre, brouillard,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurterre53 = new Piece("moteur",14500,terre, brouillard,tourisme,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurterre54 = new Piece("moteur",24500,terre, brouillard,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Context.getInstance().getDaoP().save(moteurterre1);
 		Context.getInstance().getDaoP().save(moteurterre2);
@@ -164,77 +164,77 @@ public class MoteurBDD {
 		
 		
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
-		Piece moteursable1 = new Piece("moteur",250,sable, pluie,duo,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable2 = new Piece("moteur",1000,sable, pluie,duo,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable3 = new Piece("moteur",500,sable, pluie,duo,false,tuning,"/Images/moteurTT.jpg");
+		Piece moteursable1 = new Piece("moteur",4500,sable, pluie,duo,false,ecoPlus,"/Images/moteurClassic.jpg");
+		Piece moteursable2 = new Piece("moteur",14500,sable, pluie,duo,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable3 = new Piece("moteur",24500,sable, pluie,duo,false,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteursable4 = new Piece("moteur",4500,sable, pluie,duo,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable5 = new Piece("moteur",4500,sable, pluie,duo,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable6 = new Piece("moteur",4500,sable, pluie,duo,true,tuning,"/Images/moteurTT.jpg");
+		Piece moteursable5 = new Piece("moteur",14500,sable, pluie,duo,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable6 = new Piece("moteur",24500,sable, pluie,duo,true,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteursable7 = new Piece("moteur",4500,sable, pluie,famille,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable8 = new Piece("moteur",4500,sable, pluie,famille,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable9 = new Piece("moteur",4500,sable, pluie,famille,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteursable8 = new Piece("moteur",14500,sable, pluie,famille,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable9 = new Piece("moteur",24500,sable, pluie,famille,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteursable10 = new Piece("moteur",4500,sable, pluie,famille,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable11 = new Piece("moteur",4500,sable, pluie,famille,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable12 = new Piece("moteur",4500,sable, pluie,famille,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteursable11 = new Piece("moteur",14500,sable, pluie,famille,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable12 = new Piece("moteur",24500,sable, pluie,famille,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteursable13 = new Piece("moteur",4500,sable, pluie,tourisme,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable14 = new Piece("moteur",4500,sable, pluie,tourisme,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable15 = new Piece("moteur",4500,sable, pluie,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteursable14 = new Piece("moteur",14500,sable, pluie,tourisme,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable15 = new Piece("moteur",24500,sable, pluie,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteursable16 = new Piece("moteur",4500,sable, pluie,tourisme,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable17 = new Piece("moteur",4500,sable, pluie,tourisme,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable18 = new Piece("moteur",4500,sable, pluie,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteursable17 = new Piece("moteur",14500,sable, pluie,tourisme,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable18 = new Piece("moteur",24500,sable, pluie,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteursable19 = new Piece("moteur",4500,sable, sec,duo,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable20 = new Piece("moteur",4500,sable, sec,duo,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable21 = new Piece("moteur",4500,sable, sec,duo,false,tuning,"/Images/moteurTT.jpg");
+		Piece moteursable20 = new Piece("moteur",14500,sable, sec,duo,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable21 = new Piece("moteur",24500,sable, sec,duo,false,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteursable22 = new Piece("moteur",4500,sable, sec,duo,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable23 = new Piece("moteur",4500,sable, sec,duo,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable24 = new Piece("moteur",4500,sable, sec,duo,true,tuning,"/Images/moteurTT.jpg");
+		Piece moteursable23 = new Piece("moteur",14500,sable, sec,duo,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable24 = new Piece("moteur",24500,sable, sec,duo,true,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteursable25 = new Piece("moteur",4500,sable, sec,famille,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable26 = new Piece("moteur",4500,sable, sec,famille,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable27 = new Piece("moteur",4500,sable, sec,famille,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteursable26 = new Piece("moteur",14500,sable, sec,famille,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable27 = new Piece("moteur",24500,sable, sec,famille,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteursable28 = new Piece("moteur",4500,sable, sec,famille,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable29 = new Piece("moteur",4500,sable, sec,famille,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable30 = new Piece("moteur",4500,sable, sec,famille,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteursable29 = new Piece("moteur",14500,sable, sec,famille,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable30 = new Piece("moteur",24500,sable, sec,famille,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteursable31 = new Piece("moteur",4500,sable, sec,tourisme,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable32 = new Piece("moteur",4500,sable, sec,tourisme,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable33 = new Piece("moteur",4500,sable, sec,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteursable32 = new Piece("moteur",14500,sable, sec,tourisme,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable33 = new Piece("moteur",24500,sable, sec,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteursable34 = new Piece("moteur",4500,sable, sec,tourisme,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable35 = new Piece("moteur",4500,sable, sec,tourisme,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable36 = new Piece("moteur",4500,sable, sec,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteursable35 = new Piece("moteur",14500,sable, sec,tourisme,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable36 = new Piece("moteur",24500,sable, sec,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteursable37 = new Piece("moteur",4500,sable, brouillard,duo,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable38 = new Piece("moteur",4500,sable, brouillard,duo,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable39 = new Piece("moteur",4500,sable, brouillard,duo,false,tuning,"/Images/moteurTT.jpg");
+		Piece moteursable38 = new Piece("moteur",14500,sable, brouillard,duo,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable39 = new Piece("moteur",24500,sable, brouillard,duo,false,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteursable40 = new Piece("moteur",4500,sable, brouillard,duo,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable41 = new Piece("moteur",4500,sable, brouillard,duo,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable42 = new Piece("moteur",4500,sable, brouillard,duo,true,tuning,"/Images/moteurTT.jpg");
+		Piece moteursable41 = new Piece("moteur",14500,sable, brouillard,duo,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable42 = new Piece("moteur",24500,sable, brouillard,duo,true,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteursable43 = new Piece("moteur",4500,sable, brouillard,famille,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable44 = new Piece("moteur",4500,sable, brouillard,famille,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable45 = new Piece("moteur",4500,sable, brouillard,famille,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteursable44 = new Piece("moteur",14500,sable, brouillard,famille,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable45 = new Piece("moteur",24500,sable, brouillard,famille,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteursable46 = new Piece("moteur",4500,sable, brouillard,famille,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable47 = new Piece("moteur",4500,sable, brouillard,famille,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable48 = new Piece("moteur",4500,sable, brouillard,famille,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteursable47 = new Piece("moteur",14500,sable, brouillard,famille,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable48 = new Piece("moteur",24500,sable, brouillard,famille,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteursable49 = new Piece("moteur",4500,sable, brouillard,tourisme,false,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable50 = new Piece("moteur",4500,sable, brouillard,tourisme,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable51 = new Piece("moteur",4500,sable, brouillard,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteursable50 = new Piece("moteur",14500,sable, brouillard,tourisme,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable51 = new Piece("moteur",24500,sable, brouillard,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteursable52 = new Piece("moteur",4500,sable, brouillard,tourisme,true,ecoPlus,"/Images/moteurClassic.jpg");
-		Piece moteursable53 = new Piece("moteur",4500,sable, brouillard,tourisme,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteursable54 = new Piece("moteur",4500,sable, brouillard,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteursable53 = new Piece("moteur",14500,sable, brouillard,tourisme,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteursable54 = new Piece("moteur",24500,sable, brouillard,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		
 		Context.getInstance().getDaoP().save(moteursable1);
@@ -294,76 +294,76 @@ public class MoteurBDD {
 		
 		///////////////////////////////////////////////////////////////////////////////////////////////////////
 		Piece moteurglace1 = new Piece("moteur",4500,glace, pluie,duo,false,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace2 = new Piece("moteur",4500,glace, pluie,duo,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace3 = new Piece("moteur",4500,glace, pluie,duo,false,tuning,"/Images/moteurTT.jpg");
+		Piece moteurglace2 = new Piece("moteur",14500,glace, pluie,duo,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace3 = new Piece("moteur",24500,glace, pluie,duo,false,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurglace4 = new Piece("moteur",4500,glace, pluie,duo,true,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace5 = new Piece("moteur",4500,glace, pluie,duo,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace6 = new Piece("moteur",4500,glace, pluie,duo,true,tuning,"/Images/moteurTT.jpg");
+		Piece moteurglace5 = new Piece("moteur",14500,glace, pluie,duo,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace6 = new Piece("moteur",24500,glace, pluie,duo,true,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurglace7 = new Piece("moteur",4500,glace, pluie,famille,false,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace8 = new Piece("moteur",4500,glace, pluie,famille,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace9 = new Piece("moteur",4500,glace, pluie,famille,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurglace8 = new Piece("moteur",14500,glace, pluie,famille,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace9 = new Piece("moteur",24500,glace, pluie,famille,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurglace10 = new Piece("moteur",4500,glace, pluie,famille,true,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace11 = new Piece("moteur",4500,glace, pluie,famille,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace12 = new Piece("moteur",4500,glace, pluie,famille,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurglace11 = new Piece("moteur",14500,glace, pluie,famille,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace12 = new Piece("moteur",24500,glace, pluie,famille,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurglace13 = new Piece("moteur",4500,glace, pluie,tourisme,false,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace14 = new Piece("moteur",4500,glace, pluie,tourisme,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace15 = new Piece("moteur",4500,glace, pluie,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurglace14 = new Piece("moteur",14500,glace, pluie,tourisme,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace15 = new Piece("moteur",24500,glace, pluie,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurglace16 = new Piece("moteur",4500,glace, pluie,tourisme,true,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace17 = new Piece("moteur",4500,glace, pluie,tourisme,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace18 = new Piece("moteur",4500,glace, pluie,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurglace17 = new Piece("moteur",14500,glace, pluie,tourisme,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace18 = new Piece("moteur",24500,glace, pluie,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurglace19 = new Piece("moteur",4500,glace, sec,duo,false,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace20 = new Piece("moteur",4500,glace, sec,duo,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace21 = new Piece("moteur",4500,glace, sec,duo,false,tuning,"/Images/moteurTT.jpg");
+		Piece moteurglace20 = new Piece("moteur",14500,glace, sec,duo,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace21 = new Piece("moteur",24500,glace, sec,duo,false,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurglace22 = new Piece("moteur",4500,glace, sec,duo,true,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace23 = new Piece("moteur",4500,glace, sec,duo,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace24 = new Piece("moteur",4500,glace, sec,duo,true,tuning,"/Images/moteurTT.jpg");
+		Piece moteurglace23 = new Piece("moteur",14500,glace, sec,duo,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace24 = new Piece("moteur",24500,glace, sec,duo,true,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurglace25 = new Piece("moteur",4500,glace, sec,famille,false,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace26 = new Piece("moteur",4500,glace, sec,famille,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace27 = new Piece("moteur",4500,glace, sec,famille,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurglace26 = new Piece("moteur",14500,glace, sec,famille,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace27 = new Piece("moteur",24500,glace, sec,famille,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurglace28 = new Piece("moteur",4500,glace, sec,famille,true,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace29 = new Piece("moteur",4500,glace, sec,famille,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace30 = new Piece("moteur",4500,glace, sec,famille,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurglace29 = new Piece("moteur",14500,glace, sec,famille,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace30 = new Piece("moteur",24500,glace, sec,famille,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurglace31 = new Piece("moteur",4500,glace, sec,tourisme,false,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace32 = new Piece("moteur",4500,glace, sec,tourisme,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace33 = new Piece("moteur",4500,glace, sec,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurglace32 = new Piece("moteur",14500,glace, sec,tourisme,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace33 = new Piece("moteur",24500,glace, sec,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurglace34 = new Piece("moteur",4500,glace, sec,tourisme,true,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace35 = new Piece("moteur",4500,glace, sec,tourisme,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace36 = new Piece("moteur",4500,glace, sec,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurglace35 = new Piece("moteur",14500,glace, sec,tourisme,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace36 = new Piece("moteur",24500,glace, sec,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurglace37 = new Piece("moteur",4500,glace, brouillard,duo,false,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace38 = new Piece("moteur",4500,glace, brouillard,duo,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace39 = new Piece("moteur",4500,glace, brouillard,duo,false,tuning,"/Images/moteurTT.jpg");
+		Piece moteurglace38 = new Piece("moteur",14500,glace, brouillard,duo,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace39 = new Piece("moteur",24500,glace, brouillard,duo,false,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurglace40 = new Piece("moteur",4500,glace, brouillard,duo,true,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace41 = new Piece("moteur",4500,glace, brouillard,duo,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace42 = new Piece("moteur",4500,glace, brouillard,duo,true,tuning,"/Images/moteurTT.jpg");
+		Piece moteurglace41 = new Piece("moteur",14500,glace, brouillard,duo,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace42 = new Piece("moteur",24500,glace, brouillard,duo,true,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurglace43 = new Piece("moteur",4500,glace, brouillard,famille,false,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace44 = new Piece("moteur",4500,glace, brouillard,famille,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace45 = new Piece("moteur",4500,glace, brouillard,famille,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurglace44 = new Piece("moteur",14500,glace, brouillard,famille,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace45 = new Piece("moteur",24500,glace, brouillard,famille,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurglace46 = new Piece("moteur",4500,glace, brouillard,famille,true,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace47 = new Piece("moteur",4500,glace, brouillard,famille,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace48 = new Piece("moteur",4500,glace, brouillard,famille,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurglace47 = new Piece("moteur",14500,glace, brouillard,famille,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace48 = new Piece("moteur",24500,glace, brouillard,famille,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurglace49 = new Piece("moteur",4500,glace, brouillard,tourisme,false,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace50 = new Piece("moteur",4500,glace, brouillard,tourisme,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace51 = new Piece("moteur",4500,glace, brouillard,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurglace50 = new Piece("moteur",14500,glace, brouillard,tourisme,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace51 = new Piece("moteur",24500,glace, brouillard,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurglace52 = new Piece("moteur",4500,glace, brouillard,tourisme,true,ecoPlus,"/Images/moteurglace.jpg");
-		Piece moteurglace53 = new Piece("moteur",4500,glace, brouillard,tourisme,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurglace54 = new Piece("moteur",4500,glace, brouillard,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurglace53 = new Piece("moteur",14500,glace, brouillard,tourisme,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurglace54 = new Piece("moteur",24500,glace, brouillard,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Context.getInstance().getDaoP().save(moteurglace1);
 		Context.getInstance().getDaoP().save(moteurglace2);
@@ -423,76 +423,76 @@ public class MoteurBDD {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 		Piece moteurbitume1 = new Piece("moteur",4500,bitume, pluie,duo,false,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume2 = new Piece("moteur",4500,bitume, pluie,duo,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume3 = new Piece("moteur",4500,bitume, pluie,duo,false,tuning,"/Images/moteurTT.jpg");
+		Piece moteurbitume2 = new Piece("moteur",14500,bitume, pluie,duo,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume3 = new Piece("moteur",24500,bitume, pluie,duo,false,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurbitume4 = new Piece("moteur",4500,bitume, pluie,duo,true,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume5 = new Piece("moteur",4500,bitume, pluie,duo,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume6 = new Piece("moteur",4500,bitume, pluie,duo,true,tuning,"/Images/moteurTT.jpg");
+		Piece moteurbitume5 = new Piece("moteur",14500,bitume, pluie,duo,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume6 = new Piece("moteur",24500,bitume, pluie,duo,true,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurbitume7 = new Piece("moteur",4500,bitume, pluie,famille,false,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume8 = new Piece("moteur",4500,bitume, pluie,famille,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume9 = new Piece("moteur",4500,bitume, pluie,famille,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurbitume8 = new Piece("moteur",14500,bitume, pluie,famille,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume9 = new Piece("moteur",24500,bitume, pluie,famille,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurbitume10 = new Piece("moteur",4500,bitume, pluie,famille,true,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume11 = new Piece("moteur",4500,bitume, pluie,famille,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume12 = new Piece("moteur",4500,bitume, pluie,famille,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurbitume11 = new Piece("moteur",14500,bitume, pluie,famille,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume12 = new Piece("moteur",24500,bitume, pluie,famille,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurbitume13 = new Piece("moteur",4500,bitume, pluie,tourisme,false,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume14 = new Piece("moteur",4500,bitume, pluie,tourisme,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume15 = new Piece("moteur",4500,bitume, pluie,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurbitume14 = new Piece("moteur",14500,bitume, pluie,tourisme,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume15 = new Piece("moteur",24500,bitume, pluie,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurbitume16 = new Piece("moteur",4500,bitume, pluie,tourisme,true,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume17 = new Piece("moteur",4500,bitume, pluie,tourisme,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume18 = new Piece("moteur",4500,bitume, pluie,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurbitume17 = new Piece("moteur",14500,bitume, pluie,tourisme,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume18 = new Piece("moteur",24500,bitume, pluie,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurbitume19 = new Piece("moteur",4500,bitume, sec,duo,false,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume20 = new Piece("moteur",4500,bitume, sec,duo,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume21 = new Piece("moteur",4500,bitume, sec,duo,false,tuning,"/Images/moteurTT.jpg");
+		Piece moteurbitume20 = new Piece("moteur",14500,bitume, sec,duo,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume21 = new Piece("moteur",24500,bitume, sec,duo,false,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurbitume22 = new Piece("moteur",4500,bitume, sec,duo,true,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume23 = new Piece("moteur",4500,bitume, sec,duo,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume24 = new Piece("moteur",4500,bitume, sec,duo,true,tuning,"/Images/moteurTT.jpg");
+		Piece moteurbitume23 = new Piece("moteur",14500,bitume, sec,duo,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume24 = new Piece("moteur",24500,bitume, sec,duo,true,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurbitume25 = new Piece("moteur",4500,bitume, sec,famille,false,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume26 = new Piece("moteur",4500,bitume, sec,famille,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume27 = new Piece("moteur",4500,bitume, sec,famille,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurbitume26 = new Piece("moteur",14500,bitume, sec,famille,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume27 = new Piece("moteur",24500,bitume, sec,famille,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurbitume28 = new Piece("moteur",4500,bitume, sec,famille,true,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume29 = new Piece("moteur",4500,bitume, sec,famille,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume30 = new Piece("moteur",4500,bitume, sec,famille,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurbitume29 = new Piece("moteur",14500,bitume, sec,famille,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume30 = new Piece("moteur",24500,bitume, sec,famille,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurbitume31 = new Piece("moteur",4500,bitume, sec,tourisme,false,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume32 = new Piece("moteur",4500,bitume, sec,tourisme,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume33 = new Piece("moteur",4500,bitume, sec,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurbitume32 = new Piece("moteur",14500,bitume, sec,tourisme,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume33 = new Piece("moteur",24500,bitume, sec,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurbitume34 = new Piece("moteur",4500,bitume, sec,tourisme,true,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume35 = new Piece("moteur",4500,bitume, sec,tourisme,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume36 = new Piece("moteur",4500,bitume, sec,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurbitume35 = new Piece("moteur",14500,bitume, sec,tourisme,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume36 = new Piece("moteur",24500,bitume, sec,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurbitume37 = new Piece("moteur",4500,bitume, brouillard,duo,false,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume38 = new Piece("moteur",4500,bitume, brouillard,duo,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume39 = new Piece("moteur",4500,bitume, brouillard,duo,false,tuning,"/Images/moteurTT.jpg");
+		Piece moteurbitume38 = new Piece("moteur",14500,bitume, brouillard,duo,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume39 = new Piece("moteur",24500,bitume, brouillard,duo,false,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurbitume40 = new Piece("moteur",4500,bitume, brouillard,duo,true,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume41 = new Piece("moteur",4500,bitume, brouillard,duo,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume42 = new Piece("moteur",4500,bitume, brouillard,duo,true,tuning,"/Images/moteurTT.jpg");
+		Piece moteurbitume41 = new Piece("moteur",14500,bitume, brouillard,duo,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume42 = new Piece("moteur",24500,bitume, brouillard,duo,true,tuning,"/Images/moteurTT.jpg");
 		
 		Piece moteurbitume43 = new Piece("moteur",4500,bitume, brouillard,famille,false,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume44 = new Piece("moteur",4500,bitume, brouillard,famille,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume45 = new Piece("moteur",4500,bitume, brouillard,famille,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurbitume44 = new Piece("moteur",14500,bitume, brouillard,famille,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume45 = new Piece("moteur",24500,bitume, brouillard,famille,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurbitume46 = new Piece("moteur",4500,bitume, brouillard,famille,true,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume47 = new Piece("moteur",4500,bitume, brouillard,famille,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume48 = new Piece("moteur",4500,bitume, brouillard,famille,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurbitume47 = new Piece("moteur",14500,bitume, brouillard,famille,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume48 = new Piece("moteur",24500,bitume, brouillard,famille,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurbitume49 = new Piece("moteur",4500,bitume, brouillard,tourisme,false,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume50 = new Piece("moteur",4500,bitume, brouillard,tourisme,false,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume51 = new Piece("moteur",4500,bitume, brouillard,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurbitume50 = new Piece("moteur",14500,bitume, brouillard,tourisme,false,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume51 = new Piece("moteur",24500,bitume, brouillard,tourisme,false,tuning,"/Images/moteurTT.jpg"); 
 		
 		Piece moteurbitume52 = new Piece("moteur",4500,bitume, brouillard,tourisme,true,ecoPlus,"/Images/moteurbitume.jpg");
-		Piece moteurbitume53 = new Piece("moteur",4500,bitume, brouillard,tourisme,true,luxe,"/Images/moteurSport.jpg");
-		Piece moteurbitume54 = new Piece("moteur",4500,bitume, brouillard,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
+		Piece moteurbitume53 = new Piece("moteur",14500,bitume, brouillard,tourisme,true,luxe,"/Images/moteurSport.jpg");
+		Piece moteurbitume54 = new Piece("moteur",24500,bitume, brouillard,tourisme,true,tuning,"/Images/moteurTT.jpg"); 
 		
 		Context.getInstance().getDaoP().save(moteurbitume1);
 		Context.getInstance().getDaoP().save(moteurbitume2);

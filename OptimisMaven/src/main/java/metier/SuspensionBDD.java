@@ -34,77 +34,77 @@ public class SuspensionBDD {
 		Surclasser luxe= new Surclasser("luxe");
 		Surclasser tuning = new Surclasser("tuning");
 		
-		Piece suspensionterre1 = new Piece("suspension",400,terre, pluie,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre2 = new Piece("suspension",1000,terre, pluie,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre3 = new Piece("suspension",650,terre, pluie,duo,false,tuning,"/Images/suspensionSport.jpg");
+		Piece suspensionterre1 = new Piece("suspension",1600,terre, pluie,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre2 = new Piece("suspension",4000,terre, pluie,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre3 = new Piece("suspension",2500,terre, pluie,duo,false,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionterre4 = new Piece("suspension",400,terre, pluie,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre5 = new Piece("suspension",1000,terre, pluie,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre6 = new Piece("suspension",650,terre, pluie,duo,true,tuning,"/Images/suspensionSport.jpg");
+		Piece suspensionterre4 = new Piece("suspension",1600,terre, pluie,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre5 = new Piece("suspension",4000,terre, pluie,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre6 = new Piece("suspension",2500,terre, pluie,duo,true,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionterre7 = new Piece("suspension",400,terre, pluie,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre8 = new Piece("suspension",1000,terre, pluie,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre9 = new Piece("suspension",650,terre, pluie,famille,false,tuning,"/Images/suspensionSport.jpg"); 
+		Piece suspensionterre7 = new Piece("suspension",1600,terre, pluie,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre8 = new Piece("suspension",4000,terre, pluie,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre9 = new Piece("suspension",2500,terre, pluie,famille,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionterre10 = new Piece("suspension",400,terre, pluie,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre11 = new Piece("suspension",1000,terre, pluie,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre12 = new Piece("suspension",650,terre, pluie,famille,true,tuning,"/Images/suspensionSport.jpg"); 
+		Piece suspensionterre10 = new Piece("suspension",1600,terre, pluie,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre11 = new Piece("suspension",4000,terre, pluie,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre12 = new Piece("suspension",2500,terre, pluie,famille,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionterre13 = new Piece("suspension",400,terre, pluie,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre14 = new Piece("suspension",1000,terre, pluie,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre15 = new Piece("suspension",650,terre, pluie,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
+		Piece suspensionterre13 = new Piece("suspension",40000,terre, pluie,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre14 = new Piece("suspension",100000,terre, pluie,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre15 = new Piece("suspension",65000,terre, pluie,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionterre16 = new Piece("suspension",400,terre, pluie,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre17 = new Piece("suspension",1000,terre, pluie,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre18 = new Piece("suspension",650,terre, pluie,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
+		Piece suspensionterre16 = new Piece("suspension",40000,terre, pluie,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre17 = new Piece("suspension",100000,terre, pluie,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre18 = new Piece("suspension",65000,terre, pluie,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionterre19 = new Piece("suspension",400,terre, sec,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre20 = new Piece("suspension",1000,terre, sec,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre21 = new Piece("suspension",650,terre, sec,duo,false,tuning,"/Images/suspensionSport.jpg");
+		Piece suspensionterre19 = new Piece("suspension",1600,terre, sec,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre20 = new Piece("suspension",4000,terre, sec,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre21 = new Piece("suspension",2500,terre, sec,duo,false,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionterre22 = new Piece("suspension",400,terre, sec,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre23 = new Piece("suspension",1000,terre, sec,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre24 = new Piece("suspension",650,terre, sec,duo,true,tuning,"/Images/suspensionSport.jpg");
+		Piece suspensionterre22 = new Piece("suspension",1600,terre, sec,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre23 = new Piece("suspension",4000,terre, sec,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre24 = new Piece("suspension",2500,terre, sec,duo,true,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionterre25 = new Piece("suspension",400,terre, sec,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre26 = new Piece("suspension",1000,terre, sec,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre27 = new Piece("suspension",650,terre, sec,famille,false,tuning,"/Images/suspensionSport.jpg"); 
+		Piece suspensionterre25 = new Piece("suspension",1600,terre, sec,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre26 = new Piece("suspension",4000,terre, sec,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre27 = new Piece("suspension",2500,terre, sec,famille,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionterre28 = new Piece("suspension",400,terre, sec,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre29 = new Piece("suspension",1000,terre, sec,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre30 = new Piece("suspension",650,terre, sec,famille,true,tuning,"/Images/suspensionSport.jpg"); 
+		Piece suspensionterre28 = new Piece("suspension",1600,terre, sec,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre29 = new Piece("suspension",4000,terre, sec,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre30 = new Piece("suspension",2500,terre, sec,famille,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionterre31 = new Piece("suspension",400,terre, sec,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre32 = new Piece("suspension",1000,terre, sec,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre33 = new Piece("suspension",650,terre, sec,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
+		Piece suspensionterre31 = new Piece("suspension",40000,terre, sec,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre32 = new Piece("suspension",100000,terre, sec,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre33 = new Piece("suspension",65000,terre, sec,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionterre34 = new Piece("suspension",400,terre, sec,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre35 = new Piece("suspension",1000,terre, sec,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre36 = new Piece("suspension",650,terre, sec,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
+		Piece suspensionterre34 = new Piece("suspension",40000,terre, sec,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre35 = new Piece("suspension",100000,terre, sec,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre36 = new Piece("suspension",65000,terre, sec,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionterre37 = new Piece("suspension",400,terre, brouillard,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre38 = new Piece("suspension",1000,terre, brouillard,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre39 = new Piece("suspension",650,terre, brouillard,duo,false,tuning,"/Images/suspensionSport.jpg");
+		Piece suspensionterre37 = new Piece("suspension",1600,terre, brouillard,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre38 = new Piece("suspension",4000,terre, brouillard,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre39 = new Piece("suspension",2500,terre, brouillard,duo,false,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionterre40 = new Piece("suspension",400,terre, brouillard,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre41 = new Piece("suspension",1000,terre, brouillard,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre42 = new Piece("suspension",650,terre, brouillard,duo,true,tuning,"/Images/suspensionSport.jpg");
+		Piece suspensionterre40 = new Piece("suspension",1600,terre, brouillard,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre41 = new Piece("suspension",4000,terre, brouillard,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre42 = new Piece("suspension",2500,terre, brouillard,duo,true,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionterre43 = new Piece("suspension",400,terre, brouillard,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre44 = new Piece("suspension",1000,terre, brouillard,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre45 = new Piece("suspension",650,terre, brouillard,famille,false,tuning,"/Images/suspensionSport.jpg"); 
+		Piece suspensionterre43 = new Piece("suspension",1600,terre, brouillard,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre44 = new Piece("suspension",4000,terre, brouillard,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre45 = new Piece("suspension",2500,terre, brouillard,famille,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionterre46 = new Piece("suspension",400,terre, brouillard,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre47 = new Piece("suspension",1000,terre, brouillard,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre48 = new Piece("suspension",650,terre, brouillard,famille,true,tuning,"/Images/suspensionSport.jpg"); 
+		Piece suspensionterre46 = new Piece("suspension",1600,terre, brouillard,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre47 = new Piece("suspension",4000,terre, brouillard,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre48 = new Piece("suspension",2500,terre, brouillard,famille,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionterre49 = new Piece("suspension",400,terre, brouillard,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre50 = new Piece("suspension",1000,terre, brouillard,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre51 = new Piece("suspension",650,terre, brouillard,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
+		Piece suspensionterre49 = new Piece("suspension",40000,terre, brouillard,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre50 = new Piece("suspension",100000,terre, brouillard,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre51 = new Piece("suspension",65000,terre, brouillard,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionterre52 = new Piece("suspension",400,terre, brouillard,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionterre53 = new Piece("suspension",1000,terre, brouillard,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
-		Piece suspensionterre54 = new Piece("suspension",650,terre, brouillard,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
+		Piece suspensionterre52 = new Piece("suspension",40000,terre, brouillard,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionterre53 = new Piece("suspension",100000,terre, brouillard,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionterre54 = new Piece("suspension",65000,terre, brouillard,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
 		
 		Context.getInstance().getDaoP().save(suspensionterre1);
 		Context.getInstance().getDaoP().save(suspensionterre2);
@@ -165,77 +165,77 @@ public class SuspensionBDD {
 		
 		
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
-		Piece suspensionsable1 = new Piece("suspension",400,sable, pluie,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable2 = new Piece("suspension",1000,sable, pluie,duo,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable3 = new Piece("suspension",500,sable, pluie,duo,false,tuning,"/Images/suspensionAdapative.jpg");
+		Piece suspensionsable1 = new Piece("suspension",1600,sable, pluie,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable2 = new Piece("suspension",4000,sable, pluie,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable3 = new Piece("suspension",2500,sable, pluie,duo,false,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionsable4 = new Piece("suspension",400,sable, pluie,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable5 = new Piece("suspension",1000,sable, pluie,duo,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable6 = new Piece("suspension",650,sable, pluie,duo,true,tuning,"/Images/suspensionAdapative.jpg");
+		Piece suspensionsable4 = new Piece("suspension",1600,sable, pluie,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable5 = new Piece("suspension",4000,sable, pluie,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable6 = new Piece("suspension",2500,sable, pluie,duo,true,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionsable7 = new Piece("suspension",400,sable, pluie,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable8 = new Piece("suspension",1000,sable, pluie,famille,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable9 = new Piece("suspension",650,sable, pluie,famille,false,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionsable7 = new Piece("suspension",1600,sable, pluie,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable8 = new Piece("suspension",4000,sable, pluie,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable9 = new Piece("suspension",2500,sable, pluie,famille,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionsable10 = new Piece("suspension",400,sable, pluie,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable11 = new Piece("suspension",1000,sable, pluie,famille,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable12 = new Piece("suspension",650,sable, pluie,famille,true,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionsable10 = new Piece("suspension",1600,sable, pluie,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable11 = new Piece("suspension",4000,sable, pluie,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable12 = new Piece("suspension",2500,sable, pluie,famille,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionsable13 = new Piece("suspension",400,sable, pluie,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable14 = new Piece("suspension",1000,sable, pluie,tourisme,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable15 = new Piece("suspension",650,sable, pluie,tourisme,false,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionsable13 = new Piece("suspension",40000,sable, pluie,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable14 = new Piece("suspension",100000,sable, pluie,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable15 = new Piece("suspension",65000,sable, pluie,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionsable16 = new Piece("suspension",400,sable, pluie,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable17 = new Piece("suspension",1000,sable, pluie,tourisme,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable18 = new Piece("suspension",650,sable, pluie,tourisme,true,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionsable16 = new Piece("suspension",40000,sable, pluie,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable17 = new Piece("suspension",100000,sable, pluie,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable18 = new Piece("suspension",65000,sable, pluie,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionsable19 = new Piece("suspension",400,sable, sec,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable20 = new Piece("suspension",1000,sable, sec,duo,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable21 = new Piece("suspension",650,sable, sec,duo,false,tuning,"/Images/suspensionAdapative.jpg");
+		Piece suspensionsable19 = new Piece("suspension",1600,sable, sec,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable20 = new Piece("suspension",4000,sable, sec,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable21 = new Piece("suspension",2500,sable, sec,duo,false,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionsable22 = new Piece("suspension",400,sable, sec,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable23 = new Piece("suspension",1000,sable, sec,duo,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable24 = new Piece("suspension",650,sable, sec,duo,true,tuning,"/Images/suspensionAdapative.jpg");
+		Piece suspensionsable22 = new Piece("suspension",1600,sable, sec,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable23 = new Piece("suspension",4000,sable, sec,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable24 = new Piece("suspension",2500,sable, sec,duo,true,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionsable25 = new Piece("suspension",400,sable, sec,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable26 = new Piece("suspension",1000,sable, sec,famille,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable27 = new Piece("suspension",650,sable, sec,famille,false,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionsable25 = new Piece("suspension",1600,sable, sec,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable26 = new Piece("suspension",4000,sable, sec,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable27 = new Piece("suspension",2500,sable, sec,famille,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionsable28 = new Piece("suspension",400,sable, sec,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable29 = new Piece("suspension",1000,sable, sec,famille,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable30 = new Piece("suspension",650,sable, sec,famille,true,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionsable28 = new Piece("suspension",1600,sable, sec,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable29 = new Piece("suspension",4000,sable, sec,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable30 = new Piece("suspension",2500,sable, sec,famille,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionsable31 = new Piece("suspension",400,sable, sec,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable32 = new Piece("suspension",1000,sable, sec,tourisme,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable33 = new Piece("suspension",650,sable, sec,tourisme,false,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionsable31 = new Piece("suspension",40000,sable, sec,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable32 = new Piece("suspension",100000,sable, sec,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable33 = new Piece("suspension",65000,sable, sec,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionsable34 = new Piece("suspension",400,sable, sec,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable35 = new Piece("suspension",1000,sable, sec,tourisme,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable36 = new Piece("suspension",650,sable, sec,tourisme,true,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionsable34 = new Piece("suspension",40000,sable, sec,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable35 = new Piece("suspension",100000,sable, sec,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable36 = new Piece("suspension",65000,sable, sec,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionsable37 = new Piece("suspension",400,sable, brouillard,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable38 = new Piece("suspension",1000,sable, brouillard,duo,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable39 = new Piece("suspension",650,sable, brouillard,duo,false,tuning,"/Images/suspensionAdapative.jpg");
+		Piece suspensionsable37 = new Piece("suspension",1600,sable, brouillard,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable38 = new Piece("suspension",4000,sable, brouillard,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable39 = new Piece("suspension",2500,sable, brouillard,duo,false,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionsable40 = new Piece("suspension",400,sable, brouillard,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable41 = new Piece("suspension",1000,sable, brouillard,duo,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable42 = new Piece("suspension",650,sable, brouillard,duo,true,tuning,"/Images/suspensionAdapative.jpg");
+		Piece suspensionsable40 = new Piece("suspension",1600,sable, brouillard,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable41 = new Piece("suspension",4000,sable, brouillard,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable42 = new Piece("suspension",2500,sable, brouillard,duo,true,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionsable43 = new Piece("suspension",400,sable, brouillard,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable44 = new Piece("suspension",1000,sable, brouillard,famille,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable45 = new Piece("suspension",650,sable, brouillard,famille,false,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionsable43 = new Piece("suspension",1600,sable, brouillard,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable44 = new Piece("suspension",4000,sable, brouillard,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable45 = new Piece("suspension",2500,sable, brouillard,famille,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionsable46 = new Piece("suspension",400,sable, brouillard,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable47 = new Piece("suspension",1000,sable, brouillard,famille,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable48 = new Piece("suspension",650,sable, brouillard,famille,true,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionsable46 = new Piece("suspension",1600,sable, brouillard,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable47 = new Piece("suspension",4000,sable, brouillard,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable48 = new Piece("suspension",2500,sable, brouillard,famille,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionsable49 = new Piece("suspension",400,sable, brouillard,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable50 = new Piece("suspension",1000,sable, brouillard,tourisme,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable51 = new Piece("suspension",650,sable, brouillard,tourisme,false,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionsable49 = new Piece("suspension",40000,sable, brouillard,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable50 = new Piece("suspension",100000,sable, brouillard,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable51 = new Piece("suspension",65000,sable, brouillard,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionsable52 = new Piece("suspension",400,sable, brouillard,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
-		Piece suspensionsable53 = new Piece("suspension",1000,sable, brouillard,tourisme,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionsable54 = new Piece("suspension",650,sable, brouillard,tourisme,true,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionsable52 = new Piece("suspension",40000,sable, brouillard,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionsable53 = new Piece("suspension",100000,sable, brouillard,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionsable54 = new Piece("suspension",65000,sable, brouillard,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
 		
 		
 		Context.getInstance().getDaoP().save(suspensionsable1);
@@ -294,77 +294,78 @@ public class SuspensionBDD {
 		Context.getInstance().getDaoP().save(suspensionsable54);
 		
 		///////////////////////////////////////////////////////////////////////////////////////////////////////
-		Piece suspensionglace1 = new Piece("suspension",400,glace, pluie,duo,false,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace2 = new Piece("suspension",1000,glace, pluie,duo,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace3 = new Piece("suspension",650,glace, pluie,duo,false,tuning,"/Images/suspensionAdapative.jpg");
+		Piece suspensionglace1 = new Piece("suspension",1600,glace, pluie,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace2 = new Piece("suspension",4000,glace, pluie,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace3 = new Piece("suspension",2500,glace, pluie,duo,false,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionglace4 = new Piece("suspension",400,glace, pluie,duo,true,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace5 = new Piece("suspension",1000,glace, pluie,duo,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace6 = new Piece("suspension",650,glace, pluie,duo,true,tuning,"/Images/suspensionAdapative.jpg");
+		Piece suspensionglace4 = new Piece("suspension",1600,glace, pluie,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace5 = new Piece("suspension",4000,glace, pluie,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace6 = new Piece("suspension",2500,glace, pluie,duo,true,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionglace7 = new Piece("suspension",400,glace, pluie,famille,false,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace8 = new Piece("suspension",1000,glace, pluie,famille,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace9 = new Piece("suspension",650,glace, pluie,famille,false,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionglace7 = new Piece("suspension",1600,glace, pluie,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace8 = new Piece("suspension",4000,glace, pluie,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace9 = new Piece("suspension",2500,glace, pluie,famille,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionglace10 = new Piece("suspension",400,glace, pluie,famille,true,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace11 = new Piece("suspension",1000,glace, pluie,famille,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace12 = new Piece("suspension",650,glace, pluie,famille,true,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionglace10 = new Piece("suspension",1600,glace, pluie,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace11 = new Piece("suspension",4000,glace, pluie,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace12 = new Piece("suspension",2500,glace, pluie,famille,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionglace13 = new Piece("suspension",400,glace, pluie,tourisme,false,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace14 = new Piece("suspension",1000,glace, pluie,tourisme,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace15 = new Piece("suspension",650,glace, pluie,tourisme,false,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionglace13 = new Piece("suspension",40000,glace, pluie,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace14 = new Piece("suspension",100000,glace, pluie,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace15 = new Piece("suspension",65000,glace, pluie,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionglace16 = new Piece("suspension",400,glace, pluie,tourisme,true,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace17 = new Piece("suspension",1000,glace, pluie,tourisme,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace18 = new Piece("suspension",650,glace, pluie,tourisme,true,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionglace16 = new Piece("suspension",40000,glace, pluie,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace17 = new Piece("suspension",100000,glace, pluie,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace18 = new Piece("suspension",65000,glace, pluie,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionglace19 = new Piece("suspension",400,glace, sec,duo,false,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace20 = new Piece("suspension",1000,glace, sec,duo,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace21 = new Piece("suspension",650,glace, sec,duo,false,tuning,"/Images/suspensionAdapative.jpg");
+		Piece suspensionglace19 = new Piece("suspension",1600,glace, sec,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace20 = new Piece("suspension",4000,glace, sec,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace21 = new Piece("suspension",2500,glace, sec,duo,false,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionglace22 = new Piece("suspension",400,glace, sec,duo,true,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace23 = new Piece("suspension",1000,glace, sec,duo,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace24 = new Piece("suspension",650,glace, sec,duo,true,tuning,"/Images/suspensionAdapative.jpg");
+		Piece suspensionglace22 = new Piece("suspension",1600,glace, sec,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace23 = new Piece("suspension",4000,glace, sec,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace24 = new Piece("suspension",2500,glace, sec,duo,true,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionglace25 = new Piece("suspension",400,glace, sec,famille,false,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace26 = new Piece("suspension",1000,glace, sec,famille,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace27 = new Piece("suspension",650,glace, sec,famille,false,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionglace25 = new Piece("suspension",1600,glace, sec,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace26 = new Piece("suspension",4000,glace, sec,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace27 = new Piece("suspension",2500,glace, sec,famille,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionglace28 = new Piece("suspension",400,glace, sec,famille,true,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace29 = new Piece("suspension",1000,glace, sec,famille,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace30 = new Piece("suspension",650,glace, sec,famille,true,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionglace28 = new Piece("suspension",1600,glace, sec,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace29 = new Piece("suspension",4000,glace, sec,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace30 = new Piece("suspension",2500,glace, sec,famille,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionglace31 = new Piece("suspension",400,glace, sec,tourisme,false,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace32 = new Piece("suspension",1000,glace, sec,tourisme,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace33 = new Piece("suspension",650,glace, sec,tourisme,false,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionglace31 = new Piece("suspension",40000,glace, sec,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace32 = new Piece("suspension",100000,glace, sec,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace33 = new Piece("suspension",65000,glace, sec,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionglace34 = new Piece("suspension",400,glace, sec,tourisme,true,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace35 = new Piece("suspension",1000,glace, sec,tourisme,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace36 = new Piece("suspension",650,glace, sec,tourisme,true,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionglace34 = new Piece("suspension",40000,glace, sec,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace35 = new Piece("suspension",100000,glace, sec,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace36 = new Piece("suspension",65000,glace, sec,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionglace37 = new Piece("suspension",400,glace, brouillard,duo,false,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace38 = new Piece("suspension",1000,glace, brouillard,duo,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace39 = new Piece("suspension",650,glace, brouillard,duo,false,tuning,"/Images/suspensionAdapative.jpg");
+		Piece suspensionglace37 = new Piece("suspension",1600,glace, brouillard,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace38 = new Piece("suspension",4000,glace, brouillard,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace39 = new Piece("suspension",2500,glace, brouillard,duo,false,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionglace40 = new Piece("suspension",400,glace, brouillard,duo,true,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace41 = new Piece("suspension",1000,glace, brouillard,duo,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace42 = new Piece("suspension",650,glace, brouillard,duo,true,tuning,"/Images/suspensionAdapative.jpg");
+		Piece suspensionglace40 = new Piece("suspension",1600,glace, brouillard,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace41 = new Piece("suspension",4000,glace, brouillard,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace42 = new Piece("suspension",2500,glace, brouillard,duo,true,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionglace43 = new Piece("suspension",400,glace, brouillard,famille,false,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace44 = new Piece("suspension",1000,glace, brouillard,famille,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace45 = new Piece("suspension",650,glace, brouillard,famille,false,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionglace43 = new Piece("suspension",1600,glace, brouillard,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace44 = new Piece("suspension",4000,glace, brouillard,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace45 = new Piece("suspension",2500,glace, brouillard,famille,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionglace46 = new Piece("suspension",400,glace, brouillard,famille,true,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace47 = new Piece("suspension",1000,glace, brouillard,famille,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace48 = new Piece("suspension",650,glace, brouillard,famille,true,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionglace46 = new Piece("suspension",1600,glace, brouillard,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace47 = new Piece("suspension",4000,glace, brouillard,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace48 = new Piece("suspension",2500,glace, brouillard,famille,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionglace49 = new Piece("suspension",400,glace, brouillard,tourisme,false,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace50 = new Piece("suspension",1000,glace, brouillard,tourisme,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace51 = new Piece("suspension",650,glace, brouillard,tourisme,false,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionglace49 = new Piece("suspension",40000,glace, brouillard,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace50 = new Piece("suspension",100000,glace, brouillard,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace51 = new Piece("suspension",65000,glace, brouillard,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionglace52 = new Piece("suspension",400,glace, brouillard,tourisme,true,ecoPlus,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace53 = new Piece("suspension",1000,glace, brouillard,tourisme,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionglace54 = new Piece("suspension",650,glace, brouillard,tourisme,true,tuning,"/Images/suspensionAdapative.jpg"); 
+		Piece suspensionglace52 = new Piece("suspension",40000,glace, brouillard,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionglace53 = new Piece("suspension",100000,glace, brouillard,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionglace54 = new Piece("suspension",65000,glace, brouillard,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
+		
 		
 		Context.getInstance().getDaoP().save(suspensionglace1);
 		Context.getInstance().getDaoP().save(suspensionglace2);
@@ -423,77 +424,78 @@ public class SuspensionBDD {
 		
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
-		Piece suspensionbitume1 = new Piece("suspension",400,bitume, pluie,duo,false,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume2 = new Piece("suspension",1000,bitume, pluie,duo,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume3 = new Piece("suspension",650,bitume, pluie,duo,false,tuning,"/Images/suspensionBerlin.jpg");
+		Piece suspensionbitume1 = new Piece("suspension",1600,bitume, pluie,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume2 = new Piece("suspension",4000,bitume, pluie,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume3 = new Piece("suspension",2500,bitume, pluie,duo,false,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionbitume4 = new Piece("suspension",400,bitume, pluie,duo,true,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume5 = new Piece("suspension",1000,bitume, pluie,duo,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume6 = new Piece("suspension",650,bitume, pluie,duo,true,tuning,"/Images/suspensionBerlin.jpg");
+		Piece suspensionbitume4 = new Piece("suspension",1600,bitume, pluie,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume5 = new Piece("suspension",4000,bitume, pluie,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume6 = new Piece("suspension",2500,bitume, pluie,duo,true,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionbitume7 = new Piece("suspension",400,bitume, pluie,famille,false,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume8 = new Piece("suspension",1000,bitume, pluie,famille,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume9 = new Piece("suspension",650,bitume, pluie,famille,false,tuning,"/Images/suspensionBerlin.jpg"); 
+		Piece suspensionbitume7 = new Piece("suspension",1600,bitume, pluie,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume8 = new Piece("suspension",4000,bitume, pluie,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume9 = new Piece("suspension",2500,bitume, pluie,famille,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionbitume10 = new Piece("suspension",400,bitume, pluie,famille,true,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume11 = new Piece("suspension",1000,bitume, pluie,famille,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume12 = new Piece("suspension",650,bitume, pluie,famille,true,tuning,"/Images/suspensionBerlin.jpg"); 
+		Piece suspensionbitume10 = new Piece("suspension",1600,bitume, pluie,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume11 = new Piece("suspension",4000,bitume, pluie,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume12 = new Piece("suspension",2500,bitume, pluie,famille,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionbitume13 = new Piece("suspension",400,bitume, pluie,tourisme,false,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume14 = new Piece("suspension",1000,bitume, pluie,tourisme,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume15 = new Piece("suspension",650,bitume, pluie,tourisme,false,tuning,"/Images/suspensionBerlin.jpg"); 
+		Piece suspensionbitume13 = new Piece("suspension",40000,bitume, pluie,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume14 = new Piece("suspension",100000,bitume, pluie,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume15 = new Piece("suspension",65000,bitume, pluie,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionbitume16 = new Piece("suspension",400,bitume, pluie,tourisme,true,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume17 = new Piece("suspension",1000,bitume, pluie,tourisme,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume18 = new Piece("suspension",650,bitume, pluie,tourisme,true,tuning,"/Images/suspensionBerlin.jpg"); 
+		Piece suspensionbitume16 = new Piece("suspension",40000,bitume, pluie,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume17 = new Piece("suspension",100000,bitume, pluie,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume18 = new Piece("suspension",65000,bitume, pluie,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionbitume19 = new Piece("suspension",400,bitume, sec,duo,false,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume20 = new Piece("suspension",1000,bitume, sec,duo,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume21 = new Piece("suspension",650,bitume, sec,duo,false,tuning,"/Images/suspensionBerlin.jpg");
+		Piece suspensionbitume19 = new Piece("suspension",1600,bitume, sec,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume20 = new Piece("suspension",4000,bitume, sec,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume21 = new Piece("suspension",2500,bitume, sec,duo,false,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionbitume22 = new Piece("suspension",400,bitume, sec,duo,true,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume23 = new Piece("suspension",1000,bitume, sec,duo,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume24 = new Piece("suspension",650,bitume, sec,duo,true,tuning,"/Images/suspensionBerlin.jpg");
+		Piece suspensionbitume22 = new Piece("suspension",1600,bitume, sec,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume23 = new Piece("suspension",4000,bitume, sec,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume24 = new Piece("suspension",2500,bitume, sec,duo,true,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionbitume25 = new Piece("suspension",400,bitume, sec,famille,false,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume26 = new Piece("suspension",1000,bitume, sec,famille,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume27 = new Piece("suspension",650,bitume, sec,famille,false,tuning,"/Images/suspensionBerlin.jpg"); 
+		Piece suspensionbitume25 = new Piece("suspension",1600,bitume, sec,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume26 = new Piece("suspension",4000,bitume, sec,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume27 = new Piece("suspension",2500,bitume, sec,famille,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionbitume28 = new Piece("suspension",400,bitume, sec,famille,true,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume29 = new Piece("suspension",1000,bitume, sec,famille,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume30 = new Piece("suspension",650,bitume, sec,famille,true,tuning,"/Images/suspensionBerlin.jpg"); 
+		Piece suspensionbitume28 = new Piece("suspension",1600,bitume, sec,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume29 = new Piece("suspension",4000,bitume, sec,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume30 = new Piece("suspension",2500,bitume, sec,famille,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionbitume31 = new Piece("suspension",400,bitume, sec,tourisme,false,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume32 = new Piece("suspension",1000,bitume, sec,tourisme,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume33 = new Piece("suspension",650,bitume, sec,tourisme,false,tuning,"/Images/suspensionBerlin.jpg"); 
+		Piece suspensionbitume31 = new Piece("suspension",40000,bitume, sec,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume32 = new Piece("suspension",100000,bitume, sec,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume33 = new Piece("suspension",65000,bitume, sec,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionbitume34 = new Piece("suspension",400,bitume, sec,tourisme,true,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume35 = new Piece("suspension",1000,bitume, sec,tourisme,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume36 = new Piece("suspension",650,bitume, sec,tourisme,true,tuning,"/Images/suspensionBerlin.jpg"); 
+		Piece suspensionbitume34 = new Piece("suspension",40000,bitume, sec,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume35 = new Piece("suspension",100000,bitume, sec,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume36 = new Piece("suspension",65000,bitume, sec,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionbitume37 = new Piece("suspension",400,bitume, brouillard,duo,false,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume38 = new Piece("suspension",1000,bitume, brouillard,duo,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume39 = new Piece("suspension",650,bitume, brouillard,duo,false,tuning,"/Images/suspensionBerlin.jpg");
+		Piece suspensionbitume37 = new Piece("suspension",1600,bitume, brouillard,duo,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume38 = new Piece("suspension",4000,bitume, brouillard,duo,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume39 = new Piece("suspension",2500,bitume, brouillard,duo,false,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionbitume40 = new Piece("suspension",400,bitume, brouillard,duo,true,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume41 = new Piece("suspension",1000,bitume, brouillard,duo,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume42 = new Piece("suspension",650,bitume, brouillard,duo,true,tuning,"/Images/suspensionBerlin.jpg");
+		Piece suspensionbitume40 = new Piece("suspension",1600,bitume, brouillard,duo,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume41 = new Piece("suspension",4000,bitume, brouillard,duo,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume42 = new Piece("suspension",2500,bitume, brouillard,duo,true,tuning,"/Images/suspensionSport.jpg");
 		
-		Piece suspensionbitume43 = new Piece("suspension",400,bitume, brouillard,famille,false,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume44 = new Piece("suspension",1000,bitume, brouillard,famille,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume45 = new Piece("suspension",650,bitume, brouillard,famille,false,tuning,"/Images/suspensionBerlin.jpg"); 
+		Piece suspensionbitume43 = new Piece("suspension",1600,bitume, brouillard,famille,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume44 = new Piece("suspension",4000,bitume, brouillard,famille,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume45 = new Piece("suspension",2500,bitume, brouillard,famille,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionbitume46 = new Piece("suspension",400,bitume, brouillard,famille,true,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume47 = new Piece("suspension",1000,bitume, brouillard,famille,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume48 = new Piece("suspension",650,bitume, brouillard,famille,true,tuning,"/Images/suspensionBerlin.jpg"); 
+		Piece suspensionbitume46 = new Piece("suspension",1600,bitume, brouillard,famille,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume47 = new Piece("suspension",4000,bitume, brouillard,famille,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume48 = new Piece("suspension",2500,bitume, brouillard,famille,true,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionbitume49 = new Piece("suspension",400,bitume, brouillard,tourisme,false,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume50 = new Piece("suspension",1000,bitume, brouillard,tourisme,false,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume51 = new Piece("suspension",650,bitume, brouillard,tourisme,false,tuning,"/Images/suspensionBerlin.jpg"); 
+		Piece suspensionbitume49 = new Piece("suspension",40000,bitume, brouillard,tourisme,false,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume50 = new Piece("suspension",100000,bitume, brouillard,tourisme,false,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume51 = new Piece("suspension",65000,bitume, brouillard,tourisme,false,tuning,"/Images/suspensionSport.jpg"); 
 		
-		Piece suspensionbitume52 = new Piece("suspension",400,bitume, brouillard,tourisme,true,ecoPlus,"/Images/suspensionClassic.jpg");
-		Piece suspensionbitume53 = new Piece("suspension",1000,bitume, brouillard,tourisme,true,luxe,"/Images/suspensionAdapative.jpg");
-		Piece suspensionbitume54 = new Piece("suspension",650,bitume, brouillard,tourisme,true,tuning,"/Images/suspensionBerlin.jpg"); 
+		Piece suspensionbitume52 = new Piece("suspension",40000,bitume, brouillard,tourisme,true,ecoPlus,"/Images/suspensionRouteBerlin.jpg");
+		Piece suspensionbitume53 = new Piece("suspension",100000,bitume, brouillard,tourisme,true,luxe,"/Images/suspensionAdaptative.jpg");
+		Piece suspensionbitume54 = new Piece("suspension",65000,bitume, brouillard,tourisme,true,tuning,"/Images/suspensionSport.jpg"); 
+		
 		
 		Context.getInstance().getDaoP().save(suspensionbitume1);
 		Context.getInstance().getDaoP().save(suspensionbitume2);
