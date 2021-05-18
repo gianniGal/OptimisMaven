@@ -62,8 +62,9 @@ public class ValidationPopUp extends javax.swing.JFrame{
 		frame.getContentPane().add(btnSearch);
 		
 		JLabel lblNewLabel_1 = new JLabel("Bienvenue !");
-		lblNewLabel_1.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-		lblNewLabel_1.setBounds(80, 46, 171, 14);
+		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1.setFont(new Font("Segoe UI", Font.PLAIN, 15));
+		lblNewLabel_1.setBounds(67, 46, 171, 21);
 		frame.getContentPane().add(lblNewLabel_1);
 		
 		JLabel lblNewLabel = new JLabel("New label");

@@ -7,6 +7,8 @@ import javax.persistence.Query;
 
 import metier.Client;
 import metier.Compte;
+import metier.Piece;
+import metier.configClient;
 import util.Context;
 
 
@@ -78,6 +80,24 @@ public class DAOClient implements IDAO<Client, Integer>
 
 	}
 
+	
+	 public void saveConfig(Piece chassis, Piece moteur, Piece roue, Piece phare, Piece frein, Piece suspension) 
+	    {
+	        EntityManager em = Context.getInstance().getEmf().createEntityManager();
+
+	        em.getTransaction().begin();
+	        configClient conf = new configClient();
+	        conf.setChassis(chassis);
+	        conf.setMoteur(moteur);
+	        conf.setRoue(roue);
+	        conf.setPhare(phare);
+	        conf.setSuspension(suspension);
+	        conf.setFrein(frein);
+	        conf = em.merge(conf);
+	        em.getTransaction().commit();
+
+	        em.close();
+	    }
 
 
 }

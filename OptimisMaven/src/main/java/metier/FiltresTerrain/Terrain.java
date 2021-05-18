@@ -39,6 +39,7 @@ public class Terrain {
 	protected boolean course ;
 	@ManyToMany (cascade = {CascadeType.MERGE,CascadeType.REMOVE})
 	protected List<Surclasser> surclasser;
+	private String label;
 
 	
 	
@@ -46,7 +47,7 @@ public class Terrain {
 	public Terrain() {
 		
 	}
-	public Terrain( String lien,  List<Sol> sols, List<Meteo> meteos, List<NbDePlaces> nombrePlaces, boolean course, List<Surclasser> surclasser ) {
+	public Terrain( String lien,  List<Sol> sols, List<Meteo> meteos, List<NbDePlaces> nombrePlaces, boolean course, List<Surclasser> surclasser, String label ) {
 		
 		this.lien = lien;
 		this.sols = sols;
@@ -54,6 +55,7 @@ public class Terrain {
 		this.nombrePlaces = nombrePlaces;
 		this.course = course;
 		this.surclasser=surclasser;
+		this.label=label;
 		
 		
 	}
@@ -98,6 +100,15 @@ public class Terrain {
 	}
 	public void setSurclasser(List<Surclasser> surclasser) {
 		this.surclasser = surclasser;
+		
+		
+		
+	}
+	public String getLabel() {
+		return label;
+	}
+	public void setLabel(String label) {
+		this.label = label;
 	}
 	@Override
 	public String toString() {
