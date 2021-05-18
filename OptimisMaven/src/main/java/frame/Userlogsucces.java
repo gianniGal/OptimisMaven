@@ -45,6 +45,13 @@ public class Userlogsucces {
 		//BOUTON POUR VOIR LES CONFIGURATIONS PRECEDENTES 
 		JButton btnNewButton_1 = new JButton("Previous Config");
 		btnNewButton_1.setIcon(new ImageIcon(Userlogsucces.class.getResource("/Images/previousconf.jpg")));
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				PreviousConfig.main(new String[]{});
+				
+			}
+		});
 		btnNewButton_1.setBounds(169, 357, 228, 39);
 		frame.getContentPane().add(btnNewButton_1);
 		

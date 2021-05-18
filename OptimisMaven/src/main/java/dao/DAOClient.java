@@ -105,9 +105,8 @@ public class DAOClient implements IDAO<Client, Integer>
 	    }
 	 
 		public List<Piece> findConfig(int i) {
-			EntityManager em = Context.getInstance().getEmf().createEntityManager();
-
-			Query myQuery = em.createQuery("SELECT c from configClient c where c.idConfig=:id",Client.class).setParameter("id", i);
+			EntityManager em = Context.getInstance().getEmf().createEntityManager();			
+			Query myQuery = em.createQuery("SELECT chassis_id, frein_id, pneu_id, from configClient c JOIN fetch p.Piece where c.idConfig=:id and ",configClient.class).setParameter("id", i);
 			List<Piece> config=myQuery.getResultList();
 			em.close();
 			return config;

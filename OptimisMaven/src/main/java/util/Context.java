@@ -28,8 +28,21 @@ public class Context {
 	private Surclasser surclasserSelected;
 	private boolean courseSelected;
 	private List<Piece> config=new ArrayList();
+	private int idconfig;
 	
-    private Terrain contrainte; 
+    public int getIdconfig() {
+		return idconfig;
+	}
+
+
+
+	public void setIdconfig(int idconfig) {
+		this.idconfig = idconfig;
+	}
+
+
+
+	private Terrain contrainte; 
 
 	private  DAOClient daoC = new DAOClient();
 	private  DAOPiece daoP = new DAOPiece();

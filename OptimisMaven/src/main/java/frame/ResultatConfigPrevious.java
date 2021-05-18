@@ -55,7 +55,8 @@ public class ResultatConfigPrevious {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
-		List<Piece> pieces = Context.getInstance().getDaoC().findConfig(0);
+		
+		List<Piece> pieces = Context.getInstance().getDaoC().findConfig(Context.getInstance().getIdconfig());
 		
 		Piece chassis = pieces.get(0);
 		Piece moteur = pieces.get(1);

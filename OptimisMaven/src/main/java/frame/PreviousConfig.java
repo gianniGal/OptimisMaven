@@ -57,6 +57,7 @@ public class PreviousConfig {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				ResultatConfigPrevious.main(null);
+				Context.getInstance().setIdconfig(1);
 			}
 		});
 		btnNewButton.setFont(new Font("Segoe UI", Font.PLAIN, 20));
@@ -67,6 +68,7 @@ public class PreviousConfig {
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				ResultatConfigPrevious.main(null);
+				Context.getInstance().setIdconfig(2);
 			}
 		});
 		btnNewButton_1.setFont(new Font("Segoe UI", Font.PLAIN, 20));
@@ -77,6 +79,7 @@ public class PreviousConfig {
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				ResultatConfigPrevious.main(null);
+				Context.getInstance().setIdconfig(3);
 			}
 		});
 		btnNewButton_2.setFont(new Font("Segoe UI", Font.PLAIN, 20));

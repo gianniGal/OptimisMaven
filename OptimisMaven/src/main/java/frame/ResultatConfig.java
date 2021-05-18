@@ -126,7 +126,7 @@ public class ResultatConfig {
 
 
 				System.out.println(Context.getInstance().getConfig());
-
+				ValidationPopUp2.main(null);
 
 			}
 		});
