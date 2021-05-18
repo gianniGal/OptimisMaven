@@ -56,52 +56,44 @@ public class ResultatConfigPrevious {
 		frame.getContentPane().setLayout(null);
 
 		
-		List<Piece> pieces = Context.getInstance().getDaoC().findConfig(Context.getInstance().getIdconfig());
+		List<String> pieces = Context.getInstance().getLiensimage();
 		
-		Piece chassis = pieces.get(0);
-		Piece moteur = pieces.get(1);
-		Piece roue = pieces.get(2);
-		Piece phare = pieces.get(3);
-		Piece suspension = pieces.get(4);
-		Piece frein = pieces.get(5);
 		
-
-
 		JLabel lblNewLabel = new JLabel("pneu");
-		lblNewLabel.setIcon(new ImageIcon(ResultatConfigPrevious.class.getResource(roue.getLien())));
+		lblNewLabel.setIcon(new ImageIcon(ResultatConfigPrevious.class.getResource(pieces.get(5))));
 		lblNewLabel.setBounds(559, 701, 200, 200);
 		frame.getContentPane().add(lblNewLabel);
 	
 		
 
 		JLabel lblNewLabel_1 = new JLabel("moteur");
-		lblNewLabel_1.setIcon(new ImageIcon(ResultatConfigPrevious.class.getResource(moteur.getLien())));
+		lblNewLabel_1.setIcon(new ImageIcon(ResultatConfigPrevious.class.getResource(pieces.get(1))));
 		lblNewLabel_1.setBounds(71, 194, 200, 200);
 		frame.getContentPane().add(lblNewLabel_1);
 
 		
 
 		JLabel lblNewLabel_2 = new JLabel("frein");
-		lblNewLabel_2.setIcon(new ImageIcon(ResultatConfigPrevious.class.getResource(frein.getLien())));
+		lblNewLabel_2.setIcon(new ImageIcon(ResultatConfigPrevious.class.getResource(pieces.get(4))));
 		lblNewLabel_2.setBounds(1075, 619, 200, 200);
 		frame.getContentPane().add(lblNewLabel_2);
 
 		
 
 		JLabel lblNewLabel_3 = new JLabel("suspension");
-		lblNewLabel_3.setIcon(new ImageIcon(ResultatConfigPrevious.class.getResource(suspension.getLien())));
+		lblNewLabel_3.setIcon(new ImageIcon(ResultatConfigPrevious.class.getResource(pieces.get(3))));
 		lblNewLabel_3.setBounds(166, 556, 200, 200);
 		frame.getContentPane().add(lblNewLabel_3);
 
 
 		JLabel lblNewLabel_4 = new JLabel("chassis");
-		lblNewLabel_4.setIcon(new ImageIcon(ResultatConfigPrevious.class.getResource(chassis.getLien())));
+		lblNewLabel_4.setIcon(new ImageIcon(ResultatConfigPrevious.class.getResource(pieces.get(2))));
 		lblNewLabel_4.setBounds(443, 63, 700, 500);
 		frame.getContentPane().add(lblNewLabel_4);
 
 
 		JLabel lblNewLabel_5 = new JLabel("phare");
-		lblNewLabel_5.setIcon(new ImageIcon(ResultatConfigPrevious.class.getResource(phare.getLien())));
+		lblNewLabel_5.setIcon(new ImageIcon(ResultatConfigPrevious.class.getResource(pieces.get(0))));
 		lblNewLabel_5.setBounds(1265, 323, 200, 200);
 		frame.getContentPane().add(lblNewLabel_5);
 		
@@ -130,7 +122,7 @@ public class ResultatConfigPrevious {
 		JButton btnNewButton_1 = new JButton("Back");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				ChoixContraintes.main(null);
+				Userlogsucces.main(null);
 				frame.dispose();
 			}
 		});
@@ -139,7 +131,7 @@ public class ResultatConfigPrevious {
 
 
 
-        int yLabel = 140;
+//        int yLabel = 140;
 //		JLabel lblNewLabel_9 = new JLabel("Contraintes choisies :");
 //		lblNewLabel_9.setFont(new Font("Segoe UI", Font.PLAIN, 22));
 //		lblNewLabel_9.setBounds(1622, yLabel , 216, 38);
@@ -185,28 +177,28 @@ public class ResultatConfigPrevious {
 
 
 		//PRIX
-		double a=roue.getPrix();
-		double b=phare.getPrix();
-		double c=chassis.getPrix();
-		double d=frein.getPrix();
-		double e=suspension.getPrix();
-		double f=moteur.getPrix();
-		double g = a+b+c+d+e+f;
-		String h = Double.toString(g) + " €";
-		
-		yLabel+=100;
-		JLabel lblNewLabel_16 = new JLabel("TOTAL : ");
-		lblNewLabel_16.setBounds(1622, yLabel, 100, 35);
-		lblNewLabel_16.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_16.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		frame.getContentPane().add(lblNewLabel_16);
-		
-		yLabel+=30;
-		JLabel lblNewLabel_12 = new JLabel(h);
-		lblNewLabel_12.setBounds(1622, yLabel, 100, 35);
-		lblNewLabel_12.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_12.setFont(new Font("Segoe UI", Font.PLAIN, 18));
-		frame.getContentPane().add(lblNewLabel_12);
+//		double a=roue.getPrix();
+//		double b=phare.getPrix();
+//		double c=chassis.getPrix();
+//		double d=frein.getPrix();
+//		double e=suspension.getPrix();
+//		double f=moteur.getPrix();
+//		double g = a+b+c+d+e+f;
+//		String h = Double.toString(g) + " €";
+//		
+//		yLabel+=100;
+//		JLabel lblNewLabel_16 = new JLabel("TOTAL : ");
+//		lblNewLabel_16.setBounds(1622, yLabel, 100, 35);
+//		lblNewLabel_16.setHorizontalAlignment(SwingConstants.CENTER);
+//		lblNewLabel_16.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+//		frame.getContentPane().add(lblNewLabel_16);
+//		
+//		yLabel+=30;
+//		JLabel lblNewLabel_12 = new JLabel(h);
+//		lblNewLabel_12.setBounds(1622, yLabel, 100, 35);
+//		lblNewLabel_12.setHorizontalAlignment(SwingConstants.CENTER);
+//		lblNewLabel_12.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+//		frame.getContentPane().add(lblNewLabel_12);
 
 		
 		JLabel lblNewLabel_11 = new JLabel("New label");

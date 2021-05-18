@@ -119,13 +119,21 @@ public class ResultatConfig {
 
 				Context.getInstance().setConfig(phare);
 				Context.getInstance().setConfig(chassis);
+				Context.getInstance().setConfig(moteur);
 				Context.getInstance().setConfig(suspension);
 				Context.getInstance().setConfig(frein);
 				Context.getInstance().setConfig(roue);
 				Context.getInstance().getDaoC().saveConfig(chassis, moteur, roue, phare, frein, suspension);
 
 
-				System.out.println(Context.getInstance().getConfig());
+//				System.out.println(Context.getInstance().getConfig());
+				Context.getInstance().setLiensimage(phare.getLien());
+				Context.getInstance().setLiensimage(moteur.getLien());
+				Context.getInstance().setLiensimage(chassis.getLien());
+				Context.getInstance().setLiensimage(suspension.getLien());
+				Context.getInstance().setLiensimage(frein.getLien());
+				Context.getInstance().setLiensimage(roue.getLien());
+				
 				ValidationPopUp2.main(null);
 
 			}

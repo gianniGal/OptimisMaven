@@ -29,8 +29,21 @@ public class Context {
 	private boolean courseSelected;
 	private List<Piece> config=new ArrayList();
 	private int idconfig;
+	private List<String> liensimage=new ArrayList();
 	
-    public int getIdconfig() {
+    public List<String> getLiensimage() {
+		return liensimage;
+	}
+
+
+
+	public void setLiensimage(String liensimage) {
+		 this.liensimage.add(liensimage);
+	}
+
+
+
+	public int getIdconfig() {
 		return idconfig;
 	}
 
