@@ -45,8 +45,10 @@ public class Userlogsucces {
 		//BOUTON POUR VOIR LES CONFIGURATIONS PRECEDENTES 
 		JButton btnNewButton_1 = new JButton("Previous Config");
 		btnNewButton_1.setIcon(new ImageIcon(Userlogsucces.class.getResource("/Images/previousconf.jpg")));
-		btnNewButton_1.setBounds(169, 288, 228, 39);
+		btnNewButton_1.setBounds(169, 357, 228, 39);
 		frame.getContentPane().add(btnNewButton_1);
+		
+		
 		
 		//BOUTON POUR CREER NOUVELLE CONFIGURATION
 		JButton btnNewButton_2 = new JButton("New Config");
@@ -58,7 +60,7 @@ public class Userlogsucces {
 				
 			}
 		});
-		btnNewButton_2.setBounds(169, 357, 205, 39);
+		btnNewButton_2.setBounds(169, 288, 205, 39);
 		frame.getContentPane().add(btnNewButton_2);
 		
 		//BOUTON DE DECONNEXION

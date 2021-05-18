@@ -136,11 +136,11 @@ public  class CreationBDD {
 
 
 		//DECLARATION TERRAIN
-		Terrain terrainDesert = new Terrain("/Images/d3.png",solDesert,meteoDesert,placeDesert,false, surclasser);
-		Terrain terrainMontagne = new Terrain("/Images/montagne2.png",  solMontagne,meteoMontagne,placeMontagne,false, surclasser);
-		Terrain terrainForet = new Terrain("/Images/d3.png",solForet,meteoForet,placeForet,false, surclasser);
-		Terrain terrainVille= new Terrain("/Images/d3.png",solVille,meteoVille,placeVille,false, surclasser);
-		Terrain terrainCircuit = new Terrain("/Images/montagne2.png", solCircuit,meteoCircuit,placeCircuit,false, surclasser);
+		Terrain terrainDesert = new Terrain("/Images/d3.png",solDesert,meteoDesert,placeDesert,false, surclasser, "Desert");
+		Terrain terrainMontagne = new Terrain("/Images/montagne2.png",  solMontagne,meteoMontagne,placeMontagne,false, surclasser,"Montagne");
+		Terrain terrainForet = new Terrain("/Images/foret.jpg",solForet,meteoForet,placeForet,false, surclasser, "Forêt");
+		Terrain terrainVille= new Terrain("/Images/ville.jpg",solVille,meteoVille,placeVille,false, surclasser, "Ville");
+		Terrain terrainCircuit = new Terrain("/Images/circuit.jpg", solCircuit,meteoCircuit,placeCircuit,false, surclasser, "Circuit");
 
 
 

@@ -352,7 +352,7 @@ public class ChoixContraintes {
 		});   
 		
 		chckbxNewCheckBox.setFont(new Font("Segoe UI", Font.PLAIN, 14));
-		chckbxNewCheckBox.setBounds(62, 97, 97, 23);
+		chckbxNewCheckBox.setBounds(xRadioButton, yRadioButton, 97, 23);
 		frame.getContentPane().add(chckbxNewCheckBox);
 
 

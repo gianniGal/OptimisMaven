@@ -91,7 +91,7 @@ public class NouvelleConfig extends javax.swing.JFrame{
 
 
 			//CREATION BOUTON RADIO POUR LE TERRAIN
-			JRadioButton rdbtnNewRadioButton = new JRadioButton(t.getClass().getSimpleName());		
+			JRadioButton rdbtnNewRadioButton = new JRadioButton(t.getLabel());		
 			rdbtnNewRadioButton.addItemListener(new ItemListener() {    
 				public void itemStateChanged(ItemEvent e) {                 
 					String check =  e.getStateChange()==1?"checked":"unchecked"; 

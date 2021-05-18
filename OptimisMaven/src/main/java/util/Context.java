@@ -1,5 +1,6 @@
 package util;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManagerFactory;
@@ -26,8 +27,8 @@ public class Context {
 	private NbDePlaces nombrePlacesSelected;
 	private Surclasser surclasserSelected;
 	private boolean courseSelected;
-
-	private List<Piece> config;
+	private List<Piece> config=new ArrayList();
+	
     private Terrain contrainte; 
 
 	private  DAOClient daoC = new DAOClient();
@@ -175,17 +176,17 @@ public class Context {
 		this.courseSelected = courseSelected;
 	}
 
-
-
-    public List<Piece> getConfig() {
-		return config;
-	}
+	public List<Piece> getConfig() {
+        return config;
+    }
 
 
 
-	public void setConfig(List<Piece> config) {
-		this.config = config;
-	}
+    public void setConfig(Piece piece) {
+        this.config.add(piece);
+    }
+
+  
 
 
 

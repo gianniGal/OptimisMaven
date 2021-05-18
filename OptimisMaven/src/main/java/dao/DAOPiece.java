@@ -88,12 +88,8 @@ public class DAOPiece implements IDAO<Piece, Integer>{
 		
 		try {
 			pieces=(List<Piece>) query.getResultList();
-
-			System.out.println(pieces);
-
 		}
 		catch(Exception e) {
-			System.out.println(pieces);
 		}
 
 		if (pieces.isEmpty() ) {

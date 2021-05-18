@@ -430,27 +430,27 @@ public class PneuBDD {
 		
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
-		Piece pneubitume1 = new Piece("pneu",320,bitume, pluie,duo,false,ecoPlus,"/Images/pneuHiver.jpg");
+		Piece pneubitume1 = new Piece("pneu",320,bitume, pluie,duo,false,ecoPlus,"/Images/pneuNeige.jpg");
 		Piece pneubitume2 = new Piece("pneu",1000,bitume, pluie,duo,false,luxe,"/Images/pneuRouteTune.jpg");
 		Piece pneubitume3 = new Piece("pneu",400,bitume, pluie,duo,false,tuning,"/Images/pneuRouteTune.jpg");
 		
-		Piece pneubitume4 = new Piece("pneu",320,bitume, pluie,duo,true,ecoPlus,"/Images/pneuHiver.jpg");
+		Piece pneubitume4 = new Piece("pneu",320,bitume, pluie,duo,true,ecoPlus,"/Images/pneuNeige.jpg");
 		Piece pneubitume5 = new Piece("pneu",1000,bitume, pluie,duo,true,luxe,"/Images/pneuRouteTune.jpg");
 		Piece pneubitume6 = new Piece("pneu",400,bitume, pluie,duo,true,tuning,"/Images/pneuRouteTune.jpg");
 		
-		Piece pneubitume7 = new Piece("pneu",320,bitume, pluie,famille,false,ecoPlus,"/Images/pneuHiver.jpg");
+		Piece pneubitume7 = new Piece("pneu",320,bitume, pluie,famille,false,ecoPlus,"/Images/pneuNeige.jpg");
 		Piece pneubitume8 = new Piece("pneu",1000,bitume, pluie,famille,false,luxe,"/Images/pneuRouteTune.jpg");
 		Piece pneubitume9 = new Piece("pneu",400,bitume, pluie,famille,false,tuning,"/Images/pneuRouteTune.jpg"); 
 		
-		Piece pneubitume10 = new Piece("pneu",320,bitume, pluie,famille,true,ecoPlus,"/Images/pneuHiver.jpg");
+		Piece pneubitume10 = new Piece("pneu",320,bitume, pluie,famille,true,ecoPlus,"/Images/pneuNeige.jpg");
 		Piece pneubitume11 = new Piece("pneu",1000,bitume, pluie,famille,true,luxe,"/Images/pneuRouteTune.jpg");
 		Piece pneubitume12 = new Piece("pneu",400,bitume, pluie,famille,true,tuning,"/Images/pneuRouteTune.jpg"); 
 		
-		Piece pneubitume13 = new Piece("pneu",800,bitume, pluie,tourisme,false,ecoPlus,"/Images/pneuHiver.jpg");
+		Piece pneubitume13 = new Piece("pneu",800,bitume, pluie,tourisme,false,ecoPlus,"/Images/pneuNeige.jpg");
 		Piece pneubitume14 = new Piece("pneu",2500,bitume, pluie,tourisme,false,luxe,"/Images/pneuRouteTune.jpg");
 		Piece pneubitume15 = new Piece("pneu",1000,bitume, pluie,tourisme,false,tuning,"/Images/pneuRouteTune.jpg"); 
 		
-		Piece pneubitume16 = new Piece("pneu",800,bitume, pluie,tourisme,true,ecoPlus,"/Images/pneuHiver.jpg");
+		Piece pneubitume16 = new Piece("pneu",800,bitume, pluie,tourisme,true,ecoPlus,"/Images/pneuNeige.jpg");
 		Piece pneubitume17 = new Piece("pneu",2500,bitume, pluie,tourisme,true,luxe,"/Images/pneuRouteTune.jpg");
 		Piece pneubitume18 = new Piece("pneu",1000,bitume, pluie,tourisme,true,tuning,"/Images/pneuRouteTune.jpg"); 
 		

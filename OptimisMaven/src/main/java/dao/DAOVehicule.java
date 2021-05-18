@@ -89,4 +89,15 @@ public class DAOVehicule implements IDAO<Terrain, Integer>
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+
+
+
+
+	@Override
+	public Terrain save(Terrain object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
