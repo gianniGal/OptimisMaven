@@ -340,6 +340,7 @@ public class ChassisBDD {
 		Piece chassisglace34 = new Piece("chassis",35000,glace, sec,tourisme,true,ecoPlus,"/Images/ChassisTouFalseEp.png");
 		Piece chassisglace35 = new Piece("chassis",95000,glace, sec,tourisme,true,luxe,"/Images/ChassisTouTrueLu.jpg");
 		Piece chassisglace36 = new Piece("chassis",75500,glace, sec,tourisme,true,tuning,"/Images/ChassisTouTrueTu.jpg"); 
+		
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		Piece chassisglace37 = new Piece("chassis",8000,glace, brouillard,duo,false,ecoPlus,"/Images/ChassisDuoFalseEp.jpg");
 		Piece chassisglace38 = new Piece("chassis",50000,glace, brouillard,duo,false,luxe,"/Images/ChassisDuoFalseLu.png");
